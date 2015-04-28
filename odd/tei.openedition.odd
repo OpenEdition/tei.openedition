@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>Lodel ODD-2</title>
+				<title>ODD OpenEdition 1.3.1</title>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information</p>
@@ -30,7 +30,7 @@
 					<gi>elementSpec</gi> element. We don't use macros and model classes, in order to
 				keep the content model definitions easier to read and more straightforward.</p>
 
-			<schemaSpec ident="TEI_OE" start="TEI"
+			<schemaSpec ident="tei.openedition" start="TEI"
 				source="http://www.tei-c.org/Vault/P5/2.6.0/xml/tei/odd/p5subset.xml">
 
 				<moduleRef key="tei" include=""/>
@@ -64,6 +64,7 @@
 				<elementRef key="fileDesc"/>
 				<elementRef key="forename"/>
 				<elementRef key="front"/>
+				<elementRef key="gloss"/>
 				<elementRef key="graphic"/>
 				<elementRef key="head"/>
 				<elementRef key="hi"/>
@@ -1380,6 +1381,50 @@
 						<attDef ident="select" mode="delete"/>
 						<attDef ident="style" mode="delete"/>
 						<attDef ident="synch" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
+
+
+				<elementSpec ident="gloss" mode="change">
+					<content>
+           					 <rng:zeroOrMore>
+							<rng:choice>
+								<rng:text/>
+								<rng:ref name="hi"/>
+								<rng:ref name="lb"/>
+								<rng:ref name="anchor"/>
+								<rng:ref name="note"/>
+								<rng:ref name="ref"/>
+								<rng:ref name="ptr"/>
+							</rng:choice>
+						</rng:zeroOrMore>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="decls" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="subtype" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="type" mode="delete"/>
 						<attDef ident="xml:base" mode="delete"/>
 						<attDef ident="xml:space" mode="delete"/>
 					</attList>
@@ -2727,6 +2772,7 @@
 								<rng:zeroOrMore>
 									<rng:choice>
 										<rng:ref name="bibl"/>
+										<rng:ref name="gloss"/>
 										<rng:ref name="lb"/>
 										<rng:ref name="pb"/>
 										<rng:ref name="anchor"/>
@@ -2739,6 +2785,7 @@
 									<rng:zeroOrMore>
 										<rng:choice>
 											<rng:ref name="bibl"/>
+											<rng:ref name="gloss"/>
 											<rng:ref name="lb"/>
 											<rng:ref name="pb"/>
 											<rng:ref name="anchor"/>
@@ -2779,14 +2826,6 @@
 						<attDef ident="source" mode="delete"/>
 						<attDef ident="style" mode="delete"/>
 						<attDef ident="synch" mode="delete"/>
-						<attDef ident="type" mode="change">
-							<!-- Une valeur par défaut est attendue par Roma même si elle n'est pas spécifiée... -->
-							<defaultVal/>
-							<valList type="closed" mode="replace">
-								<valItem ident="exemple"/>
-								<valItem ident="sousexemple"/>
-							</valList>
-						</attDef>
 						<attDef ident="xml:base" mode="delete"/>
 						<attDef ident="xml:space" mode="delete"/>
 					</attList>
