@@ -3,7 +3,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>ODD OpenEdition 1.3.1</title>
+				<title>ODD OpenEdition 1.3.2</title>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information</p>
@@ -30,7 +30,7 @@
 					<gi>elementSpec</gi> element. We don't use macros and model classes, in order to
 				keep the content model definitions easier to read and more straightforward.</p>
 
-			<schemaSpec ident="tei.openedition" start="TEI"
+			<schemaSpec ident="tei.openedition.1.3.2" start="TEI"
 				source="http://www.tei-c.org/Vault/P5/2.6.0/xml/tei/odd/p5subset.xml">
 
 				<moduleRef key="tei" include=""/>
