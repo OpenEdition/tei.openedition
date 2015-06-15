@@ -3,7 +3,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>ODD OpenEdition 1.3.2</title>
+				<title>ODD OpenEdition 1.4</title>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information</p>
@@ -30,7 +30,7 @@
 					<gi>elementSpec</gi> element. We don't use macros and model classes, in order to
 				keep the content model definitions easier to read and more straightforward.</p>
 
-			<schemaSpec ident="tei.openedition.1.3.2" start="TEI"
+			<schemaSpec ident="tei.openedition.1.4" start="TEI"
 				source="http://www.tei-c.org/Vault/P5/2.6.0/xml/tei/odd/p5subset.xml">
 
 				<moduleRef key="tei" include=""/>
@@ -56,6 +56,7 @@
 				<elementRef key="desc"/>
 				<elementRef key="div"/>
 				<elementRef key="edition"/>
+				<elementRef key="editionStmt"/>
 				<elementRef key="editor"/>
 				<elementRef key="email"/>
 				<elementRef key="encodingDesc"/>
@@ -662,12 +663,12 @@
 						<attDef ident="style" mode="delete"/>
 						<attDef ident="synch" mode="delete"/>
 						<attDef ident="to" mode="delete"/>
-						<attDef ident="type" mode="delete"/>
+						<attDef ident="unit" mode="delete"/>
 						<attDef ident="xml:base" mode="delete"/>
 						<attDef ident="xml:space" mode="delete"/>
 					</attList>
 					<remarks>
-						<p>Authorized attributes: @xml:id, @xml:lang</p>
+						<p>Authorized attributes: @type, @xml:id, @xml:lang</p>
 					</remarks>
 				</elementSpec>
 
@@ -684,6 +685,7 @@
 								<rng:ref name="figure"/>
 								<rng:ref name="p"/>
 								<rng:ref name="ab"/>
+								<rng:ref name="bibl"/>
 								<rng:ref name="list"/>
 								<rng:ref name="table"/>
 								<rng:ref name="q"/>
@@ -703,6 +705,7 @@
 									<rng:ref name="figure"/>
 									<rng:ref name="p"/>
 									<rng:ref name="ab"/>
+									<rng:ref name="bibl"/>
 									<rng:ref name="list"/>
 									<rng:ref name="table"/>
 									<rng:ref name="q"/>
@@ -954,6 +957,7 @@
 										<rng:ref name="figure"/>
 										<rng:ref name="p"/>
 										<rng:ref name="ab"/>
+										<rng:ref name="bibl"/>
 										<rng:ref name="table"/>
 										<rng:ref name="q"/>
 										<rng:ref name="quote"/>
@@ -972,6 +976,7 @@
 											<rng:ref name="figure"/>
 											<rng:ref name="p"/>
 											<rng:ref name="ab"/>
+											<rng:ref name="bibl"/>
 											<rng:ref name="list"/>
 											<rng:ref name="table"/>
 											<rng:ref name="q"/>
@@ -1512,7 +1517,7 @@
 
 
 
-				<elementSpec ident="hi" module="core" mode="change">
+				<elementSpec ident="hi" mode="change">
 					<content>
 						<rng:zeroOrMore>
 							<rng:choice>
