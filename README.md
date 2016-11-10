@@ -8,3 +8,4 @@ Pour valider un fichier XML avec ce schéma, il est possible d'utiliser le sché
 
 Se reporter aux releases (https://github.com/OpenEdition/tei.openedition/releases) pour connaitre les évolutions du schéma.
 
+Les recommandations d'usage sont décrites avec des exemples dans le wiki du projet (https://github.com/OpenEdition/tei.openedition/wiki) 
