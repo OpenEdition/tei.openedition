@@ -1,3 +1,6 @@
+Documentation TEI openedition : https://github.com/OpenEdition/tei.openedition/wiki 
+
+
 Validation with online tei.openedition.1.4.1 schema
 
 
