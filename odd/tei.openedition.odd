@@ -3,7 +3,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title>ODD OpenEdition 1.4.1</title>
+				<title>ODD OpenEdition 1.5</title>
 			</titleStmt>
 			<publicationStmt>
 				<p>Publication Information</p>
@@ -15,9 +15,7 @@
 	</teiHeader>
 	<text>
 		<body>
-			<p>In this version, we start by specifying just the elements included in the TEI
-				OpenEdition, according to the list provided at <ptr target="http:/lodel.org/715"/>.
-				We supply an <gi>elementRef</gi> element for each element required.</p>
+			<p>This version is TEI P5 3.1.0 compliant.</p>.
 			<p>Since the elements are included individually, both <ident>tei</ident> and
 					<ident>linking</ident> modules are only supplied for providing attribute classes
 				and datatypes to the schema. By letting their <att>include</att> attibute empty, it
@@ -30,8 +28,8 @@
 					<gi>elementSpec</gi> element. We don't use macros and model classes, in order to
 				keep the content model definitions easier to read and more straightforward.</p>
 
-			<schemaSpec ident="tei.openedition.1.4.1" start="TEI"
-				source="http://www.tei-c.org/Vault/P5/2.6.0/xml/tei/odd/p5subset.xml">
+			<schemaSpec ident="tei.openedition.1.5" start="TEI"
+				source="http://www.tei-c.org/Vault/P5/3.1.0/xml/tei/odd/p5subset.xml">
 
 				<moduleRef key="tei" include=""/>
 				<moduleRef key="linking" include=""/>
@@ -2609,24 +2607,22 @@
 				<elementSpec ident="publicationStmt" mode="change">
 					<desc>Informations de publication du document électronique</desc>
 					<content>
-						<rng:choice>
-							<rng:oneOrMore>
-								<rng:choice>
-									<rng:ref name="p"/>
-									<rng:ref name="ab"/>
-								</rng:choice>
-							</rng:oneOrMore>
-							<rng:group>
+						<rng:oneOrMore>
+							<rng:choice>
+								<rng:ref name="p"/>
+								<rng:ref name="ab"/>
 								<rng:ref name="publisher"/>
-								<rng:oneOrMore>
-									<rng:choice>
-										<rng:ref name="date"/>
-										<rng:ref name="idno"/>
-										<rng:ref name="availability"/>
-									</rng:choice>
-								</rng:oneOrMore>
-							</rng:group>
-						</rng:choice>
+							</rng:choice>
+						</rng:oneOrMore>
+						<rng:optional>
+							<rng:zeroOrMore>
+								<rng:choice>
+									<rng:ref name="date"/>
+									<rng:ref name="idno"/>
+									<rng:ref name="availability"/>
+								</rng:choice>
+							</rng:zeroOrMore>
+						</rng:optional>
 					</content>
 					<attList>
 						<attDef ident="ana" mode="delete"/>
