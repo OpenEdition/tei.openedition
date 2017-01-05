@@ -15,7 +15,7 @@
 	</teiHeader>
 	<text>
 		<body>
-			<p>This version is TEI P5 3.1.0 compliant.</p>.
+			<p>This version is TEI P5 3.1.0 compliant.</p>
 			<p>Since the elements are included individually, both <ident>tei</ident> and
 					<ident>linking</ident> modules are only supplied for providing attribute classes
 				and datatypes to the schema. By letting their <att>include</att> attibute empty, it
