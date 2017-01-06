@@ -956,6 +956,7 @@
 										<rng:ref name="p"/>
 										<rng:ref name="ab"/>
 										<rng:ref name="bibl"/>
+										<rng:ref name="listBibl"/>
 										<rng:ref name="table"/>
 										<rng:ref name="q"/>
 										<rng:ref name="quote"/>
@@ -975,6 +976,7 @@
 											<rng:ref name="p"/>
 											<rng:ref name="ab"/>
 											<rng:ref name="bibl"/>
+											<rng:ref name="listBibl"/>
 											<rng:ref name="list"/>
 											<rng:ref name="table"/>
 											<rng:ref name="q"/>
