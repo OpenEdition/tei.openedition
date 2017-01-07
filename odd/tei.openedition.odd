@@ -62,6 +62,7 @@
 				<elementRef key="figure"/>
 				<elementRef key="fileDesc"/>
 				<elementRef key="forename"/>
+				<elementRef key="formula"/>
 				<elementRef key="front"/>
 				<elementRef key="gloss"/>
 				<elementRef key="graphic"/>
@@ -822,6 +823,37 @@
 					</remarks>
 				</elementSpec>
 
+			<elementSpec ident="formula" mode="change">
+					<content>
+						<rng:text/>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @lang, @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
 
 
 				<elementSpec ident="date" mode="change">
@@ -1531,6 +1563,7 @@
 								<rng:ref name="note"/>
 								<rng:ref name="ref"/>
 								<rng:ref name="ptr"/>
+								<rng:ref name="formula"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
@@ -2347,6 +2380,7 @@
 								<rng:ref name="ptr"/>
 								<rng:ref name="bibl"/>
 								<rng:ref name="code"/>
+								<rng:ref name="formula"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
