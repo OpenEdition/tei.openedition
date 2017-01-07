@@ -370,7 +370,6 @@ function cuttext($text, $length, $dots=false)
 					<p>Une formule mathématique inline <hi rend="latex"><formula notation="latex"><![CDATA[\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)]]></formula></hi>.</p>
 				</div>
 				<div type="div2">
-				<p><code></code></p>
 					<head subtype="level2">Nulla facilisi</head>
 					<p>Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Praesent vestibulum dapibus nibh. Etiam iaculis nunc ac metus. Ut id nisl quis enim dignissim sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Proin magna. Duis vel nibh at velit scelerisque suscipit. Curabitur turpis. Vestibulum suscipit nulla quis orci.</p>
 					<p rend="figure-title">Fusce ac felis sit amet ligula pharetra condimentum</p>
