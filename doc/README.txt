@@ -1,7 +1,7 @@
 Documentation TEI openedition : https://github.com/OpenEdition/tei.openedition/wiki 
 
 
-Validation with online tei.openedition.1.5.1 schema
+Validation with online tei.openedition.1.5.2 schema
 
 
 <?xml version="1.0" encoding="UTF-8"?>
