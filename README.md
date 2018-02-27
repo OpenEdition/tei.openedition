@@ -1,6 +1,6 @@
 # XML/TEI OpenEdition Schema
 
-This Git project contains TEI schema versions used by the OpenEdition Books and Revues.org platforms. It is associated to the revuesorg editorial model shipped with the Lodel software https://github.com/OpenEdition/lodel
+This Git project contains TEI schema versions used by the OpenEdition Books and OpenEdition Journals platforms. It is associated to the revuesorg editorial model shipped with the Lodel software https://github.com/OpenEdition/lodel
 
 Among the different XML encoding standards for machine-readable texts, the TEI ([Text Encoding Initiative](http://www.tei-c.org/)) is probably the most comprehensive and mature. The TEI Guidelines define some 500 different textual components and concepts (word, sentence, character, glyph, person, etc.). Any particular usage of the TEI supposes a customization of the TEI to their specificities, so as to adapt and constraint the richness of the TEI to a well scoped and tuned schema. The TEI community has created a specification language called ODD [("One Document Does it all")](http://www.tei-c.org/Guidelines/Customization/odds.xml) to modify the general TEI schema. Having ODD descriptions, it is possible with a tool called Roma to generate automatically customised TEI schemas (xsd, relaxNG, etc.) and some documentation.
 
@@ -16,7 +16,7 @@ The usage recommendations and examples are here: https://github.com/OpenEdition/
 
 # Schema TEI OpenEdition 
 
-Ce projet versionne le schéma TEI utilisé sur les plateformes d'OpenEdition Revues.org et OpenEdition Books. Il correspond au modèle éditorial revuesorg distribué avec Lodel https://github.com/OpenEdition/lodel
+Ce projet versionne le schéma TEI utilisé sur les plateformes d'OpenEdition Journals et d'OpenEdition Books. Il correspond au modèle éditorial revuesorg distribué avec Lodel https://github.com/OpenEdition/lodel
 
 Parmi les standards d'encodage XML d'un texte, TEI ([Text Encoding Initiative](http://www.tei-c.org/)) est sans doute le plus complet et le plus mûr. The TEI Guidelines define some 500 different textual components and concepts (word, sentence, character, glyph, person, etc.). Any particular usage of the TEI supposes a customization of the TEI to their specificities, so as to adapt and constraint the richness of the TEI to a well scoped and tuned schema. The TEI community has created a specification language called ODD [("One Document Does it all")](http://www.tei-c.org/Guidelines/Customization/odds.xml) to modify the general TEI schema. Having ODD descriptions, it is possible with a tool called Roma to generate automatically customised TEI schemas (xsd, relaxNG, etc.) and some documentation.
 
