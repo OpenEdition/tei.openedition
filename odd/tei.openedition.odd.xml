@@ -49,6 +49,7 @@
 				<elementRef key="bibl"/>
 				<elementRef key="biblFull"/>
 				<elementRef key="biblScope"/>
+				<elementRef key="biblStruct"/>
 				<elementRef key="body"/>
 				<elementRef key="cell"/>
 				<elementRef key="code"/>
@@ -72,6 +73,7 @@
 				<elementRef key="head"/>
 				<elementRef key="hi"/>
 				<elementRef key="idno"/>
+				<elementRef key="imprint"/>
 				<elementRef key="item"/>
 				<elementRef key="keywords"/>
 				<elementRef key="label"/>
@@ -82,6 +84,7 @@
 				<elementRef key="list"/>
 				<elementRef key="listBibl"/>
 				<elementRef key="meeting"/>
+				<elementRef key="monogr"/>
 				<elementRef key="name"/>
 				<elementRef key="nameLink"/>
 				<elementRef key="note"/>
@@ -677,6 +680,49 @@
 
 
 
+				<elementSpec ident="biblStruct" mode="change">
+					<desc>Permet de renseigner des informations bibliographiques dans teiHeader/fileDesc</desc>
+					<content>
+						<rng:zeroOrMore>
+							<rng:choice>
+								<rng:ref name="monogr"/>
+							</rng:choice>
+						</rng:zeroOrMore>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="default" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="sortKey" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
+						<attDef ident="status" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="subtype" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="type" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
+
+
 				<elementSpec ident="body" mode="change">
 					<content>
 						<rng:zeroOrMore>
@@ -996,6 +1042,7 @@
 						<attDef ident="exclude" mode="delete"/>
 						<attDef ident="facs" mode="delete"/>
 						<attDef ident="key" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
 						<attDef ident="next" mode="delete"/>
 						<attDef ident="prev" mode="delete"/>
 						<attDef ident="ref" mode="delete"/>
@@ -1672,6 +1719,46 @@
 
 
 
+				<elementSpec ident="imprint" mode="change">
+					<content>
+						<rng:zeroOrMore>
+							<rng:choice>
+								<rng:ref name="biblScope"/>
+								<rng:ref name="date"/>
+								<rng:ref name="publisher"/>
+							</rng:choice>
+						</rng:zeroOrMore>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
+
+
+
 				<elementSpec ident="item" mode="change">
 					<content>
 						<rng:zeroOrMore>
@@ -2093,6 +2180,45 @@
 						<attDef ident="rendition" mode="delete"/>
 						<attDef ident="sameAs" mode="delete"/>
 						<attDef ident="select" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
+
+
+				<elementSpec ident="monogr" mode="change">
+					<content>
+						<rng:zeroOrMore>
+							<rng:choice>
+								<rng:ref name="title"/>
+								<rng:ref name="idno"/>
+								<rng:ref name="imprint"/>
+							</rng:choice>
+						</rng:zeroOrMore>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
 						<attDef ident="style" mode="delete"/>
 						<attDef ident="synch" mode="delete"/>
 						<attDef ident="xml:base" mode="delete"/>
@@ -3321,6 +3447,7 @@
 						<attDef ident="corresp" mode="delete"/>
 						<attDef ident="exclude" mode="delete"/>
 						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
 						<attDef ident="next" mode="delete"/>
 						<attDef ident="prev" mode="delete"/>
 						<attDef ident="rend" mode="delete"/>
@@ -3361,6 +3488,7 @@
 						<attDef ident="corresp" mode="delete"/>
 						<attDef ident="exclude" mode="delete"/>
 						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
 						<attDef ident="next" mode="delete"/>
 						<attDef ident="prev" mode="delete"/>
 						<attDef ident="rend" mode="delete"/>
@@ -3392,7 +3520,10 @@
 								</rng:choice>
 							</rng:oneOrMore>
 							<rng:oneOrMore>
-								<rng:ref name="biblFull"/>
+								<rng:choice>
+									<rng:ref name="biblFull"/>
+									<rng:ref name="biblStruct"/>
+								</rng:choice>
 							</rng:oneOrMore>
 						</rng:choice>
 					</content>
