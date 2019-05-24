@@ -40,6 +40,7 @@
 				<elementRef key="ab"/>
 				<elementRef key="abbr"/>
 				<elementRef key="affiliation"/>
+				<elementRef key="analytic"/>
 				<elementRef key="anchor"/>
 				<elementRef key="appInfo"/>
 				<elementRef key="application"/>
@@ -111,6 +112,7 @@
 				<elementRef key="s"/>
 				<elementRef key="schemaRef"/>
 				<elementRef key="seg"/>
+				<elementRef key="series"/>
 				<elementRef key="sourceDesc"/>
 				<elementRef key="surname"/>
 				<elementRef key="table"/>
@@ -276,6 +278,44 @@
 						<attDef ident="when" mode="delete"/>
 						<attDef ident="when-custom" mode="delete"/>
 						<attDef ident="when-iso" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
+
+				<elementSpec ident="analytic" mode="change">
+					<content>
+						<alternate minOccurs="0" maxOccurs="unbounded">
+							<elementRef key="author"/>
+							<elementRef key="editor"/>
+							<elementRef key="title"/>
+							<elementRef key="date"/>
+							<elementRef key="idno"/>
+						</alternate>
+					</content>
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
 						<attDef ident="xml:base" mode="delete"/>
 						<attDef ident="xml:space" mode="delete"/>
 					</attList>
@@ -680,13 +720,15 @@
 
 
 				<elementSpec ident="biblStruct" mode="change">
-					<desc>Permet de renseigner des informations bibliographiques dans teiHeader/fileDesc</desc>
+					<desc>Permet de renseigner des informations bibliographiques dans teiHeader/fileDesc/sourceDesc</desc>
 					<content>
-						<rng:zeroOrMore>
-							<rng:choice>
-								<rng:ref name="monogr"/>
-							</rng:choice>
-						</rng:zeroOrMore>
+						<sequence>
+							<elementRef key="analytic" minOccurs="0" maxOccurs="unbounded"/>
+							<sequence minOccurs="1" maxOccurs="unbounded">
+								<elementRef key="monogr"/>
+								<elementRef key="series" minOccurs="0" maxOccurs="unbounded"/>
+							</sequence>
+						</sequence>
 					</content>
 					<attList>
 						<attDef ident="ana" mode="delete"/>
@@ -711,12 +753,11 @@
 						<attDef ident="style" mode="delete"/>
 						<attDef ident="subtype" mode="delete"/>
 						<attDef ident="synch" mode="delete"/>
-						<attDef ident="type" mode="delete"/>
 						<attDef ident="xml:base" mode="delete"/>
 						<attDef ident="xml:space" mode="delete"/>
 					</attList>
 					<remarks>
-						<p>Authorized attributes: @xml:id, @xml:lang</p>
+						<p>Authorized attributes: type, @xml:id, @xml:lang</p>
 					</remarks>
 				</elementSpec>
 
@@ -1722,6 +1763,7 @@
 								<rng:ref name="biblScope"/>
 								<rng:ref name="date"/>
 								<rng:ref name="publisher"/>
+								<rng:ref name="pubPlace"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
@@ -3462,6 +3504,44 @@
 						<p>Authorized attributes: @type, @url, @xml:id, @xml:lang</p>
 					</remarks>
 				</elementSpec>
+
+
+
+				<elementSpec ident="series" mode="change">
+					<content>
+						<alternate minOccurs="0" maxOccurs="unbounded">
+							<elementRef key="title"/>
+							<elementRef key="editor"/>
+							<elementRef key="idno"/>
+						</alternate>
+					</content>					
+					<attList>
+						<attDef ident="ana" mode="delete"/>
+						<attDef ident="cert" mode="delete"/>
+						<attDef ident="change" mode="delete"/>
+						<attDef ident="copyOf" mode="delete"/>
+						<attDef ident="corresp" mode="delete"/>
+						<attDef ident="exclude" mode="delete"/>
+						<attDef ident="facs" mode="delete"/>
+						<attDef ident="n" mode="delete"/>
+						<attDef ident="next" mode="delete"/>
+						<attDef ident="prev" mode="delete"/>
+						<attDef ident="rend" mode="delete"/>
+						<attDef ident="rendition" mode="delete"/>
+						<attDef ident="resp" mode="delete"/>
+						<attDef ident="sameAs" mode="delete"/>
+						<attDef ident="select" mode="delete"/>
+						<attDef ident="source" mode="delete"/>
+						<attDef ident="style" mode="delete"/>
+						<attDef ident="synch" mode="delete"/>
+						<attDef ident="xml:base" mode="delete"/>
+						<attDef ident="xml:space" mode="delete"/>
+					</attList>
+					<remarks>
+						<p>Authorized attributes: @xml:id, @xml:lang</p>
+					</remarks>
+				</elementSpec>
+
 
 
 				<elementSpec ident="sourceDesc" mode="change">
