@@ -856,6 +856,7 @@
 								<rng:ref name="ref"/>
 								<rng:ref name="ptr"/>
 								<rng:ref name="table"/>
+								<rng:ref name="figure"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
