@@ -1695,6 +1695,7 @@
 								<rng:ref name="ref"/>
 								<rng:ref name="ptr"/>
 								<rng:ref name="formula"/>
+								<rng:ref name="figure"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
