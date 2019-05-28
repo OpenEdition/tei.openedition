@@ -805,14 +805,17 @@
 							</rng:zeroOrMore>
 						</rng:optional>
 						<rng:zeroOrMore>
-							<rng:ref name="div"/>
-							<rng:zeroOrMore>
-								<rng:choice>
-									<rng:ref name="pb"/>
-									<rng:ref name="lb"/>
-									<rng:ref name="anchor"/>
-								</rng:choice>
-							</rng:zeroOrMore>
+							<rng:choice>
+								<rng:ref name="div"/>
+								<rng:ref name="listBibl"/>
+								<rng:zeroOrMore>
+									<rng:choice>
+										<rng:ref name="pb"/>
+										<rng:ref name="lb"/>
+										<rng:ref name="anchor"/>
+									</rng:choice>
+								</rng:zeroOrMore>
+							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
 					<attList>
