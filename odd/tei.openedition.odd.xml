@@ -221,6 +221,7 @@
 								<rng:ref name="anchor"/>
 								<rng:ref name="note"/>
 								<rng:ref name="email"/>
+								<rng:ref name="ref"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
@@ -854,8 +855,11 @@
 								<rng:ref name="s"/>
 								<rng:ref name="pb"/>
 								<rng:ref name="lb"/>
+								<rng:ref name="list"/>
 								<rng:ref name="anchor"/>
 								<rng:ref name="note"/>
+								<rng:ref name="p"/>
+								<rng:ref name="q"/>
 								<rng:ref name="ref"/>
 								<rng:ref name="ptr"/>
 								<rng:ref name="table"/>
@@ -1123,6 +1127,7 @@
 										<rng:ref name="p"/>
 										<rng:ref name="ab"/>
 										<rng:ref name="bibl"/>
+										<rng:ref name="list"/>
 										<rng:ref name="listBibl"/>
 										<rng:ref name="table"/>
 										<rng:ref name="q"/>
