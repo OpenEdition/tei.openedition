@@ -1674,8 +1674,6 @@
 						<attDef ident="n" mode="delete"/>
 						<attDef ident="next" mode="delete"/>
 						<attDef ident="prev" mode="delete"/>
-						<attDef ident="rend" mode="delete"/>
-						<attDef ident="rendition" mode="delete"/>
 						<attDef ident="sameAs" mode="delete"/>
 						<attDef ident="select" mode="delete"/>
 						<attDef ident="style" mode="delete"/>
