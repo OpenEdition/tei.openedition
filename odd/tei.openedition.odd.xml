@@ -2427,6 +2427,7 @@
 								<rng:ref name="bibl"/>
 								<rng:ref name="p"/>
 								<rng:ref name="list"/>
+								<rng:ref name="q"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
