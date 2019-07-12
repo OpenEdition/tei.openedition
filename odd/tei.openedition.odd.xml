@@ -2428,6 +2428,7 @@
 								<rng:ref name="p"/>
 								<rng:ref name="list"/>
 								<rng:ref name="q"/>
+								<rng:ref name="table"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
