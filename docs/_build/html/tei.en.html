@@ -1,0 +1,1534 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Guidelines (english) &mdash; OpenEdition TEI  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Validation with XML Schema" href="validation.html" />
+    <link rel="prev" title="1. teiHeader" href="tei.fr.teiHeader.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OpenEdition TEI
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">TEI</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tei.fr.html">Documentation (français)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guidelines (english)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#teiheader">teiHeader</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#title-subtitle-suptitle-translated-titles">title, subtitle, suptitle, translated titles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#authors-translators-academic-editor-excavation-director-collaborator-archeology-and-their-description">authors, translators, academic editor, excavation director, collaborator (archeology) and their description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-name-tag">Using the name tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-name-persname-tag">Using the name PersName tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#contributor-description">Contributor description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#index-keywords-geography-chronology-themes-person-cited">Index: keywords; geography; chronology; themes; person cited</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#print-and-electronic-publication-dates">Print and electronic publication dates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#electronic-publication-dates-and-embargo-periods">Electronic publication dates and embargo periods</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#other-metadata">Other metadata</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#text">text</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#front">front</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#summaries">Summaries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reading-notes-and-reviews">Reading notes and reviews</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#author-notes-editors-notes-errata-acknowledgements">Author notes, editors notes, errata, acknowledgements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#body">BODY</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#structure-of-the-text-and-section-titles">Structure of the text and section titles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#footnotes-and-endnotes">Footnotes and endnotes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#text-layout-hi-tags-rend-and-rendition-attributes">Text layout: hi tags, rend and rendition attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quotation-and-paragraph-styles">Quotation and paragraph styles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lists">Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tables">Tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hypertext-links">Hypertext links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formula">Formula</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#linguistic-examples">Linguistic examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#back">Back</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bibliography">Bibliography</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#annexes">Annexes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">Validation with XML Schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="samples.html">Sample TEI file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatibility.html">Compatibility</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="openedition.html">OpenEdition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenEdition TEI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Guidelines (english)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tei.en.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="guidelines-english">
+<span id="tei-en"></span><h1>Guidelines (english)<a class="headerlink" href="#guidelines-english" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">These instructions look at XML markup for documents due to be imported
+into Lodel 1.0. The Xpaths suggested here feature in OpenEdition’s
+editorial model.</div>
+<div class="line">TEI XML schema: <a class="reference external" href="http://lodel.org/ns/">http://lodel.org/ns/</a>.</div>
+<div class="line">TEI document example:
+<a class="reference external" href="https://github.com/OpenEdition/tei.openedition/blob/master/doc/lorem_ipsum_lodel_1.0.xml">Lorem-ipsum-Lodel1.0.xml</a>.</div>
+</div>
+<p><strong>Errata</strong></p>
+<p>Revision 04/27/2015: correction for epigraphs: unlike what was written
+in this documentation before this day, epigraphs must be included in the
+<code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> element, not in the <code class="docutils literal notranslate"><span class="pre">&lt;front&gt;</span></code> element.</p>
+<p>Revision 04/28/2015: specifications for linguistic examples added.</p>
+<p>Revision 10/23/2015: specifications for <code class="docutils literal notranslate"><span class="pre">&lt;persName&gt;</span></code> added.</p>
+<p>Revision 12/12/2016: list style type</p>
+<p>Revision 14/12/2016: fix <code class="docutils literal notranslate"><span class="pre">&lt;hi</span> <span class="pre">rend=&quot;small-caps&quot;&gt;</span></code></p>
+<p>Revision 03/01/2017: specifications for <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='break']</span></code></p>
+<p>Revision 06/01/2017: 2 contributors : collaborator and
+excavationsdirector, person cited, math formula</p>
+<p>Révision 11/10/2017 : correction on math formula examples</p>
+<p><strong>Outline</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="#teiheader">I. teiHeader</a></p>
+<ul>
+<li><p><a class="reference external" href="#title-subtitle-suptitle-translated-titles">Title, subtitle, suptitle, translated
+titles</a></p></li>
+<li><p><a class="reference external" href="#authors-translators-academic-editor-excavation-director-collaborator-archeology-and-their-description">Authors, translators, scientific editors, excavation director,
+collaborator</a></p></li>
+<li><p><a class="reference external" href="#using-the-name-tag">Using the name tag</a></p></li>
+<li><p><a class="reference external" href="#using-the-name-persname-tag">Using the persName tag</a></p></li>
+<li><p><a class="reference external" href="#contributor-description">Contributors</a></p></li>
+<li><p><a class="reference external" href="#index-keywords-geography-chronology-themes-person-cited">Index : keywords ; geography ; chronology ; themes; person
+cited</a></p></li>
+<li><p><a class="reference external" href="#print-and-electronic-publication-dates">Publication dates</a></p></li>
+<li><p><a class="reference external" href="#electronic-publication-dates-and-embargo-periods">Embargo
+periods</a></p></li>
+<li><p><a class="reference external" href="#other-metadata">Other metadata</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#text">II. text</a></p>
+<ul>
+<li><p><a class="reference external" href="#front">II.1. front</a></p>
+<ul>
+<li><p><a class="reference external" href="#summaries">Summaries</a></p></li>
+<li><p><a class="reference external" href="#reading-notes-and-reviews">Lecture notes</a></p></li>
+<li><p><a class="reference external" href="#author-notes-editors-notes-errata-acknowledgements">Author notes, editors notes, errata,
+acknowledgements</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#body">II.2. body</a></p>
+<ul>
+<li><p><a class="reference external" href="#structure-of-the-text-and-section-titles">Structure of the text and section
+titles</a></p></li>
+<li><p><a class="reference external" href="#footnotes-and-endnotes">Footnotes and endnotes</a></p></li>
+<li><p><a class="reference external" href="#text-layout-hi-tags-rend-and-rendition-attributes">Text layout: hi tags, rend and rendition
+attributes</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OpenEdition/lodel/wiki/Creating-a-TEI-document-in-Lodel-1.0#quotation-and-paragraph-styles">Quotations and paragraph
+styles</a></p></li>
+<li><p><a class="reference external" href="#lists">Lists</a></p></li>
+<li><p><a class="reference external" href="#tables">Tables</a></p></li>
+<li><p><a class="reference external" href="#hypertext-links">Hypertext links</a></p></li>
+<li><p><a class="reference external" href="#images">Images</a></p></li>
+<li><p><a class="reference external" href="#code">Code</a></p></li>
+<li><p><a class="reference external" href="#formula">Formula</a></p></li>
+<li><p><a class="reference external" href="#linguistic-examples">Linguistic examples</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#back">II.3. Back</a></p>
+<ul>
+<li><p><a class="reference external" href="#bibliography">Bibliography</a></p></li>
+<li><p><a class="reference external" href="#annexes">Annexes</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="teiheader">
+<h2>teiHeader<a class="headerlink" href="#teiheader" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="title-subtitle-suptitle-translated-titles">
+<h3>title, subtitle, suptitle, translated titles<a class="headerlink" href="#title-subtitle-suptitle-translated-titles" title="Permalink to this headline">¶</a></h3>
+<p>Make sure that each title:</p>
+<ul class="simple">
+<li><p>Is a single paragraph, without line break (lb tag);</p></li>
+<li><p>Is in lower case, except the first letter;</p></li>
+<li><p>Does not finish with a fullstop.</p></li>
+</ul>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Title:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[&#64;type='main']</span></code></p></li>
+<li><p>Subtitle:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[&#64;type='sub']</span></code></p></li>
+<li><p>Suptitle:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[&#64;type='sup']</span></code></p></li>
+<li><p>Translated title:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[&#64;type='alt'</span> <span class="pre">and</span> <span class="pre">&#64;xml:lang]</span></code>
+<code class="docutils literal notranslate"><span class="pre">xml:lang</span></code> attribute is required (ISO 639-1).</p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;teiHeader&gt;</span>
+    <span class="nt">&lt;fileDesc&gt;</span>
+      <span class="nt">&lt;titleStmt&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">type=</span><span class="s">&quot;sup&quot;</span><span class="nt">&gt;</span>Dolor sit amet<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">type=</span><span class="s">&quot;main&quot;</span><span class="nt">&gt;</span>Lorem ipsum pour Opentext<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">type=</span><span class="s">&quot;sub&quot;</span><span class="nt">&gt;</span>Basé sur le modèle éditorial pour Lodel de OpenEdition<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">type=</span><span class="s">&quot;alt&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Other travelling salesmen live a life of luxury<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;title</span> <span class="na">type=</span><span class="s">&quot;alt&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;es&quot;</span><span class="nt">&gt;</span>Las preocupaciones son mucho mayores<span class="nt">&lt;/title&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="section" id="authors-translators-academic-editor-excavation-director-collaborator-archeology-and-their-description">
+<h4>authors, translators, academic editor, excavation director, collaborator (archeology) and their description<a class="headerlink" href="#authors-translators-academic-editor-excavation-director-collaborator-archeology-and-their-description" title="Permalink to this headline">¶</a></h4>
+<p>You can associate several authors, translators and editors to the
+document.</p>
+<p>2 possible encodings for person names : <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> ou <code class="docutils literal notranslate"><span class="pre">&lt;persName&gt;</span></code></p>
+</div>
+<div class="section" id="using-the-name-tag">
+<h4>Using the name tag<a class="headerlink" href="#using-the-name-tag" title="Permalink to this headline">¶</a></h4>
+<p>Make sure both first names and surnames are displayed in this order and
+in small case, apart from the first letter. This order is important as
+Lodel detects the first name as the first word and the surname as the
+second when the document is imported. In the case of a composite
+surname, non-breaking spaces
+(<a class="reference external" href="http://en.wikipedia.org/​wiki/​Non-breaking_space">http://en.wikipedia.org/​wiki/​Non-breaking_space</a>)
+should be used between the different parts of the composite surname to
+help Lodel correctly distinguish first names and surnames. Non-breaking
+spaces are not necessary for composite first names.</p>
+<p>You must always use the same form for author names. Pay special
+attention to the case and spelling of first names. E.g. If two documents
+from the same author are imported into Lodel, and the author is spelled
+John-Arthur Smith in the first and John Arthur Smith, without the
+hyphen, in the second, Lodel will consider them as two different authors
+and will create separate entries in the author index.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Author:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:name</span></code></p></li>
+<li><p>Translator:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='translator']/tei:name</span></code></p></li>
+<li><p>Editor:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(&#64;role)]/tei:name</span></code></p></li>
+<li><p>Excavation director:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='excavationsdirector']/tei:name</span></code></p></li>
+<li><p>Collaborator (for archeology):
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='collaborator']/tei:name</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="using-the-name-persname-tag">
+<h4>Using the name PersName tag<a class="headerlink" href="#using-the-name-persname-tag" title="Permalink to this headline">¶</a></h4>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Author:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:persName/tei:surname</span></code></p></li>
+<li><p>Translator:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='translator']/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='translator']/tei:persName/tei:surname</span></code></p></li>
+<li><p>Editor:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(&#64;role)]/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(&#64;role)]/tei:persName/tei:surname</span></code></p></li>
+<li><p>Excavation director (forename and surame):
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='excavationsdirector']/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='excavationsdirector']/tei:persName/tei:surname</span></code></p></li>
+<li><p>Collaborator (for archeology) (forename and surame):
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='collaborator']/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[&#64;role='collaborator']/tei:persName/tei:surname</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="contributor-description">
+<h4>Contributor description<a class="headerlink" href="#contributor-description" title="Permalink to this headline">¶</a></h4>
+<p>For each contributor, you can also provide a description using the
+<code class="docutils literal notranslate"><span class="pre">&lt;affiliation&gt;</span></code> tag. You can also use other tags to indicate a
+contributor’s affiliation, position, email address, title and web site.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Author descriptions:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:affiliation/tei:s</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:affiliation/tei:s</span></code></p></li>
+<li><p>Affiliation:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:orgName/tei:s</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:orgName/tei:s</span></code></p></li>
+<li><p>Position:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:roleName[&#64;type='function']/tei:s</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:roleName[&#64;type='function']/tei:s</span></code></p></li>
+<li><p>Title:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:roleName[&#64;type='honorific']/tei:s</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:roleName[&#64;type='honorific']/tei:s</span></code></p></li>
+<li><p>Email:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:email/tei:s</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:email/tei:s</span></code></p></li>
+<li><p>Web site:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:ref</span> <span class="pre">|</span> <span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:ref</span></code></p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+&lt;titleStmt&gt;
+[...]
+    &lt;author&gt;
+        &lt;name&gt;Marin Dacos&lt;/name&gt;
+        &lt;affiliation&gt;
+            Directeur du Cléo (Centre pour l&#39;édition électronique ouverte)
+        &lt;/affiliation&gt;
+        &lt;roleName type=&quot;function&quot;&gt;
+            &lt;s&gt;Directeur&lt;/s&gt;
+        &lt;/roleName&gt;
+        &lt;orgName&gt;
+            &lt;s&gt;Cléo&lt;/s&gt;
+        &lt;/orgName&gt;
+        &lt;email&gt;
+            &lt;s&gt;contact@openedition.org&lt;/s&gt;
+        &lt;/email&gt;
+        &lt;ref target=&quot;http://www.openedition.org&quot; type=&quot;website&quot;&gt;http://www.openedition.org&lt;/​ref&gt;
+        &lt;roleName type=&quot;honorific&quot;&gt;
+            &lt;s&gt;M.&lt;/s&gt;
+        &lt;/roleName&gt;
+    &lt;/author&gt;
+    &lt;editor role=&quot;translator&quot;&gt;
+        &lt;persName&gt;
+            &lt;forename&gt;Jean-François&lt;/forename&gt;
+            &lt;surname&gt;Rivière&lt;/surname&gt;
+        &lt;/persName&gt;
+        &lt;affiliation&gt;Chargé d&#39;édition au Cléo&lt;/affiliation&gt;
+    &lt;/editor&gt;
+    &lt;editor&gt;
+        &lt;persName&gt;
+            &lt;forename&gt;Nahuel&lt;/forename&gt;
+            &lt;surname&gt;Angelinetti&lt;/surname&gt;
+        &lt;/persName&gt;
+        &lt;affiliation&gt;Développeur au Cléo&lt;/affiliation&gt;
+    &lt;/editor&gt;
+&lt;/titleStmt&gt;
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="index-keywords-geography-chronology-themes-person-cited">
+<h4>Index: keywords; geography; chronology; themes; person cited<a class="headerlink" href="#index-keywords-geography-chronology-themes-person-cited" title="Permalink to this headline">¶</a></h4>
+<p>As for author names, spelling and the case used in index entries should
+always be the same in order to avoid any duplicates in the index.</p>
+<p>For person cited, <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> ou <code class="docutils literal notranslate"><span class="pre">&lt;persname&gt;</span></code> can be used (see author
+section for details).</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Keywords:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='keyword'</span> <span class="pre">and</span> <span class="pre">xml:lang]/tei:list/tei:item</span></code>.
+<code class="docutils literal notranslate"><span class="pre">xml:lang</span></code>attribute is required (ISO 639-1).</p></li>
+<li><p>Geographical index:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='geographical']/tei:list/tei:item</span></code></p></li>
+<li><p>Chronological index:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='chronological']/tei:list/tei:item</span></code></p></li>
+<li><p>Thematic index:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='subject']/tei:list/tei:item</span></code></p></li>
+<li><p>Person Cited</p></li>
+</ul>
+<p>Using the tag <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;</span></code> :
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='personcited']/tei:list/tei:item/tei:name</span></code></p>
+<p>Using the tag <code class="docutils literal notranslate"><span class="pre">&lt;persName&gt;</span></code>:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='personcited']/tei:list/tei:item/tei:persName/tei:forename</span></code>
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[&#64;scheme='personcited']/tei:list/tei:item/tei:persName/tei:surname</span></code></p>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;profileDesc&gt;</span>
+[...]
+    <span class="nt">&lt;textClass&gt;</span>
+        <span class="nt">&lt;keywords</span> <span class="na">scheme=</span><span class="s">&quot;keyword&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;list&gt;</span>
+                <span class="nt">&lt;item&gt;</span>aenean<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>commodo<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>ligula<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>eget<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>dolor<span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/keywords&gt;</span>
+        <span class="nt">&lt;keywords</span> <span class="na">scheme=</span><span class="s">&quot;chronological&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;list&gt;</span>
+                <span class="nt">&lt;item&gt;</span>XXIe siecle<span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/keywords&gt;</span>
+        <span class="nt">&lt;keywords</span> <span class="na">scheme=</span><span class="s">&quot;geographical&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;list&gt;</span>
+                <span class="nt">&lt;item&gt;</span>France<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Ile de France<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Paris<span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/keywords&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="print-and-electronic-publication-dates">
+<h3>Print and electronic publication dates<a class="headerlink" href="#print-and-electronic-publication-dates" title="Permalink to this headline">¶</a></h3>
+<p>The publication dates of print and electronic issues of a document
+should be distinguished.</p>
+<p>If the electronic publication date is not indicated in the document, it
+will be automatically set by Lodel during import at the date of import.
+If the document is reloaded into Lodel, if the date of electronic
+publication is not indicated in the document, it will be automatically
+set when the document is reloaded. In order to retain a stable
+electronic publication date, in the event the document is reloaded, the
+publication date should be indicated in the document imported into
+Lodel.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Electronic publication date:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date</span></code>
+with the date in the DD/MM/YYYY format</p></li>
+<li><p>Print publication date:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:publicationStmt/tei:date</span></code>
+with the date in the DD/MM/YYYY format</p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;fileDesc&gt;</span>
+[...]
+    <span class="nt">&lt;publicationStmt&gt;</span>
+        <span class="nt">&lt;date&gt;</span>01/07/2010<span class="nt">&lt;/date&gt;</span> <span class="c">&lt;!--date de publication électronique--&gt;</span>
+[...]
+    <span class="nt">&lt;/publicationStmt&gt;</span>
+    <span class="nt">&lt;sourceDesc&gt;</span>
+        <span class="nt">&lt;biblFull&gt;</span>
+            <span class="nt">&lt;publicationStmt&gt;</span>
+                <span class="nt">&lt;date&gt;</span>01/07/2008<span class="nt">&lt;/date&gt;</span> <span class="c">&lt;!--date de publication papier--&gt;</span>
+            <span class="nt">&lt;/publicationStmt&gt;</span>
+[...]
+        <span class="nt">&lt;/biblFull&gt;</span>
+    <span class="nt">&lt;/sourceDesc&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="section" id="electronic-publication-dates-and-embargo-periods">
+<h4>Electronic publication dates and embargo periods<a class="headerlink" href="#electronic-publication-dates-and-embargo-periods" title="Permalink to this headline">¶</a></h4>
+<p>For OpenEdition Journals, journals published with an “embargo period”,
+Lodel uses the electronic publication date to manage display of the
+article in summary or full-text form. For articles with an electronic
+publishing date later than the article’s consultation date, only
+metadata will be displayed (title, author, summary, abstract, etc),
+while articles with an electronic publication date prior to the
+article’s consultation date will be displayed in full text. For a two
+year “embargo period”, the electronic publishing date should be set two
+years after the print publication date. The article will thus become
+available in full-text two years after publication of the print version.</p>
+</div>
+</div>
+<div class="section" id="other-metadata">
+<h3>Other metadata<a class="headerlink" href="#other-metadata" title="Permalink to this headline">¶</a></h3>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Language:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:profileDesc/tei:langUsage/tei:language</span></code>
+with a value in ISO 639-1 format</p></li>
+<li><p>Pagination:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:publicationStmt/tei:idno[&#64;type='pp']</span></code>.
+The print pagination of a document can be set in various ways: in
+Roman numbers or and small capitals (V-XXV), or Arabic numbes (5-25).
+All values are valid. Pagination is indicated without using entering
+p. or pp., as these are generally added automatically.</p></li>
+<li><p>Document number:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[&#64;type='documentnumber']</span></code>.
+This is editorial information that can be displayed in the layout and
+in the document’s electronic reference. The document number can be
+used, for example, to facilitate the citation of electronic
+documents.</p></li>
+<li><p>Licence:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:availability</span></code></p></li>
+<li><p>Bibliographical notice for the document:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:notesStmt/tei:note[&#64;type='bibl']</span></code>.
+Here you can note the bibliographical reference of the document’s
+print edition</p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;fileDesc&gt;</span>
+[...]
+    <span class="nt">&lt;publicationStmt&gt;</span>
+        <span class="nt">&lt;date&gt;</span>01/07/2010<span class="nt">&lt;/date&gt;</span>
+        <span class="nt">&lt;availability&gt;</span>
+            Creative Commons Attribution-NoDerivs 3.0 Unported License
+        <span class="nt">&lt;/availability&gt;</span>
+        <span class="nt">&lt;idno</span> <span class="na">type=</span><span class="s">&quot;documentnumber&quot;</span><span class="nt">&gt;</span>25<span class="nt">&lt;/idno&gt;</span>
+    <span class="nt">&lt;/publicationStmt&gt;</span>
+    <span class="nt">&lt;sourceDesc&gt;</span>
+        <span class="nt">&lt;biblFull&gt;</span>
+            <span class="nt">&lt;publicationStmt&gt;</span>
+                <span class="nt">&lt;date&gt;</span>01/07/2008<span class="nt">&lt;/date&gt;</span>
+                <span class="nt">&lt;idno</span> <span class="na">type=</span><span class="s">&quot;pp&quot;</span><span class="nt">&gt;</span>10-27<span class="nt">&lt;/idno&gt;</span>
+            <span class="nt">&lt;/publicationStmt&gt;</span>
+            <span class="nt">&lt;notesStmt&gt;</span>
+                <span class="nt">&lt;note</span> <span class="na">type=</span><span class="s">&quot;bibl&quot;</span><span class="nt">&gt;</span>Référence bibliographique de l&#39;édition papier de cet article.<span class="nt">&lt;/note&gt;</span>
+            <span class="nt">&lt;/notesStmt&gt;</span>
+        <span class="nt">&lt;/biblFull&gt;</span>
+    <span class="nt">&lt;/sourceDesc&gt;</span>
+<span class="nt">&lt;/fileDesc&gt;</span>
+[...]
+<span class="nt">&lt;profileDesc&gt;</span>
+    <span class="nt">&lt;langUsage&gt;</span>
+        <span class="nt">&lt;language&gt;</span>fr<span class="nt">&lt;/language&gt;</span>
+    <span class="nt">&lt;/langUsage&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="text">
+<h2>text<a class="headerlink" href="#text" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="front">
+<h3>front<a class="headerlink" href="#front" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="summaries">
+<h4>Summaries<a class="headerlink" href="#summaries" title="Permalink to this headline">¶</a></h4>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Summaries:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='abstract'</span> <span class="pre">and</span> <span class="pre">&#64;xml:lang]</span></code>
+As for translated titles, the <code class="docutils literal notranslate"><span class="pre">xml:lang</span></code> attribute is required with
+a value in ISO 639-1 format.</p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;text&gt;</span>
+    <span class="nt">&lt;front&gt;</span>
+[...]
+        <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;abstract&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Il était sur le dos, un dos aussi dur qu’une carapace, et, en relevant un peu la tête, il vit, bombé, brun, cloisonné par des arceaux plus rigides, son abdomen sur le haut duquel la couverture, prête à glisser tout à fait, ne tenait plus qu’à peine. Ses nombreuses pattes, lamentablement grêles par comparaison avec la corpulence qu’il avait par ailleurs, grouillaient désespérément sous ses yeux. « Qu’est-ce qui m’est arrivé ? » pensa-t-il.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Ce n’était pas un rêve. [...]<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;abstract&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>&quot;Oh, God&quot;, he thought, &quot;what a strenuous career it is that I&#39;ve chosen! Travelling day in and day out. Doing business like this takes much more effort than doing your own business at home, and on top of that there&#39;s the curse of travelling, worries about making train connections, bad and irregular food, contact with different people all the time so that you can never get to know anyone or become friendly with them. It can all go to Hell! &quot;He felt a slight itch up on his belly; pushed himself slowly up on his back towards the headboard so that he could lift his head better; found where the itch was, and saw that it was covered with lots of little white spots which he didn&#39;t know what to make of; and when he tried to feel the place with one of his legs he drew it quickly back because as soon as he touched it he was overcome by a cold shudder. He slid back into his former position. &quot;Getting up early all the time&quot;, he thought, &quot;it makes you stupid. You&#39;ve got to get enough sleep. Other travelling salesmen live a life of luxury. For instance, whenever I go back to the guest house during the morning to copy out the contract, these gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I&#39;d get kicked out on the spot. But who knows, maybe that would be the best thing for me. If I didn&#39;t have my parents to think about I&#39;d have given in my notice a long time ago, I&#39;d have gone up to the boss and told him just what I think, tell him everything I would, let him know just what I feel. He&#39;d fall right off his desk! And it&#39;s a funny sort of business to be sitting up there at your desk, talking down at your subordinates from up there, especially when you have to go right up close because the boss is hard of hearing. Well, there&#39;s still some hope; once I&#39;ve got the money together to pay off my parents&#39; debt to him - another five or six years I suppose - that&#39;s definitely what I&#39;ll do. That&#39;s when I&#39;ll make the big change.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;abstract&quot;</span> <span class="na">xml:lang=</span><span class="s">&quot;es&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Las preocupaciones son mucho mayores cuando se trabaja fuera, por no hablar de las molestias propias de los viajes: estar pendiente de los enlaces de los trenes; la comida mala, irregular; relaciones que cambian constantemente, que nunca llegan a ser verdaderamente cordiales, y en las que no tienen cabida los sentimientos. amsa era viajante de comercio-, y de la pared colgaba una estampa recientemente recortada de una revista ilustrada y puesta en un marco dorado.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="reading-notes-and-reviews">
+<h4>Reading notes and reviews<a class="headerlink" href="#reading-notes-and-reviews" title="Permalink to this headline">¶</a></h4>
+<p>Reading notes and reviews should be styled separately, in separate
+files. They should not be entitled “Reading notes”.</p>
+<p>If the entry does not have its own distinct title, the “Title” style is
+applied to author and title of the reviewed work. It is also possible to
+style bibliographical elements (publisher, place and year of
+publishing…) as a “subtitle”; this means the bibliographical notice also
+features in the summary.</p>
+<p>The title, author name, bibliographical notice and date of publication
+of reviewed works can also be styled as descriptive elements of the
+document.</p>
+<p>This information allows for better referencing and offers the
+possibility to create specific indexes (an index of authors of reviewed
+works for example). This information may be displayed in the layout.</p>
+<p>The document should also be given a title, even if the title is the same
+as content featuring in the “reviewed work” styles.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Title of the reviewed work:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='review']/tei:p[&#64;rend='review-title']</span></code></p></li>
+<li><p>Author of the reviewed work:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='review']/tei:p[&#64;rend='review-author']</span></code></p></li>
+<li><p>Bibliographical notice of the reviewed work:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='review']/tei:p[&#64;rend='review-bibliography']</span></code></p></li>
+<li><p>Publication date of the reviewed work:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='review']/tei:p[&#64;rend='review-date']</span></code></p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;text&gt;</span>
+    <span class="nt">&lt;front&gt;</span>
+[...]
+        <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;review&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;review-title&quot;</span><span class="nt">&gt;</span>La métamorphose<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;review-author&quot;</span><span class="nt">&gt;</span>Franz Kafka<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;review-bibliography&quot;</span><span class="nt">&gt;</span>Franz Kafka, <span class="nt">&lt;hi</span> <span class="na">rend=</span><span class="s">&quot;italic&quot;</span><span class="nt">&gt;</span>La métaporphose<span class="nt">&lt;/hi&gt;</span> [1938] , trad. de l&#39;allemand par Alexandre Vialatte, 224 pages, 140 x 205 mm. Collection Du monde entier, Gallimard-nouv. ISBN 2070235157.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;review-date&quot;</span><span class="nt">&gt;</span>1938<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="author-notes-editors-notes-errata-acknowledgements">
+<h4>Author notes, editors notes, errata, acknowledgements<a class="headerlink" href="#author-notes-editors-notes-errata-acknowledgements" title="Permalink to this headline">¶</a></h4>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Author notes:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:note[&#64;resp='author']/tei:p</span></code></p></li>
+<li><p>Editor notes:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:note[&#64;resp='editor']/tei:p</span></code></p></li>
+<li><p>Erratum:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='correction']/tei:p</span></code></p></li>
+<li><p>Dedications:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='dedication']/tei:p</span></code></p></li>
+<li><p>Acknowledgements:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:front/tei:div[&#64;type='ack']/tei:p</span></code></p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+&lt;text&gt;
+    &lt;front&gt;
+[...]
+        &lt;div type=&quot;ack&quot;&gt;
+            &lt;p&gt;Je remercie le site Blind Text Generator qui a fourni tout le faux-texte de ce document.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div type=&quot;correction&quot;&gt;
+            &lt;p&gt;L&#39;erratum permet de signaler les modifications apportées au texte après sa publication.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;note resp=&quot;editor&quot;&gt;
+            &lt;p&gt;
+                Le texte de ce document a été généré sur le site &lt;ref target=&quot;http://www.blindtextgenerator.com/&quot;&gt;http://www.blindtextgenerator.com&lt;/​ref&gt;.
+            &lt;/p&gt;
+        &lt;/note&gt;
+        &lt;note resp=&quot;author&quot;&gt;
+            &lt;p&gt;
+                Les résumés français, anglais et espagnol sont des extraits de &lt;hi rend=&quot;italic&quot;&gt;La Métamorphose&lt;/hi&gt; de Franz Kafka.
+            &lt;/p&gt;
+        &lt;/note&gt;
+    &lt;/front&gt;
+[...]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="body">
+<h3>BODY<a class="headerlink" href="#body" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="structure-of-the-text-and-section-titles">
+<h4>Structure of the text and section titles<a class="headerlink" href="#structure-of-the-text-and-section-titles" title="Permalink to this headline">¶</a></h4>
+<p>The document text should be structured by sections (div tags).</p>
+<p>Section titles should be indicated as the first element of the section
+in a head tag with an attribute of the subtype=”level1” form</p>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;text&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level1&quot;</span><span class="nt">&gt;</span>1. ...<span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level2&quot;</span><span class="nt">&gt;</span>1.1. ...<span class="nt">&lt;/head&gt;</span>
+                <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div&gt;</span>
+                    <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level3&quot;</span><span class="nt">&gt;</span>1.1.1. ...<span class="nt">&lt;/head&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div&gt;</span>
+                    <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level3&quot;</span><span class="nt">&gt;</span>1.1.2. ...<span class="nt">&lt;/head&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="nt">&lt;head</span>  <span class="na">subtype=</span><span class="s">&quot;level2&quot;</span><span class="nt">&gt;</span>1.2. ...<span class="nt">&lt;/head&gt;</span>
+                <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level1&quot;</span><span class="nt">&gt;</span>2. ...<span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="footnotes-and-endnotes">
+<h4>Footnotes and endnotes<a class="headerlink" href="#footnotes-and-endnotes" title="Permalink to this headline">¶</a></h4>
+<p>Footnotes and endnotes should be inserted in the text using note tags
+with a place attribute to indicate the type of note and an n attribute
+to indicate the note number. The note content should imperatively be
+placed in one or several paragraphs.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Footnotes: <code class="docutils literal notranslate"><span class="pre">//tei:note[&#64;place='foot'</span> <span class="pre">and</span> <span class="pre">&#64;n]/tei:p</span></code></p></li>
+<li><p>Endnotes: <code class="docutils literal notranslate"><span class="pre">//tei:note[&#64;place='end'and</span> <span class="pre">&#64;n]/tei:p</span></code></p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+Curabitur ullamcorper ultricies nisi<span class="nt">&lt;note</span> <span class="na">place=</span><span class="s">&quot;foot&quot;</span> <span class="na">n=</span><span class="s">&quot;4&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Nulla consequat massa quis enim.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/note&gt;</span>. Nam eget dui.<span class="nt">&lt;note</span> <span class="na">place=</span><span class="s">&quot;end&quot;</span> <span class="na">n=</span><span class="s">&quot;i&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Etiam rhoncus.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/note&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>HTML result</em>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;paragraphesansretrait&quot;</span><span class="p">&gt;</span>Curabitur ullamcorper ultricies nisi<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;footnotecall&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;bodyftn1&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#ftn1&quot;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>. Nam eget dui.<span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;endnotecall&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;bodyftn2&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#ftn2&quot;</span><span class="p">&gt;</span>i<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="text-layout-hi-tags-rend-and-rendition-attributes">
+<h4>Text layout: hi tags, rend and rendition attributes<a class="headerlink" href="#text-layout-hi-tags-rend-and-rendition-attributes" title="Permalink to this headline">¶</a></h4>
+<p>To apply text layouts, you can use the <code class="docutils literal notranslate"><span class="pre">&lt;hi&gt;</span></code> tag with a rend
+attribute with the following value: italic, bold, sup, sub, uppercase,
+small-caps, underline.</p>
+<p>You can also use the <code class="docutils literal notranslate"><span class="pre">&lt;hi&gt;</span></code> tag with a rendition attribute referring
+to a defined css format style in the header
+(<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:tagsDecl</span></code>)</p>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;teiHeader&gt;</span>
+[...]
+      <span class="nt">&lt;encodingDesc&gt;</span>
+[...]
+          <span class="nt">&lt;tagsDecl&gt;</span>
+              <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;T5&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>font-style:italic;font-weight:bold<span class="nt">&lt;/rendition&gt;</span>
+              <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;T6&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>font-style:italic;text-decoration:underline<span class="nt">&lt;/rendition&gt;</span>
+              <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;T7&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>font-style:italic;text-decoration:underline;font-weight:bold<span class="nt">&lt;/rendition&gt;</span>
+              <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;T10&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>text-decoration:underline;font-weight:bold<span class="nt">&lt;/rendition&gt;</span>
+          <span class="nt">&lt;/tagsDecl&gt;</span>
+      <span class="nt">&lt;/encodingDesc&gt;</span>
+[...]
+<span class="nt">&lt;/teiHeader&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;text&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+                <span class="nt">&lt;hi</span> <span class="na">rend=</span><span class="s">&quot;italic&quot;</span><span class="nt">&gt;</span>Aenean <span class="nt">&lt;hi</span> <span class="na">rend=</span><span class="s">&quot;sup&quot;</span><span class="nt">&gt;</span>commodo<span class="nt">&lt;/hi&gt;&lt;/hi&gt;</span> ligula eget dolor. Aenean massa.
+                <span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T5&quot;</span><span class="nt">&gt;</span>Cum sociis<span class="nt">&lt;/hi&gt;</span>
+                natoque
+                <span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T6&quot;</span><span class="nt">&gt;</span>penatibus et magnis<span class="nt">&lt;/hi&gt;</span>
+                dis
+                <span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T7&quot;</span><span class="nt">&gt;</span>parturient montes<span class="nt">&lt;/hi&gt;</span>, nascetur
+                <span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T10&quot;</span><span class="nt">&gt;</span>ridiculus mus<span class="nt">&lt;/hi&gt;</span>.
+            <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>HTML rendering</em> :</p>
+<p class="paragraphesansretrait"><em>Aenean <sup>commodo</sup></em> ligula eget dolor. Aenean massa. <em><strong>Cum sociis</strong></em>                           natoque <em><span style="text-decoration:underline;">penatibus et magnis</span></em>                            dis <em><strong><span style="text-decoration:underline;">parturient montes</span></strong></em>, nascetur <strong><span style="text-decoration:underline;">ridiculus mus</span></strong>.</p></div>
+<div class="section" id="quotation-and-paragraph-styles">
+<h4>Quotation and paragraph styles<a class="headerlink" href="#quotation-and-paragraph-styles" title="Permalink to this headline">¶</a></h4>
+<p>The following internal styles are declared in the editorial model.
+<em>Xpath</em>:</p>
+<ul class="simple">
+<li><p>Citation: <code class="docutils literal notranslate"><span class="pre">//tei:q[&#64;rend='quotation']</span></code></p></li>
+<li><p>Citation bis: <code class="docutils literal notranslate"><span class="pre">//tei:q[&#64;rend='quotation2']</span></code></p></li>
+<li><p>Citation ter: <code class="docutils literal notranslate"><span class="pre">//tei:q[&#64;rend='quotation3']</span></code></p></li>
+<li><p>Question: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='question']</span></code></p></li>
+<li><p>Answer: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='answer']</span></code></p></li>
+<li><p>Paragraphe without indentation: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='noindent']</span></code></p></li>
+<li><p>Box: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='box']</span></code></p></li>
+<li><p>Epigraph: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='epigraph']</span></code></p></li>
+<li><p>Break: <code class="docutils literal notranslate"><span class="pre">//tei:p[&#64;rend='break']</span></code></p></li>
+</ul>
+<p><em>Example</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;q</span> <span class="na">rend=</span><span class="s">&quot;quotation&quot;</span><span class="nt">&gt;</span>
+    Citation : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/q&gt;</span>
+<span class="nt">&lt;q</span> <span class="na">rend=</span><span class="s">&quot;quotation2&quot;</span><span class="nt">&gt;</span>
+    Citation bis : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/q&gt;</span>
+<span class="nt">&lt;q</span> <span class="na">rend=</span><span class="s">&quot;quotation3&quot;</span><span class="nt">&gt;</span>
+    Citation ter : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/q&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;question&quot;</span><span class="nt">&gt;</span>
+    Question : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;answer&quot;</span><span class="nt">&gt;</span>
+    Réponse : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;noindent&quot;</span><span class="nt">&gt;</span>
+    Paragraphe sans retrait : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;box&quot;</span><span class="nt">&gt;</span>
+    Encadré : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;epigraph&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;hi</span> <span class="na">rend=</span><span class="s">&quot;italic&quot;</span><span class="nt">&gt;</span>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte.<span class="nt">&lt;/hi&gt;</span>
+   <span class="nt">&lt;lb</span> <span class="nt">/&gt;</span>
+   Franz Kafka,
+    <span class="nt">&lt;hi</span> <span class="na">rend=</span><span class="s">&quot;italic&quot;</span><span class="nt">&gt;</span>La métamorphose<span class="nt">&lt;/hi&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;break&quot;</span><span class="nt">&gt;</span>* * *<span class="nt">&lt;/p&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>HTML result</em> :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;citation&quot;</span><span class="p">&gt;</span>Citation : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;citationbis&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;citationbis&quot;</span><span class="p">&gt;</span>Citation bis : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;citationter&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;citationter&quot;</span><span class="p">&gt;</span>Citation ter : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;question&quot;</span><span class="p">&gt;</span>Question : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;reponse&quot;</span><span class="p">&gt;</span>Réponse : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;paragraphesansretrait&quot;</span><span class="p">&gt;</span>Paragraphe sans retrait : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;encadre&quot;</span><span class="p">&gt;</span>Encadré : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;epigraphe&quot;</span><span class="p">&gt;</span>              <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte.<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>               <span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>               Franz Kafka,              <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>La métamorphose<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>            <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">rend</span><span class="o">=</span><span class="s">&quot;separateur&quot;</span><span class="p">&gt;</span>* * *<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lists">
+<h4>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h4>
+<p>Ordered or non-ordered lists are possible and can be interlinked.</p>
+<p><em>Xpath</em> :</p>
+<ul class="simple">
+<li><p>Elements of non-ordered list:
+<code class="docutils literal notranslate"><span class="pre">//tei:list[&#64;type='unordered']/tei:item</span></code></p></li>
+<li><p>Elements of ordered list: <code class="docutils literal notranslate"><span class="pre">//tei:list[&#64;type='ordered']/tei:item</span></code></p></li>
+</ul>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;list</span> <span class="na">xml:id=</span><span class="s">&quot;list2094761347&quot;</span> <span class="na">type=</span><span class="s">&quot;unordered&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        Fusce fermentum.
+        <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">&quot;unordered&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                Nullam cursus lacinia erat.
+            <span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                Praesent blandit laoreet nibh.
+            <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;/list&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        Fusce convallis metus id felis luctus adipiscing.
+        <span class="nt">&lt;list</span> <span class="na">type=</span><span class="s">&quot;ordered&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                Pellentesque egestas,
+            <span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                neque sit amet convallis pulvinar,
+            <span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                justo nulla eleifend augue,
+            <span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;item&gt;</span>
+                ac auctor orci leo non est.
+            <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;/list&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/list&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>HTML result</em> :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Fusce fermentum.
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nullam cursus lacinia erat.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Praesent blandit laoreet nibh. <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Fusce convallis metus id felis luctus adipiscing.
+   <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Pellentesque egestas, <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>neque sit amet convallis pulvinar,<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>justo nulla eleifend augue, <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>ac auctor orci leo non est. <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="section" id="list-style-types">
+<h5>List style types<a class="headerlink" href="#list-style-types" title="Permalink to this headline">¶</a></h5>
+<p>List style type can be definied using <code class="docutils literal notranslate"><span class="pre">rendition</span></code> attribut of
+<code class="docutils literal notranslate"><span class="pre">&lt;list&gt;</span></code> element.</p>
+<p>Allowed values for non-ordered lists :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:disc</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:square</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:circle</span></code></p></li>
+</ul>
+<p>Allowed values for ordered lists :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:decimal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:lower-roman</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:upper-roman</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:lower-alpha</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list-style-type:upper-alpha</span></code></p></li>
+</ul>
+<p><em>Example</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;teiHeader&gt;</span>
+[...]
+        <span class="nt">&lt;encodingDesc&gt;</span>
+[...]
+            <span class="nt">&lt;tagsDecl&gt;</span>
+                <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;list1&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>list-style-type:upper-roman<span class="nt">&lt;/rendition&gt;</span>
+        <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;list2&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>list-style-type:lower-roman<span class="nt">&lt;/rendition&gt;</span>
+        <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;list3&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>list-style-type:lower-alpha<span class="nt">&lt;/rendition&gt;</span>
+        <span class="nt">&lt;rendition</span> <span class="na">xml:id=</span><span class="s">&quot;list4&quot;</span> <span class="na">scheme=</span><span class="s">&quot;css&quot;</span><span class="nt">&gt;</span>list-style-type:upper-alpha<span class="nt">&lt;/rendition&gt;</span>
+            <span class="nt">&lt;/tagsDecl&gt;</span>
+        <span class="nt">&lt;/encodingDesc&gt;</span>
+[...]
+<span class="nt">&lt;/teiHeader&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;text&gt;</span>
+        <span class="nt">&lt;div&gt;</span>
+             <span class="nt">&lt;list</span> <span class="na">rendition=</span><span class="s">&quot;#list1&quot;</span> <span class="na">type=</span><span class="s">&quot;ordered&quot;</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 1<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 2<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 3<span class="nt">&lt;/item&gt;</span>
+             <span class="nt">&lt;/list&gt;</span>
+             <span class="nt">&lt;list</span> <span class="na">rendition=</span><span class="s">&quot;#list2&quot;</span> <span class="na">type=</span><span class="s">&quot;ordered&quot;</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 1<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 2<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 3<span class="nt">&lt;/item&gt;</span>
+             <span class="nt">&lt;/list&gt;</span>
+             <span class="nt">&lt;list</span> <span class="na">rendition=</span><span class="s">&quot;#list3&quot;</span> <span class="na">type=</span><span class="s">&quot;ordered&quot;</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 1<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 2<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 3<span class="nt">&lt;/item&gt;</span>
+             <span class="nt">&lt;/list&gt;</span>
+             <span class="nt">&lt;list</span> <span class="na">rendition=</span><span class="s">&quot;#list4&quot;</span> <span class="na">type=</span><span class="s">&quot;ordered&quot;</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 1<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 2<span class="nt">&lt;/item&gt;</span>
+                 <span class="nt">&lt;item&gt;</span>item 3<span class="nt">&lt;/item&gt;</span>
+             <span class="nt">&lt;/list&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>HTML Result</em> :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ol</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;list-style-type:upper-roman;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;list-style-type:lower-roman;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;list-style-type:lower-alpha;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;list-style-type:upper-alpha;&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 1<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 2<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>item 3<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tables">
+<h4>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
+<p>Tables should be formatted using <code class="docutils literal notranslate"><span class="pre">&lt;table&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;row&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;cell&gt;</span></code>
+tags. The attributes rows and cols enable fusion of cells.</p>
+<p><em>Xpath</em> :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">//tei:table</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">//tei:row</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">//tei:cell[&#64;rows</span> <span class="pre">and</span> <span class="pre">&#64;cols]</span></code></p></li>
+</ul>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;table&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">rows=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>Lots<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">rows=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>Données 1<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">rows=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>Données 2<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">cols=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>Total<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>
+                Total 1<span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T12&quot;</span><span class="nt">&gt;</span>ère<span class="nt">&lt;/hi&gt;</span> partie
+            <span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>
+                Total 2<span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T12&quot;</span><span class="nt">&gt;</span>e<span class="nt">&lt;/hi&gt;</span> partie
+            <span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+    <span class="c">&lt;!-- &lt;pb/&gt; --&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">rows=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>
+                 1<span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T12&quot;</span><span class="nt">&gt;</span>er<span class="nt">&lt;/hi&gt;</span> lot
+            <span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>12 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>27 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>91 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>98 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>26 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>45 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>97 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>92 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell</span> <span class="na">rows=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;s&gt;</span>
+                2<span class="nt">&lt;hi</span> <span class="na">rendition=</span><span class="s">&quot;#T12&quot;</span><span class="nt">&gt;</span>nd<span class="nt">&lt;/hi&gt;</span> lot
+            <span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>24 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>85 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>91 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>94 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+    <span class="nt">&lt;row&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>54 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>54 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>92 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+        <span class="nt">&lt;cell&gt;</span>
+            <span class="nt">&lt;s&gt;</span>92 %<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;/cell&gt;</span>
+    <span class="nt">&lt;/row&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><em>HTML rendering</em> :</div>
+<div class="line-block">
+<div class="line">Lots Données 1 Données 2 Total Total 1ère partie Total 2e partie 1er
+lot 12 % 27 % 91 % 98 % 26 % 45 % 97 % 92 % 2nd lot 24 % 85 % 91 % 94
+% 54 % 54 % 92 % 92 %</div>
+</div>
+</div>
+</div>
+<div class="section" id="hypertext-links">
+<h4>Hypertext links<a class="headerlink" href="#hypertext-links" title="Permalink to this headline">¶</a></h4>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">//tei:ref[&#64;target]</span></code></p></li>
+</ul>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;ref</span> <span class="na">target=</span><span class="s">&quot;http://www.openedition.org/​&quot;</span><span class="nt">&gt;</span>
+    OpenEdition : portail de ressources électroniques en sciences humaines et sociales
+<span class="nt">&lt;/ref&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><em>HTML rendering</em> :</div>
+<div class="line">OpenEdition : portail de ressources électroniques en sciences humaines
+et sociales</div>
+</div>
+</div>
+<div class="section" id="images">
+<h4>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h4>
+<p>To insert images in a document, you should create a zip archive
+containing the TEI file of the article at the root of the archive and
+the illustrations (in png, jpg or gif format) which can be placed in a
+directory arborescence in the zip archive.</p>
+<p>To insert an illustration in the document, use the tag and indicate the
+path for the image in theurl attribute.</p>
+<p>Titles, captions and credits for the image should be styled in the
+paragraphs with a rend=”figure-title”,rend=”figure-legend” or
+rend=”figure-license” attribute.</p>
+<p>If you are using the thumbnail filter developed by OpenEdition, you must
+respect the following paragraph order:</p>
+<ul class="simple">
+<li><p>Image title</p></li>
+<li><p>Image</p></li>
+<li><p>Image caption</p></li>
+<li><p>Image credits</p></li>
+</ul>
+<p>None of the descriptive elements (title, caption, credits) are required.</p>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-title&quot;</span><span class="nt">&gt;</span>Fonctionnement d&#39;Opentext<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;figure&gt;</span>
+        <span class="nt">&lt;graphic</span> <span class="na">url=</span><span class="s">&quot;relative/path/to/image/img-1.jpg&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/figure&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-legend&quot;</span><span class="nt">&gt;</span>Schéma réalisé en septembre 2009<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-license&quot;</span><span class="nt">&gt;</span>Surletoit - licence Creative Commons by-nc-sa<span class="nt">&lt;/p&gt;</span>
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="formula">
+<h4>Formula<a class="headerlink" href="#formula" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;formula&gt;</span></code> tag can contain math formula. This formula should be
+included in a CDATA.</p>
+<p><em>Xpath</em> : <code class="docutils literal notranslate"><span class="pre">//tei:p/tei:formula</span></code></p>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p&gt;</span>
+<span class="nt">&lt;formula</span> <span class="na">notation=</span><span class="s">&quot;latex&quot;</span><span class="nt">&gt;</span><span class="cp">&lt;![CDATA[\[\frac{{\partial v}}{{\partial t}} = \frac{K}{{CD}}\left( {\frac{{{\partial ^2}v}}{{\partial {x^2}}} + \frac{{{\partial ^2}v}}{{\partial {y^2}}} + \frac{{{\partial ^2}v}}{{\partial {z^2}}}} \right)\]]]&gt;</span><span class="nt">&lt;/formula&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Inline math formula: <span class="nt">&lt;formula</span> <span class="na">notation=</span><span class="s">&quot;latex&quot;</span><span class="nt">&gt;</span><span class="cp">&lt;![CDATA[\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)]]&gt;</span><span class="nt">&lt;/formula&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+[...]
+</pre></div>
+</div>
+<p><em>Résultat HTML</em> :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;latex&quot;</span><span class="p">&gt;</span>
+\[\frac{{\partial v}}{{\partial t}} = \frac{K}{{CD}}\left( {\frac{{{\partial ^2}v}}{{\partial {x^2}}} + \frac{{{\partial ^2}v}}{{\partial {y^2}}} + \frac{{{\partial ^2}v}}{{\partial {z^2}}}} \right)\]<span class="p">&lt;/</span><span class="nt">formula</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texte&quot;</span><span class="p">&gt;</span>Inline math formula: <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;latex&quot;</span><span class="p">&gt;</span>\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+[...]
+]]&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="code">
+<h4>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;code&gt;</span></code> tag can contain programming language instructions. This
+code should be included in a CDATA.</p>
+<p><em>Xpath</em> :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`//tei:p/tei:code`
+</pre></div>
+</div>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;noindent&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;code</span> <span class="na">lang=</span><span class="s">&quot;xml&quot;</span><span class="nt">&gt;</span>
+<span class="cp">&lt;![CDATA[</span>
+<span class="cp">[...]</span>
+<span class="cp">&lt;ref target=&quot;http://www.openedition.org/​&quot;&gt;</span>
+<span class="cp">    OpenEdition : portail de ressources électroniques en sciences humaines et sociales</span>
+<span class="cp">&lt;/ref&gt;</span>
+<span class="cp">[...]</span>
+<span class="cp">]]&gt;</span>
+    <span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+</div>
+<p><em>HTML result</em> :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;paragraphesansretrait&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;&lt;</span><span class="nt">code</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;brush: xml;&quot;</span><span class="p">&gt;</span>[...]
+<span class="ni">&amp;lt;</span>ref target=&quot;http://www.openedition.org/​&quot;<span class="ni">&amp;gt;</span>
+OpenEdition : portail de ressources électroniques en sciences humaines et sociales
+<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+[...]<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="linguistic-examples">
+<h4>Linguistic examples<a class="headerlink" href="#linguistic-examples" title="Permalink to this headline">¶</a></h4>
+<p>Specifications have been defined for linguistic examples with the
+following caracteristics:</p>
+<ul class="simple">
+<li><p>definition of a type for the example</p></li>
+<li><p>definition of a number for the example</p></li>
+<li><p>multiple lines for an example</p></li>
+<li><p>vertical align of segments in the lines of the example</p></li>
+<li><p>bibliographic reference for the example</p></li>
+<li><p>gloss or definition for the example</p></li>
+<li><p>nested examples (definition of sub-examples)</p></li>
+</ul>
+<p><em>Xpath</em> :</p>
+<ul class="simple">
+<li><p>Example with type (‘type’ attribute) et number (‘n’ attribute). The
+value of the type attribute is not restricted but the recommandation
+is to use type=”example”. <code class="docutils literal notranslate"><span class="pre">//tei:quote[&#64;type][&#64;n]</span></code></p></li>
+<li><p>Lines are defined in <code class="docutils literal notranslate"><span class="pre">&lt;quote&gt;</span></code> elements:
+<code class="docutils literal notranslate"><span class="pre">//tei:quote[&#64;type][&#64;n]/tei:quote</span></code></p></li>
+<li><p>Segments of each lines are defined in <code class="docutils literal notranslate"><span class="pre">&lt;seg&gt;</span></code> elements:
+<code class="docutils literal notranslate"><span class="pre">//tei:quote[&#64;type][&#64;n]/tei:quote/tei:seg</span></code></p></li>
+<li><p>Bibliographic reference for the example is defined in a <code class="docutils literal notranslate"><span class="pre">&lt;bibl&gt;</span></code>
+element: <code class="docutils literal notranslate"><span class="pre">//tei:quote[&#64;type][&#64;n]/tei:bibl</span></code></p></li>
+<li><p>Gloss or definition for the example is defined in a <code class="docutils literal notranslate"><span class="pre">&lt;gloss&gt;</span></code>
+element: <code class="docutils literal notranslate"><span class="pre">//tei:quote[&#64;type][&#64;n]/tei:gloss</span></code></p></li>
+</ul>
+<p><em>Simple example</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;quote</span> <span class="na">n=</span><span class="s">&quot;01&quot;</span> <span class="na">type=</span><span class="s">&quot;example&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;quote&gt;</span>
+    <span class="nt">&lt;seg&gt;</span>vous dites vous êtes allé donner un cours (H4 / I++)<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;seg&gt;</span>en fait (H3 / I=)<span class="nt">&lt;/seg&gt;</span>
+  <span class="nt">&lt;/quote&gt;</span>
+  <span class="nt">&lt;quote&gt;</span>
+    <span class="nt">&lt;seg&gt;</span>you say you went to give a class<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;seg&gt;</span>in fact<span class="nt">&lt;/seg&gt;</span>
+  <span class="nt">&lt;/quote&gt;</span>
+   <span class="nt">&lt;bibl&gt;</span>My bibliographic reference<span class="nt">&lt;/bibl&gt;</span>
+   <span class="nt">&lt;gloss&gt;</span>My definition (cf <span class="ni">&amp;lt;</span>gloss<span class="ni">&amp;gt;</span> dans la documentation de référence de la TEI)<span class="nt">&lt;/gloss&gt;</span>
+<span class="nt">&lt;/quote&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><em>HTML rendering</em> :</div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">01</div>
+</div>
+<div class="line">quand vous dites vous êtes allé donner un cours (H4 / I++)</div>
+<div class="line">en fait (H3 / I=)</div>
+<div class="line"><br /></div>
+<div class="line">when you say you went to give a class</div>
+<div class="line">in fact</div>
+<div class="line-block">
+<div class="line">My bibliographic reference</div>
+<div class="line">My definition (cf &lt;gloss&gt; dans la documentation de référence de la
+TEI)</div>
+</div>
+</div>
+<p><em>Exemples imbriqués (sous-exemples)</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+<span class="nt">&lt;quote</span> <span class="na">n=</span><span class="s">&quot;1&quot;</span> <span class="na">type=</span><span class="s">&quot;example&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;quote</span> <span class="na">n=</span><span class="s">&quot;a&quot;</span> <span class="na">type=</span><span class="s">&quot;example&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>quand vous dites vous êtes allé donner un cours (H4 / I++)<span class="nt">&lt;/seg&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>en fait (H3 / I=)<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;/quote&gt;</span>
+    <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>when you say you went to give a class<span class="nt">&lt;/seg&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>in fact<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;/quote&gt;</span>
+    <span class="nt">&lt;bibl&gt;</span>bibliographic reference for example 1a<span class="nt">&lt;/bibl&gt;</span>
+    <span class="nt">&lt;gloss&gt;</span>definition for example 1a<span class="nt">&lt;/gloss&gt;</span>
+  <span class="nt">&lt;/quote&gt;</span>
+  <span class="nt">&lt;quote</span> <span class="na">n=</span><span class="s">&quot;b&quot;</span> <span class="na">type=</span><span class="s">&quot;example&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>c’est e vous avez voulu (H3 / I=)<span class="nt">&lt;/seg&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>savoir comment on pouvait se<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;/quote&gt;</span>
+    <span class="nt">&lt;quote&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>it’s er you wanted<span class="nt">&lt;/seg&gt;</span>
+      <span class="nt">&lt;seg&gt;</span>to know how one could<span class="nt">&lt;/seg&gt;</span>
+    <span class="nt">&lt;/quote&gt;</span>
+    <span class="nt">&lt;bibl&gt;</span>bibliographic reference for example 1b<span class="nt">&lt;/bibl&gt;</span>
+    <span class="nt">&lt;gloss&gt;</span>definition for example 1b<span class="nt">&lt;/gloss&gt;</span>
+  <span class="nt">&lt;/quote&gt;</span>
+<span class="nt">&lt;/quote&gt;</span>
+[...]
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><em>HTML rendering</em> :</div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">1</div>
+<div class="line">a</div>
+</div>
+<div class="line">quand vous dites vous êtes allé donner un cours (H4 / I++)</div>
+<div class="line">en fait (H3 / I=)</div>
+<div class="line"><br /></div>
+<div class="line">when you say you went to give a class</div>
+<div class="line">in fact</div>
+<div class="line-block">
+<div class="line">bibliographic reference for example 1a</div>
+<div class="line">definition for example 1a</div>
+<div class="line"><br /></div>
+<div class="line">b</div>
+</div>
+<div class="line">c’est e vous avez voulu (H3 / I=)</div>
+<div class="line">savoir comment on pouvait se</div>
+<div class="line"><br /></div>
+<div class="line">it’s er you wanted</div>
+<div class="line">to know how one could</div>
+<div class="line-block">
+<div class="line">bibliographic reference for example 1b</div>
+<div class="line">definition for example 1b</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="back">
+<h3>Back<a class="headerlink" href="#back" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bibliography">
+<h4>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h4>
+<p>Bibliographies are created using the <code class="docutils literal notranslate"><span class="pre">&lt;listBibl&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;bibl&gt;</span></code> tags.
+The bibliography cannot contain sections <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code>, but <code class="docutils literal notranslate"><span class="pre">&lt;listBibl&gt;</span></code>
+and <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> tags can be used to insert section titles (see the
+XPath). The <code class="docutils literal notranslate"><span class="pre">&lt;listBibl&gt;</span></code> tags can be nested according to the
+structuring of title levels in the bibliography.</p>
+<p><em>Xpath</em> :</p>
+<ul class="simple">
+<li><p>Bibliography section:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:back/tei:div[&#64;type='bibliography']/tei:listBibl</span></code></p></li>
+<li><p>Bibliographical reference:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:back/tei:div[&#64;type='bibliography']//tei:listBibl/tei:bibl</span></code></p></li>
+<li><p>Section titles:
+<code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:back/tei:div[&#64;type='bibliography']//tei:listBibl/tei:head[&#64;subtype='leveln']</span></code>
+où ‘leveln’ peut prendre toutes les valeurs comprises entre ‘level1’
+et ‘level6’.</p></li>
+</ul>
+<p><em>Exemple</em> :</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>[...]
+&lt;back&gt;
+&lt;div type=&quot;bibliography&quot;&gt;
+    &lt;listBibl&gt;
+        &lt;bibl&gt;
+            Bennett, Francis et Michael Holdsworth.
+            &lt;hi rend=&quot;italic&quot; xml:lang=&quot;en&quot;&gt;Embracing the Digital Age. An Opportunity for Booksellers and the Book Trade&lt;/hi&gt;
+            . Londres : The Booksellers Association of the United Kingdom &amp;amp; Ireland, 2007.
+        &lt;/bibl&gt;
+        &lt;listBibl&gt;
+            &lt;head subtype=&quot;level1&quot;&gt;Partie 1&lt;/head&gt;
+            &lt;bibl&gt;
+                Carrérot, Olivier, éd.
+                &lt;hi rend=&quot;italic&quot;&gt;Qu’est-ce qu’un livre aujourd’hui ? Pages, marges, écrans&lt;/hi&gt;
+                . Les Cahiers de la Librairie. Paris : La Découverte, 2009.
+            &lt;/bibl&gt;
+        &lt;/listBibl&gt;
+[...]
+    &lt;/listBibl&gt;
+&lt;/div
+[...]
+</pre></div>
+</div>
+</div>
+<div class="section" id="annexes">
+<h4>Annexes<a class="headerlink" href="#annexes" title="Permalink to this headline">¶</a></h4>
+<p>Annexes should be placed in an “appendix” type section. The section can
+contain all elements applicable in the <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code>: quotations,
+illustrations, etc.</p>
+<p><em>Xpath</em>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/tei:TEI/tei:text/tei:back/tei:div[&#64;type='appendix']</span></code></p></li>
+</ul>
+<p><em>Exemple</em>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;back&gt;</span>
+[...]
+    <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;appendix&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;div1&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level1&quot;</span><span class="nt">&gt;</span>Vivamus laoreet<span class="nt">&lt;/head&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+                Nullam tincidunt adipiscing enim.
+            <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">type=</span><span class="s">&quot;div2&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;head</span> <span class="na">subtype=</span><span class="s">&quot;level2&quot;</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/head&gt;</span>
+                <span class="nt">&lt;p&gt;</span>
+                    Aenean commodo ligula eget dolor.
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-title&quot;</span><span class="nt">&gt;</span>Fonctionnement d&#39;Opentext<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;</span>
+                    <span class="nt">&lt;figure&gt;</span>
+                        <span class="nt">&lt;graphic</span> <span class="na">url=</span><span class="s">&quot;relative/path/to/image/img-1.jpg&quot;</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/figure&gt;</span>
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-legend&quot;</span><span class="nt">&gt;</span>Schéma réalisé en septembre 2009<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">rend=</span><span class="s">&quot;figure-license&quot;</span><span class="nt">&gt;</span>Surletoit - licence Creative Commons by-nc-sa<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;</span>
+                    Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+                <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;q</span> <span class="na">rend=</span><span class="s">&quot;quotation&quot;</span><span class="nt">&gt;</span>
+                    Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+                <span class="nt">&lt;/q&gt;</span>
+                <span class="nt">&lt;p&gt;</span>
+                    <span class="nt">&lt;hi</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Nunc nonummy metus. <span class="nt">&lt;/hi&gt;</span>
+                    Vestibulum volutpat pretium libero.
+                <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+[...]
+<span class="nt">&lt;/back&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="validation.html" class="btn btn-neutral float-right" title="Validation with XML Schema" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tei.fr.teiHeader.html" class="btn btn-neutral float-left" title="1. teiHeader" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, OpenEdition
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
