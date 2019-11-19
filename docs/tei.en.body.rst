@@ -1,32 +1,32 @@
-.. _tei-fr-body:
+.. _tei-en-body:
 
 body
 ############################################
 
-.. contents:: Sommaire
+.. contents:: Summary
    :depth: 2
 
 
-.. _tei-fr-teibody-intertitres:
+.. _tei-en-teibody-intertitres:
 
-Structure du texte et intertitres
+Structure of the text and section titles
 ============================================
 
 **Xpath**
 
-| sections : ``//div``
-| Intertitres : ``//head[@subtype='leveln']``
+| Sections : ``//div``
+| Section titles: ``//head[@subtype='leveln']``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- le texte du document doit être structuré par des sections (balises ``<div>``) ;
-- les intertitres doivent être indiqués comme premier élément de la section dans une balise ``<head>`` avec un attribut ``subtype="leveln"``  où 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6'
+- the document text should be structured by sections (``<div>`` tags).
+- section titles should be indicated as the first element of the section in a ``<head>`` tag with an attribute of the ``<subtype="leveln">`` where 'leveln' can take all values between 'level1' and 'level6'.
 
-**Exemple**
+**Example**
 
 .. code-block:: xml
 
-   [...]
+   <text>
            <div>
                <head subtype="level1">1. ...</head>
                <div>
@@ -53,63 +53,62 @@ Structure du texte et intertitres
    [...]
 
 
-.. _tei-fr-teibody-notes:   
+.. _tei-en-teibody-notes:   
 
-Notes de bas de page et notes de fin
+Footnotes and endnotes
 ============================================
-
 
 **Xpath**
 
-| Note de bas de page : ``//note[@place='foot' and @n]/p``
-| Note de fin : ``//note[@place='end'and @n]/p``
-  
+| Footnotes: ``//note[@place='foot' and @n]/p``
+| Endnotes: ``//note[@place='end'and @n]/p``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- insérées dans le texte dans des balises ``<note>`` ;
-- l'attribut 'place' indique le type de note ;
-- l'attribut 'n' indique le numéro de la note ;
-- le contenu de la note doit impérativement être placé dans un ou plusieurs paragraphes.
+- inserted in the text using ``<note>`` tags;
+- the attribute 'place' indicates the type of note;
+- the attribute 'n' indicates the note number;
+- the note content should imperatively be placed in one or several paragraphs.
 
 
-**Exemple**
+**Example**
 
 .. code-block:: xml
 
-   [...]
+   [...] 
    Curabitur ullamcorper ultricies nisi<note place="foot" n="4">
        <p>Nulla consequat massa quis enim.</p>
-       </note>. Nam eget dui.
-       <note place="end" n="i"><p>Etiam rhoncus.</p>
+   </note>. Nam eget dui.<note place="end" n="i">
+       <p>Etiam rhoncus.</p>
    </note>
    [...]
 
-**Résultat HTML**
+**HTML result**
 
 .. code-block:: html
 
    <p class="paragraphesansretrait">
-     Curabitur ullamcorper ultricies nisi
-     <a class="footnotecall" id="bodyftn1" href="#ftn1">4</a>
-     . Nam eget dui.
-     <a class="endnotecall" id="bodyftn2" href="#ftn2">i</a>
-   </p>
+    Curabitur ullamcorper ultricies nisi
+    <a class="footnotecall" id="bodyftn1" href="#ftn1">4</a>
+    . Nam eget dui.
+    <a class="endnotecall" id="bodyftn2" href="#ftn2">i</a>
+  </p>
 
-.. _tei-fr-teibody-mises-en-forme:
 
-Mises en forme du texte : balises hi, attributs rend et rendition
-======================================================================
+.. _tei-en-teibody-mises-en-forme:
+
+Text layout: hi tags, rend and rendition attributes
+=======================================================
 
 **XPath**
 
-| Mise en forme : ``//hi[@rend ou @rendition]``
-| Définition des styles  : ``/TEI/teiHeader/encodingDesc/tagsDecl``
+| Text layout : ``//hi[@rend ou @rendition]``
+| Format style  : ``/TEI/teiHeader/encodingDesc/tagsDecl``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- valeurs possibles pour l'attribut 'rend' de la balise ``<hi>`` : ``italic``, ``bold``, ``sup``, ``sub``, ``uppercase``, ``small-caps``, ``underline`` ; 
-- l'attribut 'rendition' de la balise ``<hi>`` doit faire référence à un style défini au format css dans la balise ``<tagsDecl>`` du header.
+- allowed values for the attribute 'rend' of the ``<hi>`` tag: ``italic``, ``bold``, ``sup``, ``sub``, ``uppercase``, ``small-caps``, ``underline``;
+- the attribute 'rendition' of the ``<hi>`` tag should refer to a css format style defined in ``<tagsDecl>`` in the header.
 
 **Exemple**
 
@@ -132,61 +131,56 @@ Mises en forme du texte : balises hi, attributs rend et rendition
        <text>
            <div>
                <p>
-                   <hi rend="italic">Aenean <hi rend="sup">commodo</hi></hi> ligula eget dolor. Aenean massa.
-                   <hi rendition="#T5">Cum sociis</hi>
-                   natoque
-                   <hi rendition="#T6">penatibus et magnis</hi>
-                   dis
-                   <hi rendition="#T7">parturient montes</hi>, nascetur
+                   <hi rend="italic">Aenean <hi rend="sup">commodo</hi></hi> ligula eget dolor. Aenean massa. 
+                   <hi rendition="#T5">Cum sociis</hi> 
+                   natoque 
+                   <hi rendition="#T6">penatibus et magnis</hi> 
+                   dis 
+                   <hi rendition="#T7">parturient montes</hi>, nascetur 
                    <hi rendition="#T10">ridiculus mus</hi>.
                </p>
            </div>
    [...]
 
-**Résultat HTML (rendu)**
+**HTML rendering**
 
 .. raw:: html
 
-  <p>
-    <em>Aenean <sup>commodo</sup></em> ligula eget dolor. Aenean massa. <em><strong>Cum sociis</strong></em> natoque 
-    <em><span style="text-decoration:underline;">penatibus et magnis</span></em> dis 
-    <em><strong><span style="text-decoration:underline;">parturient montes</span></strong></em>, nascetur 
-    <strong><span style="text-decoration:underline;">ridiculus mus</span></strong>.
-  </p>
+   <p class="paragraphesansretrait"><em>Aenean <sup>commodo</sup></em> ligula eget dolor. Aenean massa. <em><strong>Cum sociis</strong></em>                           natoque <em><span style="text-decoration:underline;">penatibus et magnis</span></em>                            dis <em><strong><span style="text-decoration:underline;">parturient montes</span></strong></em>, nascetur <strong><span style="text-decoration:underline;">ridiculus mus</span></strong>.</p>
 
-.. _tei-fr-teibody-citations:
+.. _tei-en-teibody-citations:
 
-Citations 
+Quotation 
 ===================================
 
 **Xpath**
 
-| Citation : ``//q[@rend='quotation']``
-| Citation bis : ``//q[@rend='quotation2']``
-| Citation ter : ``//q[@rend='quotation3']``
+| Citation: ``//q[@rend='quotation']``
+| Citation bis: ``//q[@rend='quotation2']``
+| Citation ter: ``//q[@rend='quotation3']``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- utiliser de préférence ``<q rend='citation'>`` ;
-- les 2 autres styles de citations servent à différencier plusieurs niveaux de citation au niveau de l'affichage html.
+- use preferably ``<q rend='citation'>``;
+- the two others style can be used to differentiate several levels of citation in the html display.
 
-**Exemple**
+**Example**
 
 .. code-block:: xml
 
    [...]
    <q rend="quotation">
-       Citation : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+       Citation : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. 
    </q>
    <q rend="quotation2">
-       Citation bis : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+       Citation bis : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. 
    </q>
    <q rend="quotation3">
        Citation ter : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
    </q>
    [...]
 
-**Résultat HTML**
+**HTML result**
 
 .. code-block:: html
 
@@ -201,27 +195,28 @@ Citations
    </blockquote>
 
 
-.. _tei-fr-teibody-paragraphes:
+   
+.. _tei-en-teibody-paragraphes:
 
 
-Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, épigraphe)
-=============================================================================================
+Paragraph styles
+======================================
 
 **Xpath**
 
-| Question : ``//p[@rend='question']``
-| Réponse : ``//p[@rend='answer']``
-| Paragraphe sans retrait : ``//p[@rend='noindent']``
-| Encadré : ``//p[@rend='box']``
-| Epigraphe : ``//p[@rend='epigraph']``
-| Séparateur : ``//p[@rend='break']``
+| Question: ``//p[@rend='question']``
+| Answer: ``//p[@rend='answer']``
+| Paragraph without indentation: ``//p[@rend='noindent']``
+| Box: ``//p[@rend='box']``
+| Epigraph: ``//p[@rend='epigraph']``
+| Break: ``//p[@rend='break']``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- les styles questions / réponses permettent de différencier ces éléments au niveau de l'affichage html dans les entretiens
-- le paragraphe sans retrait est utilisé pour exprimer une continuité d'idée, il ne comporte pas de numérotation de paragraphe
+- Question / Answer styles allow to differentiate these elements in the html display in interviews;
+- paragraph without indentation are used to follow the idea, it does not include paragraph numbering.
 
-**Exemple**
+**Example**
 
 .. code-block:: xml
 
@@ -230,13 +225,13 @@ Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, ép
        Question : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
    </p>
    <p rend="answer">
-       Réponse : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+       Réponse : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.  
    </p>
    <p rend="noindent">
-       Paragraphe sans retrait : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+       Paragraphe sans retrait : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. 
    </p>
    <p rend="box">
-       Encadré : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.
+       Encadré : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. 
    </p>
    <p rend="epigraph">
      <hi rend="italic">En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte.</hi>
@@ -247,7 +242,7 @@ Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, ép
    <p rend="break">* * *</p>
    [...]
 
-**Résultat HTML**
+**HTML result**
 
 .. code-block:: html
 
@@ -255,40 +250,41 @@ Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, ép
    <p class="reponse">Réponse : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel.  </p>
    <p class="paragraphesansretrait">Paragraphe sans retrait : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. </p>
    <p class="encadre">Encadré : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum accumsan quam, non hendrerit lacus posuere vel. </p>
-   <p class="epigraphe">              <em>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte.</em>               <br />               Franz Kafka,              <em>La métamorphose</em>            </p>
-   <p class="separateur">* * *</p>   
+   <p class="epigraphe">              <em>En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte.</em>               <br />               Franz Kafka,              <em>La métamorphose</em>            </p> 
+   <p rend="separateur">* * *</p> 
 
 
-.. _tei-fr-teibody-listes:
+.. _tei-en-teibody-listes:
 
 
-Listes
+Lists
 ============================================
+
 
 **Xpath**
 
-| Éléments de liste non-ordonnée : ``//list[@type='unordered']/item``
-| Éléments de liste ordonnée : ``//list[@type='ordered']/item``
-  
-**Recommandations d'usages**
+| Elements of non-ordered list: ``//list[@type='unordered']/item``
+| Elements of ordered list: ``//list[@type='ordered']/item``
 
-- possibilité d'imbriquer des éléments de listes ordonnées ou non ordonnées ; 
-- possibilité de définir un type de numérotation avec l' attribut 'rendition' sur l'élément ``<list>``. 
-- l'attribut 'rendition' fait référence à un style défini dans la balise ``<tagsDecl>`` du header.
-  
-Valeurs autorisées de l'attribut 'rendition' pour les listes non ordonnées :
+**Use recommandations**
+
+- possibility to nest elements of non-ordered and ordered list;
+- possibility to define a numbering type with the attribute 'rendition' of ``<list>`` tag.
+- the attribute 'rendition' of ``<list>`` tag refers to a style defined in ``<tagsDecl>`` tag.
+
+Allowed values of the attribute 'rendition' for non-ordered lists :
 
 -  ``list-style-type:disc``
 -  ``list-style-type:square``
 -  ``list-style-type:circle``
 
-Pour les listes ordonnées :
+For ordered lists :
 
 -  ``list-style-type:decimal``
 -  ``list-style-type:lower-roman``
 -  ``list-style-type:upper-roman``
 -  ``list-style-type:lower-alpha``
--  ``list-style-type:upper-alpha``  
+-  ``list-style-type:upper-alpha``
 
 **Exemple**
 
@@ -303,7 +299,7 @@ Pour les listes ordonnées :
                    Nullam cursus lacinia erat.
                </item>
                <item>
-                   Praesent blandit laoreet nibh.
+                   Praesent blandit laoreet nibh. 
                </item>
            </list>
        </item>
@@ -311,23 +307,23 @@ Pour les listes ordonnées :
            Fusce convallis metus id felis luctus adipiscing.
            <list type="ordered">
                <item>
-                   Pellentesque egestas,
+                   Pellentesque egestas, 
                </item>
                <item>
                    neque sit amet convallis pulvinar,
                </item>
                <item>
-                   justo nulla eleifend augue,
+                   justo nulla eleifend augue, 
                </item>
                <item>
-                   ac auctor orci leo non est.
+                   ac auctor orci leo non est. 
                </item>
            </list>
        </item>
    </list>
    [...]
 
-**Résultat HTML**
+**HTML result**
 
 .. code-block:: html
 
@@ -349,8 +345,7 @@ Pour les listes ordonnées :
    </ul>
 
 
-
-**Exemple**
+**Example**
 
 .. code-block:: xml
 
@@ -393,45 +388,49 @@ Pour les listes ordonnées :
            </div>
    [...]
 
-**Résultat HTML**
+**HTML Result**
 
 .. code-block:: html
 
-   <ol style="list-style-type:upper-roman;" class="texte">
-       <li>item 1</li>
-       <li>item 2</li>
+   <ol style="list-style-type:upper-roman;" class="texte">    
+       <li>item 1</li>    
+       <li>item 2</li>    
        <li>item 3</li>
    </ol>
-   <ol style="list-style-type:lower-roman;" class="texte">
-       <li>item 1</li>
-       <li>item 2</li>
+   <ol style="list-style-type:lower-roman;" class="texte">    
+       <li>item 1</li>    
+       <li>item 2</li>    
        <li>item 3</li>
    </ol>
-   <ol style="list-style-type:lower-alpha;" class="texte">
-       <li>item 1</li>
-       <li>item 2</li>
+   <ol style="list-style-type:lower-alpha;" class="texte">    
+       <li>item 1</li>    
+       <li>item 2</li>    
        <li>item 3</li>
    </ol>
-   <ol style="list-style-type:upper-alpha;" class="texte">
-       <li>item 1</li>
-       <li>item 2</li>
-       <li>item 3</li>
-   </ol>
+   <ol style="list-style-type:upper-alpha;" class="texte">    
+       <li>item 1</li>    
+       <li>item 2</li>    
+       <li>item 3</li>    
+   </ol>   
 
-.. _tei-fr-teibody-tableaux:   
 
-Tableaux
+
+.. _tei-en-teibody-tableaux:   
+
+Tables
 ============================================
 
 **Xpath**
 
--  Tableau : ``//table``
--  Ligne : ``//row``
--  Cellule : ``//cell[@rows and @cols]``
-   
-**Recommandations d'usages**
+| Table: ``//table``
+| Row: ``//row``
+| Cell: ``//cell[@rows and @cols]``
 
-- les attributs 'rows' et 'cols' des balises ``<cell>`` permettent la fusion de cellules.
+
+**Use recommandations**
+
+- the attributes 'rows' and 'cols' of ``<cell>`` tag enable fusion of cells.
+
 
 **Exemple**
 
@@ -478,8 +477,7 @@ Tableaux
    </table>
    [...]
 
-
-**Résultat HTML (rendu)**
+**HTML rendering**
 
 .. raw:: html
 
@@ -493,18 +491,19 @@ Tableaux
   </table>
 
 
-.. _tei-fr-teibody-liens: 
+.. _tei-en-teibody-liens: 
 
-Liens hypertextes
+Hypertext links
 ============================================
+
 
 **Xpath**
 
-Liens : ``//ref[@target]``
+| Links: ``//ref[@target]``
 
-**Recommandations d'usages**
+**Use recommandations**
 
-- indiquer l'url dans l'attribut target, avec le protocole (http, https, etc.)
+- indicate url in the attribute 'target', with protocol (http, https)
 
 **Exemple**
 
@@ -516,32 +515,31 @@ Liens : ``//ref[@target]``
    </ref>
    [...]
 
-**Résultat HTML (rendu)**
+**HTML rendering**
 
 .. raw:: html
 
   <p><a href="http://www.openedition.org/">OpenEdition : portail de ressources électroniques en sciences humaines et sociales</a></p>
 
-.. _tei-fr-teibody-illustrations: 
 
-Illustrations
+.. _tei-en-teibody-illustrations: 
+
+Images
 ============================================
 
 **Xpath**
 
-| Titre de l’illustration : ``//p[@rend='figure-title']``
-| Illustration : ``//figure[@url]``
-| Légende de l’illustration : ``//p[@rend='figure-legend']``
-| Crédits de l’illustration : ``//p[@rend='figure-license']``
+| Image title: ``//p[@rend='figure-title']``
+| Image: ``//figure[@url]``
+| Image caption: ``//p[@rend='figure-legend']``
+| Image credits: ``//p[@rend='figure-license']``
 
+**Use recommandations**
 
-**Recommandations d'usages**
-
-- respecter l'ordre des éléments : titre de l'illustration, illustration, légende, crédits ;
-- créer une archive zip contenant le fichier TEI du document à la racine et les illustrations qui peuvent être placées dans une arborescence de répertoire ;
-- l'attribut 'url' de la balise ``<figure>`` contient le chemin relatif au fichier à l'intérieur de l'archive ;
-- les formats autorisés pour les illustrations sont : png, jpg, gif, svg ; 
-
+- respect the order of the elements: image title, image, image caption, image credits;
+- create a zip archive containing the TEI file of the article at the root of the archive and the illustrations which can be placed in a directory arborescence;
+- indicate the path for the image in the 'url' attribute of ``<figure>`` tag;
+- images must be in png, jpg, svg or gif format.
 
 **Exemple**
 
@@ -559,20 +557,21 @@ Illustrations
    [...]
 
 
-.. _tei-fr-teibody-formule: 
+.. _tei-en-teibody-formule: 
 
-Formules
+Formula
 ============================================
+
 
 **Xpath**
 
-Formule : ``//p/formula``
+| Formula: ``//p/formula``
 
-**Recommandations d'usages**
 
-- inclure les formules à l'intérieur de la balise ``<formula>`` dans un CDATA, le contenu ne sera pas traité par Lodel.
-- Sur certains sites, le navigateur peut interpréter le LaTeX avec MathJax pour afficher les formules.
+**Use recommandations**
 
+- the ``<formula>`` tag can contain math formula. This formula should be included in a CDATA;
+- in some websites, the browser can interpret the LaTeX with MathJax to display the formulas.
 
 **Exemple**
 
@@ -581,7 +580,7 @@ Formule : ``//p/formula``
    <p>
    <formula notation="latex"><![CDATA[\[\frac{{\partial v}}{{\partial t}} = \frac{K}{{CD}}\left( {\frac{{{\partial ^2}v}}{{\partial {x^2}}} + \frac{{{\partial ^2}v}}{{\partial {y^2}}} + \frac{{{\partial ^2}v}}{{\partial {z^2}}}} \right)\]]]></formula>
    </p>
-   <p>Un formule mathématique inline <formula notation="latex"><![CDATA[\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)]]></formula>.</p>
+   <p>Inline math formula: <formula notation="latex"><![CDATA[\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)]]></formula>.</p>
    [...]
 
 **Résultat HTML**
@@ -591,12 +590,12 @@ Formule : ``//p/formula``
    <p class="latex">
    \[\frac{{\partial v}}{{\partial t}} = \frac{K}{{CD}}\left( {\frac{{{\partial ^2}v}}{{\partial {x^2}}} + \frac{{{\partial ^2}v}}{{\partial {y^2}}} + \frac{{{\partial ^2}v}}{{\partial {z^2}}}} \right)\]</formula>
    </p>
-   <p class="texte">Un formule mathématique inline <span class="latex">\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)</span>.</p>
+   <p class="texte">Inline math formula: <span class="latex">\(\frac{{{\partial ^2}v}}{{\partial {z^2}}} = 0\)</span>.</p>
    [...]
    ]]>
 
 
-.. _tei-fr-teibody-code:    
+.. _tei-en-teibody-code:    
 
 Code
 ============================================
@@ -604,12 +603,14 @@ Code
 
 **Xpath**
 
-Code : ``//p/code[@lang]``
+| Code: ``//p/code``
 
-**Recommandations d'usages**
 
-- préciser le langage de programmation dans l'attribut 'lang' ;
-- inclure le code dans un CDATA.
+**Use recommandations**
+
+- indicate programming langage in the attribute 'lang';
+- the code should be included in a CDATA.
+
 
 **Exemple**
 
@@ -627,7 +628,7 @@ Code : ``//p/code[@lang]``
        </code>
    </p>
 
-**Résultat HTML**
+**HTML result**
 
 .. code-block:: html
 
@@ -639,31 +640,32 @@ Code : ``//p/code[@lang]``
    [...]</code></pre>
 
 
-.. _tei-fr-teibody-linguistique:
+.. _tei-en-teibody-linguistique:
 
-Exemples de linguistique
+Linguistic examples
 ============================================
 
 **Xpath**
 
-| Exemple : ``//quote[@type][@n]``
-| Lignes : ``//quote[@type][@n]/quote``
-| Segments : ``//quote[@type][@n]/quote/seg``
-| Référence bibliographique : ``//quote[@type][@n]/bibl``
-| Glose : ``//quote[@type][@n]/gloss``
+| Examples: ``//quote[@type][@n]``
+| Lines: ``//quote[@type][@n]/quote``
+| Segments: ``//quote[@type][@n]/quote/seg``
+| Bibliographic reference: ``//quote[@type][@n]/bibl``
+| Gloss : ``//quote[@type][@n]/gloss``
 
 
-**Recommandations d'usages**   
+**Use recommandations**
 
-- possibilité de définir le type d'exemple avec l'attribut 'type' pour la balise ``<quote>`` (type recommandé : "example") ;
-- possibilité de numéroter l'exemple avec l'attibut 'n' de la balise ``<quote>`` ;
-- possibilité de définir plusieurs lignes d'exemples avec des éléments ``<quote>`` ;
-- possibilité d'aligner verticalement des segments des lignes de l'exemple avec des éléments ``<seg>`` ;
-- possibilité de définir une référence bibliographique dans un élément ``<bibl>`` ;
-- possibilité d'associer une glose ou une définition à l'exemple dans un élément ``<gloss>`` ;
-- possibilité d'imbriquer des exemples (définition de sous-exemples).
+-  possibility to define a type for the example with the attribute 'type', the recommandation is to use type="example";
+-  possibility to number the example with the attribute 'n';
+-  possibility to define multiple lines for an example with elements ``<quote>``;
+-  possibility to align vertically segments in the lines with elements ``<seg>``;
+-  possibility to define bibliographic reference with elements ``<bibl>``;
+-  possibility to associate gloss or definition for the example with elements ``<gloss>``;
+-  nested examples (definition of sub-examples)
 
-**Exemple simple**
+
+**Simple example**
 
 .. code-block:: xml
 
@@ -679,10 +681,10 @@ Exemples de linguistique
      </quote>
       <bibl>My bibliographic reference</bibl>
       <gloss>My definition (cf &lt;gloss&gt; dans la documentation de référence de la TEI)</gloss>
-   </quote>
+   </quote> 
    [...]
 
-*Résultat HTML (rendu)**
+**HTML rendering**
 
 .. raw:: html
 
@@ -693,9 +695,7 @@ Exemples de linguistique
   </table>
   <br />
 
-
-
-**Exemples imbriqués (sous-exemples)**
+**Nested Examples**
 
 .. code-block:: xml
 
@@ -712,7 +712,7 @@ Exemples de linguistique
        </quote>
        <bibl>bibliographic reference for example 1a</bibl>
        <gloss>definition for example 1a</gloss>
-     </quote>
+     </quote> 
      <quote n="b" type="example">
        <quote>
          <seg>c’est e vous avez voulu (H3 / I=)</seg>
@@ -728,8 +728,7 @@ Exemples de linguistique
    </quote>
    [...]
 
-**Résultat HTML (rendu)**
-
+**HTML rendering**
 
 .. raw:: html
 

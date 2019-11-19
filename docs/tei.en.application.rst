@@ -1,23 +1,23 @@
-.. _tei-fr-application:
+.. _tei-en-application:
 
 Application
 ##########################################
 
-Cette page présente les possibilités d'application des éléments du schéma OpenEdition pour : 
+This page presents the application possibilities of the OpenEdition schema for: 
 
-- l'import de documents sur OpenEdition Journals (Import OJ) ; 
-- l'import de documents sur OpenEdition Books (Import OB) ;
-- l'utilisation de ces éléments pour l'export des documents au format TEI OpenEdition (Export TEI OE).
+- documents uploaded on OpenEdition Journals (Upload OJ) ; 
+- documents uploaded on OpenEdition Books (Upload OJ) ;
+- output TEI OpenEdition (Output TEI OE ).
 
-L'export TEI est utilisé dans les cas suivants :
+The output TEI is used in the following cases :
 
-- contrat tripartite Cairn
+- as part of the contract with Cairn.info
 - TDM : ISTEX
-- archivage pérenne
+- permanent archiving
 
 .. TODO à détailler ?
 
-.. contents:: Sommaire
+.. contents:: Summary
    :depth: 3
 
 
@@ -32,29 +32,29 @@ titleStmt
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| :ref:`tei-fr-teiHeader-titres`                                                                    |
+| :ref:`tei-en-teiHeader-titres`                                                                    |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| title[@type='main']                       | oui                   | oui         | oui             |
+| title[@type='main']                       | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| title[@type='sub']                        | oui                   | oui         | oui             |
+| title[@type='sub']                        | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| title[@type='sup']                        | oui                   | oui         | oui             |
+| title[@type='sup']                        | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| title[@type='alt' and @xml:lang] [3]_     | oui                   | oui         | oui             |
+| title[@type='alt' and @xml:lang] [3]_     | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teiHeader-auteurs`                                                                   |
+| :ref:`tei-en-teiHeader-auteurs`                                                                   |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| author                                    | oui                   | oui         | oui             |
+| author                                    | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| editor[@role='translator']                | oui                   | oui         | oui             |
+| editor[@role='translator']                | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| editor[not(@role)]                        | oui                   | oui         | oui             |
+| editor[not(@role)]                        | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| editor[@role='excavationsdirector']       | ME archéo [2]_        | non         | oui             |
+| editor[@role='excavationsdirector']       | archeo EM [2]_        | no          | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| editor[@role='collaborator']              | ME archéo [2]_        | non         | oui             |
+| editor[@role='collaborator']              | archeo EM [2]_        | no          | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 author et editor
@@ -68,23 +68,23 @@ author et editor
 
 
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| persName/forename                         | oui                   | oui         | oui             |
+| persName/forename                         | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| persName/surname                          | oui                   | oui         | oui             |
+| persName/surname                          | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| affiliation                               | oui                   | oui         | oui             |
+| affiliation                               | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| orgName                                   | oui                   | oui         | oui             |
+| orgName                                   | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| roleName[@type='function']                | oui                   | oui         | oui (sans @type)|
+| roleName[@type='function']                | yes                   | yes         | yes (sans @type)|
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| roleName[@type='honorific']               | oui                   | oui         | oui             |
+| roleName[@type='honorific']               | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| email                                     | oui                   | oui         | oui             |
+| email                                     | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| ref[@type='website']                      | oui                   | oui         | oui             |
+| ref[@type='website']                      | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
   
@@ -97,17 +97,17 @@ publicationStmt
  
 
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| :ref:`tei-fr-teiHeader-dates`                                                                     |
+| :ref:`tei-en-teiHeader-dates`                                                                     |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| date                                      | oui                   | non         | oui             |
+| date                                      | yes                   | no          | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teiHeader-autres-md`                                                                 |
+| :ref:`tei-en-teiHeader-autres-md`                                                                 |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| idno[@type='documentnumber']              | oui                   | non         | oui             |
+| idno[@type='documentnumber']              | yes                   | no          | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| availability                              | oui                   | oui         | oui             |
+| availability                              | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -120,17 +120,17 @@ biblFull
  
 
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| :ref:`tei-fr-teiHeader-dates`                                                                     |
+| :ref:`tei-en-teiHeader-dates`                                                                     |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| publicationStmt/tei:date                  | oui                   | non         | oui             |
+| publicationStmt/tei:date                  | yes                   | no          | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teiHeader-autres-md`                                                                 |
+| :ref:`tei-en-teiHeader-autres-md`                                                                 |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| publicationStmt/tei:idno[@type='pp']      | oui                   | oui         | oui             |
+| publicationStmt/tei:idno[@type='pp']      | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| notesStmt/tei:note[@type='bibl']          | oui                   | non         | non             |
+| notesStmt/tei:note[@type='bibl']          | yes                   | no          | no              |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -146,11 +146,11 @@ tagsDecl
 
   
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| :ref:`tei-fr-teibody-mises-en-forme`                                                              |
+| :ref:`tei-en-teibody-mises-en-forme`                                                              |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| rendition[@xml:id and @scheme="css"]      | oui                   | oui         | oui             |
+| rendition[@xml:id and @scheme="css"]      | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -163,11 +163,11 @@ profileDesc
 
 
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                   | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                   | Upload OJ             | Upload OB   | Output TEI OE   |
 +===========================================+=======================+=============+=================+
-| :ref:`tei-fr-teiHeader-autres-md`                                                                 |
+| :ref:`tei-en-teiHeader-autres-md`                                                                 |
 +-------------------------------------------+-----------------------+-------------+-----------------+
-| langUsage/language                        | oui                   | oui         | oui             |
+| langUsage/language                        | yes                   | yes         | yes             |
 +-------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -180,19 +180,19 @@ keywords
 +-------------------------------------------+-----------------------+-------------+-----------------+ 
 
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| Élément                                   | Import OJ             | Import OB             | Export TEI OE   |
+| Élément                                   | Upload OJ             | Upload OB             | Output TEI OE   |
 +===========================================+=======================+=======================+=================+
-| :ref:`tei-fr-teiHeader-index`                                                                               |
+| :ref:`tei-en-teiHeader-index`                                                                               |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| [@scheme='keyword' and xml:lang] [3]_     | oui                   | oui                   | oui             |
+| [@scheme='keyword' and xml:lang] [3]_     | yes                   | yes                   | yes             |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| [@scheme='geographical']                  | oui                   | oui                   | oui             |
+| [@scheme='geographical']                  | yes                   | yes                   | yes             |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| [@scheme='chronological']                 | oui                   | oui                   | oui             |
+| [@scheme='chronological']                 | yes                   | yes                   | yes             |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| [@scheme='subject']                       | oui                   | oui                   | oui             |
+| [@scheme='subject']                       | yes                   | yes                   | yes             |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
-| [@scheme='personcited']                   | certains ME [1]_      | certains ME [1]_      | non             |
+| [@scheme='personcited']                   | some EM [1]_          | some EM [1]_          | no              |
 +-------------------------------------------+-----------------------+-----------------------+-----------------+
  
 
@@ -209,33 +209,33 @@ front
 
 
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                            | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                            | Upload OJ             | Upload OB   | Output TEI OE   |
 +====================================================+=======================+=============+=================+
-| :ref:`tei-fr-teifront-resume`                                                                              |
+| :ref:`tei-en-teifront-resume`                                                                              |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='abstract' and @xml:lang] [3]_           | oui                   | oui         | oui             |
+| div[@type='abstract' and @xml:lang] [3]_           | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teifront-oeuvres`                                                                             |
+| :ref:`tei-en-teifront-oeuvres`                                                                             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='review']/p[@rend='review-title']        | oui                   | non         | oui             |
+| div[@type='review']/p[@rend='review-title']        | yes                   | no          | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='review']/p[@rend='review-author']       | oui                   | non         | oui             |
+| div[@type='review']/p[@rend='review-author']       | yes                   | no          | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='review']/p[@rend='review-bibliography'] | oui                   | non         | oui             |
+| div[@type='review']/p[@rend='review-bibliography'] | yes                   | no          | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='review']/p[@rend='review-date']         | oui                   | non         | oui             |
+| div[@type='review']/p[@rend='review-date']         | yes                   | no          | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teifront-notes`                                                                               |
+| :ref:`tei-en-teifront-notes`                                                                               |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='correction']/p                          | oui                   | oui         | oui             |
+| div[@type='correction']/p                          | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='dedication']/p                          | oui                   | oui         | oui             |
+| div[@type='dedication']/p                          | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+  
-| div[@type='ack']/tei:p                             | oui                   | oui         | oui             |
+| div[@type='ack']/tei:p                             | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+  
-| note[@resp='author']/p                             | oui                   | oui         | oui             |
+| note[@resp='author']/p                             | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| note[@resp='editor']/p                             | oui                   | oui         | oui             |
+| note[@resp='editor']/p                             | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -248,89 +248,89 @@ body
 
 
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                            | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                            | Upload OJ             | Upload OB   | Output TEI OE   |
 +====================================================+=======================+=============+=================+
-| :ref:`tei-fr-teibody-intertitres`                                                                          |
+| :ref:`tei-en-teibody-intertitres`                                                                          |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| div                                                | oui                   | oui         | oui             |
+| div                                                | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| head[@subtype='leveln']                            | oui                   | oui         | oui             |
+| head[@subtype='leveln']                            | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-notes`                                                                                |
+| :ref:`tei-en-teibody-notes`                                                                                |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| note[@place='foot' and @n]/p                       | oui                   | oui         | oui             |
+| note[@place='foot' and @n]/p                       | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| note[@place='end' and @n]/p                        | oui                   | oui         | oui             |
+| note[@place='end' and @n]/p                        | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-mises-en-forme`                                                                       |
+| :ref:`tei-en-teibody-mises-en-forme`                                                                       |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| hi[@rend] [4]_                                     | oui                   | oui         | oui             |
+| hi[@rend] [4]_                                     | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-citations`                                                                            |
+| :ref:`tei-en-teibody-citations`                                                                            |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| q[@rend='quotation']                               | oui                   | oui         | oui             |
+| q[@rend='quotation']                               | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| q[@rend='quotation2']                              | oui                   | oui         | oui             |
+| q[@rend='quotation2']                              | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| q[@rend='quotation3']                              | oui                   | oui         | oui             |
+| q[@rend='quotation3']                              | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-paragraphes`                                                                          |
+| :ref:`tei-en-teibody-paragraphes`                                                                          |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='answer']                                  | oui                   | oui         | oui             |
+| p[@rend='answer']                                  | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='noindent']                                | oui                   | oui         | oui             |
+| p[@rend='noindent']                                | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='box']                                     | oui                   | oui         | oui             |
+| p[@rend='box']                                     | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='epigraph']                                | oui                   | oui         | oui             |
+| p[@rend='epigraph']                                | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='break']                                   | oui                   | oui         | oui             |
+| p[@rend='break']                                   | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-listes`                                                                               |
+| :ref:`tei-en-teibody-listes`                                                                               |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| list[@type='unordered']/item                       | oui                   | oui         | oui             |
+| list[@type='unordered']/item                       | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| list[@type='ordered']/item                         | oui                   | oui         | oui             |
+| list[@type='ordered']/item                         | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-tableaux`                                                                             |
+| :ref:`tei-en-teibody-tableaux`                                                                             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| table                                              | oui                   | oui         | oui             |
+| table                                              | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| row                                                | oui                   | oui         | oui             |
+| row                                                | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| cell[@rows and @cols]                              | oui                   | oui         | oui             |
+| cell[@rows and @cols]                              | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-liens`                                                                                |
+| :ref:`tei-en-teibody-liens`                                                                                |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| ref[@target]                                       | oui                   | oui         | oui             |
+| ref[@target]                                       | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-illustrations`                                                                        |
+| :ref:`tei-en-teibody-illustrations`                                                                        |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| figure[@url]                                       | oui                   | oui         | oui             |
+| figure[@url]                                       | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='figure-title']                            | oui                   | oui         | oui             |
+| p[@rend='figure-title']                            | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='figure-legend']                           | oui                   | oui         | oui             |
+| p[@rend='figure-legend']                           | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| p[@rend='figure-license']                          | oui                   | oui         | oui             |
+| p[@rend='figure-license']                          | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-formule`                                                                              |
+| :ref:`tei-en-teibody-formule`                                                                              |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| formula[@notation='latex'] [5]_                    | oui                   | oui         | oui             |
+| formula[@notation='latex'] [5]_                    | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-code`                                                                                 |
+| :ref:`tei-en-teibody-code`                                                                                 |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| code[@lang']                                       | oui                   | oui         | oui             |
+| code[@lang']                                       | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teibody-linguistique`                                                                         |
+| :ref:`tei-en-teibody-linguistique`                                                                         |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| quote[@type and @n]/quote                          | oui                   | oui         | oui             |
+| quote[@type and @n]/quote                          | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| quote[@type and @n]/seg                            | oui                   | oui         | oui             |
+| quote[@type and @n]/seg                            | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| quote[@type and @n]/bibl                           | oui                   | oui         | oui             |
+| quote[@type and @n]/bibl                           | yes                   | yes         | yes             |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
-| quote[@type and @n]/gloss                          | oui                   | non         | non             |
+| quote[@type and @n]/gloss                          | yes                   | no          | no              |
 +----------------------------------------------------+-----------------------+-------------+-----------------+
 
 
@@ -343,27 +343,27 @@ back
 
 
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| Elément                                                       | Import OJ             | Import OB   | Export TEI OE   |
+| Element                                                       | Upload OJ             | Upload OB   | Output TEI OE   |
 +===============================================================+=======================+=============+=================+
-| :ref:`tei-fr-teiback-biblio`                                                                                          |
+| :ref:`tei-en-teiback-biblio`                                                                                          |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='bibliography']/listBibl                            | oui                   | oui         | oui             |
+| div[@type='bibliography']/listBibl                            | yes                   | yes         | yes             |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='bibliography']/listBibl/bibl                       | oui                   | oui         | oui             |
+| div[@type='bibliography']/listBibl/bibl                       | yes                   | yes         | yes             |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='bibliography']/listBibl/head[@subtype='leveln']    | oui                   | oui         | oui             |
+| div[@type='bibliography']/listBibl/head[@subtype='leveln']    | yes                   | yes         | yes             |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| :ref:`tei-fr-teiback-annexes`                                                                                         |
+| :ref:`tei-en-teiback-annexes`                                                                                         |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
-| div[@type='appendix']                                         | oui                   | oui         | oui             |
+| div[@type='appendix']                                         | yes                   | yes         | yes             |
 +---------------------------------------------------------------+-----------------------+-------------+-----------------+
 
 
-.. [1] Certaines revues ou éditeurs bénéficient d'un modèle éditorial contenant des éléments supplémentaires par rapport au modèle éditorial générique. Pour plus d'informations, contactez XXXX[at]openedition.org
-.. [2] Certaines revues d'archéologie ont une modèle éditorial "archéo" proposant des éléments supplémentaires par rapport au modèle éditorial générique. Pour plus d'informations, contactez XXXX[at]openedition.org
-.. [3] la valeur de l'attribut ``xml:lang`` doit être au format ISO 639-1
-.. [4] valeurs autorisées pour l'attribut 'rend' de l'élément ``<hi>`` : ``italic``, ``bold``, ``sup``, ``sub``, ``uppercase``, ``small-caps``, ``underline``
-.. [5] Certains sites utilisent MathJax pour intérpréter les formules LaTeX dans le navigateur. Pour plus d'informations, contactez XXXX[at]openedition.org
+.. [1] Some journals or publishers have a specific editorial model template with additional elements. For more information, please contact XXXX[at]openedition.org
+.. [2] Some journals or publishers have a editorial model template with specifics additional elements for the discipline of archaeology. For more information, please contact XXXX[at]openedition.org
+.. [3] The value of the attribute ``xml:lang`` must be in ISO 639-1 format
+.. [4] Allowed values for the attribute 'rend' of the ``<hi>`` tag: ``italic``, ``bold``, ``sup``, ``sub``, ``uppercase``, ``small-caps``, ``underline``
+.. [5] Some websites use MathJax to interpret LaTeX formulas in the browser. For more information, please contact XXXX[at]openedition.org
 
 
 

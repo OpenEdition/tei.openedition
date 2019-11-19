@@ -71,8 +71,8 @@ Auteurs, éditeurs, traducteurs
 
 - Description des auteurs
 
-| Description) : ``/TEI/teiHeader/fileDesc/titleStmt/author/affiliation``
-| Affiliation) : ``/TEI/teiHeader/fileDesc/titleStmt/author/orgName``
+| Description : ``/TEI/teiHeader/fileDesc/titleStmt/author/affiliation``
+| Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/author/orgName``
 | Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='function']``
 | Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='honorific']``
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/author/email``
@@ -159,22 +159,20 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
 
 **XPath**
 
-| Index :  ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme and xml:lang]/list/item``
-
-| Index de personnes, utilisation de ``<name>`` : ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme]/list/item/name``
+| Index :  ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme and @xml:lang]/list/item``
 
 | Index de personnes, utilisation de ``<persName>`` : ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme]/list/item/persName/forename`` et ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme]/list/item/persName/surname``
   
 
 **Recommandations d'usage**
 
-- valeurs autorisées pour l'attribut scheme :
+- valeurs autorisées pour l'attribut 'scheme' :
 
- * keywords : index de mots clés (langue à définir, attribut ``xml:lang``  obligatoire avec un valeur au format ISO 639-1)
- * geographical : index géographique, lieux
- * chronological : index chronologique, périodes
- * subject : index thématique, sujets
- * personcited : personnes citées (index de personne)
+ * ``<keywords scheme="keywords" lang="fr">`` : index de mots clés (attribut 'xml:lang' obligatoire avec une valeur au format ISO 639-1) ;
+ * ``<keywords scheme="geographical">`` : index géographique, lieux ;
+ * ``<keywords scheme="chronological">`` : index chronologique, périodes ;
+ * ``<keywords scheme="subject">`` : index thématique, sujets ;
+ * ``<keywords scheme="personcited">`` : personnes citées (index de personne).
 
 - attention à la casse et à l'orthographe pour éviter les doublons dans les index.
 
@@ -217,9 +215,6 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
            <keywords scheme="personcited">
              <list>
                  <item>
-                     <name>Pierre Durand</name>
-                 </item>
-                 <item>
                      <persName>
                          <forename>Olivier</forename>
                          <surname>Dumond</surname>
@@ -227,7 +222,6 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
                  </item>
              </list>
            </keywords>
-
    [...]
 
 .. _tei-fr-teiHeader-dates:

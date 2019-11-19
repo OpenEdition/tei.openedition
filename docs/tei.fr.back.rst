@@ -18,15 +18,13 @@ Bibliographie
 
 | Section bibliographie : ``/TEI/text/back/div[@type='bibliography']/listBibl``
 | Référence bibliographique : ``/TEI/text/back/div[@type='bibliography']/listBibl/bibl``
-
 | Intertitres : ``/TEI/text/back/div[@type='bibliography']/listBibl/head[@subtype='leveln']`` 
-| où 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6'.
 
 **Recommandations d'usage**
 
 - la section bibliographie est définie avec une balise ``<div type='bibliography'>`` et commence par une balise par une balise ``<listBibl>`` ;
 - ``<listBibl>`` ne peut contenir de balises ``<div>`` ; 
-- utilisation des balises ``<head>`` pour placer des intertitres ;
+- utilisation des balises ``<head>`` pour placer des intertitres, l'attribut 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6' ;
 - les balises ``<listBibl>`` peuvent être imbiquées en fonction de la structuration des niveaux de titres dans la bibliographie ;
 - les références bibliographiques sont indiquées avec des balises ``<bibl>``
 
