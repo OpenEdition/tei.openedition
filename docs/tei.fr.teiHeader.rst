@@ -5,52 +5,33 @@ teiHeader
 ############################################
 
 .. contents:: Sommaire
-   :depth: 7
+   :depth: 2
 
 
-
-title
-============================================
-
-XPath
---------------------------------------------
-
--  Titre :
-   ``xml /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='main']``
-
--  Sous-titre :
-   ``xml /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='sub']``
-
--  Surtitre :
-   ``xml /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='sup']``
-
--  Titres traduits :
-   ``xml /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[@type='alt' and @xml:lang]``
-
--  Pour les titres traduits, l'attribut ``xml xml:lang`` est obligatoire
-   avec un valeur au format ISO 639-1.
+.. _tei-fr-teiHeader-titres:
 
 
-Application
---------------------------------------------
+titres, sous-titres, surtitres, titres traduits
+=================================================
 
-- import OpenEdition Journals
-- import OpenEdition Books 
-- export TEI OpenEdition
+**XPath**
 
-Recommandations d'usage
---------------------------------------------
+| Titre : ``/TEI/teiHeader/fileDesc/titleStmt/title[@type='main']``
+| Sous-titre : ``/TEI/teiHeader/fileDesc/titleStmt/title[@type='sub']``
+| Surtitre : ``/TEI/teiHeader/fileDesc/titleStmt/title[@type='sup']``
+| Titres traduits : ``/TEI/teiHeader/fileDesc/titleStmt/title[@type='alt' and @xml:lang]``
 
-Veiller à ce que chaque titre :
 
--  constitue un seul paragraphe, sans saut de ligne (balise lb) ;
--  soit affiché en minuscules sauf initiale ;
--  ne soit pas terminé par un point.
+**Recommandations d'usage**
 
-Exemple
---------------------------------------------
+-  pas de saut de ligne (balise ``<lb />``), un seul paragraphe ;
+-  en minuscules sauf initiale, non terminés par un point ;
+-  pour les titres traduits l'attribut ``xml:lang`` est obligatoire avec un valeur au format ISO 639-1.
 
-.. code:: xml
+
+**Exemple**
+
+.. code-block:: xml
 
    [...]
    <teiHeader>
@@ -65,127 +46,93 @@ Exemple
 
 
 
+.. _tei-fr-teiHeader-auteurs:
+
+Auteurs, éditeurs, traducteurs
+=============================================
+
+**XPath**
+
+| Auteur : ``/TEI/teiHeader/fileDesc/titleStmt/author/``
+| Traducteur : ``/TEI/teiHeader/fileDesc/titleStmt/editor[@role='translator']``
+| Éditeur scientifique : ``/TEI/teiHeader/fileDesc/titleStmt/editor[not(@role)]``
+| Directeur de fouilles : ``/TEI/teiHeader/fileDesc/titleStmt/editor[@role='excavationsdirector']``
+| Collaborateur : ``/TEI/teiHeader/fileDesc/titleStmt/editor[@role='collaborator']``
+
+- Noms des auteurs
+
+| Prénom : ``/TEI/teiHeader/fileDesc/titleStmt/author/persName/forename``
+| Nom : ``/TEI/teiHeader/fileDesc/titleStmt/author/persName/surname``
+  
+- Noms des Traducteur, Éditeur scientifique, Directeur de fouilles, Collaborateur
+
+| Prénom : ``/TEI/teiHeader/fileDesc/titleStmt/editor/persName/forename``
+| Nom : ``/TEI/teiHeader/fileDesc/titleStmt/editor/persName/surname``
+
+- Description des auteurs
+
+| Description : ``/TEI/teiHeader/fileDesc/titleStmt/author/affiliation``
+| Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/author/orgName``
+| Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='function']``
+| Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='honorific']``
+| Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/author/email``
+| Site web : ``/TEI/teiHeader/fileDesc/titleStmt/author/ref[@type='website']``
+
+- Description des Traducteur, Éditeur scientifique, Directeur de fouilles, Collaborateur
+
+| Description : ``/TEI/teiHeader/fileDesc/titleStmt/editor/affiliation``
+| Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/editor/orgName``
+| Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='function']``
+| Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='honorific']``
+| Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/editor/email``
+| Site web : ``/TEI/teiHeader/fileDesc/titleStmt/editor/ref[@type='website']``
+
+.. TODO : vérifier usage de l'élément s
 
 
+**Recommandations d'usage**
+
+- possibilité d'indiquer plusieurs auteurs, traducteurs, etc. pour le document ;
+- possibilité d'ajouter des descriptions pour chacun des contributeurs, la description générale est indiquée dans la balise ``<affiliation>`` ;
+- attention à la casse et à l'orthographe pour éviter les doublons dans les index.
+
+.. 2 possibilités d'encodage pour les noms de personnes : ``<name>`` ou ``<persName>``
+
+.. Veillez à ce que les prénoms et noms soient affichés dans cet ordre et
+.. en minuscule sauf initiale. Cet ordre est important car Lodel va en
+.. déduire le prénom (premier mot) et le nom (deuxième mot) au moment de
+.. l’importation. En cas de nom composé, il faut utiliser des espaces
+.. insécables
+.. (`http://fr.wikipedia.org/​wiki/​Espace_ins%C3%A9cable <http://fr.wikipedia.org/​wiki/​Espace_ins%C3%A9cable>`__)
+.. entre les différentes parties du nom composé. De cette manière Lodel
+.. distinguera correctement prénoms et noms. Cette recommandation n'est pas
+.. nécessaire pour les prénoms composés.
 
 
+**Exemple**
 
-Titre, sous-titre, surtitre, titres traduits
---------------------------------------------
-*Xpath*:
-*Exemple*:
-Auteurs, traducteurs, éditeurs scientifiques, directeurs de fouilles, collaborateurs (pour l'archéologie) et leur description
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: xml
 
-Il est bien-sûr possible d'indiquer plusieurs auteurs, traducteurs, etc.
-pour le document.
-
-2 possibilités d'encodage pour les noms de personnes : ``<name>`` ou
-``<persName>``
-
-Utilisation de la balise name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Veillez à ce que les prénoms et noms soient affichés dans cet ordre et
-en minuscule sauf initiale. Cet ordre est important car Lodel va en
-déduire le prénom (premier mot) et le nom (deuxième mot) au moment de
-l’importation. En cas de nom composé, il faut utiliser des espaces
-insécables
-(`http://fr.wikipedia.org/​wiki/​Espace_ins%C3%A9cable <http://fr.wikipedia.org/​wiki/​Espace_ins%C3%A9cable>`__)
-entre les différentes parties du nom composé. De cette manière Lodel
-distinguera correctement prénoms et noms. Cette recommandation n'est pas
-nécessaire pour les prénoms composés.
-
-Il est indispensable d’utiliser toujours la même forme pour les noms
-d’auteurs. En particulier, prêter attention à la casse, et à
-l’orthographe des prénoms. Ex : Si deux documents d’un même auteur sont
-importés dans Lodel , l’auteur étant orthographié Jean-Paul Durand dans
-le premier document, et Jean Paul Durand (sans tiret) dans le second,
-Lodel les considérera comme deux auteurs différents, et créera deux
-entrées distinctes dans l’index des auteurs.
-
-*Xpath* :
-
--  Auteur :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:name``
--  Traducteur :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='translator']/tei:name``
--  Éditeur scientifique :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(@role)]/tei:name``
--  Directeur de fouilles :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='excavationsdirector']/tei:name``
--  Collaborateur (pour l'archéologie) :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='collaborator']/tei:name``
-
-Utilisation de la balise persName
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*Xpath* :
-
--  Auteur (prénom et nom)
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:persName/tei:forename``
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:persName/tei:surname``
--  Traducteur (prénom et nom)
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='translator']/tei:persName/tei:forename``
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='translator']/tei:persName/tei:surname``
--  Éditeur scientifique (prénom et nom)
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(@role)]/tei:persName/tei:forename``
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[not(@role)]/tei:persName/tei:surname``
--  Directeur de fouilles (prénom et nom)
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='excavationsdirector']/tei:persName/tei:forename``
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='excavationsdirector']/tei:persName/tei:surname``
--  Collaborateur (pour l'archéologie) (prénom et nom)
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='collaborator']/tei:persName/tei:forename``
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor[@role='collaborator']/tei:persName/tei:surname``
-
-Description des contributeurs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Pour chacun de ces contributeurs, il est possible de donner une
-description. La description générale du contributeur est donnée dans la
-balise ``<affiliation>``. Il est également possible d'utiliser d'autres
-balises pour préciser l'affiliation, la fonction, le courriel, le
-préfixe et le site web.
-
-*Xpath*:
-
--  Description d'auteur
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:affiliation/tei:s | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:affiliation/tei:s``
--  Affiliation
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:orgName/tei:s | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:orgName/tei:s``
--  Fonction
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:roleName[@type='function']/tei:s | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:roleName[@type='function']/tei:s``
--  Préfixe
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:roleName[@type='honorific']/tei:s | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:roleName[@type='honorific']/tei:s``
--  Courriel
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:email/tei:s | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:email/tei:s``
--  Site web
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author/tei:ref | /tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:editor/tei:ref``
-
-*Exemple*:
-
-.. code:: xml
-
-   [...]
-   <titleStmt>
-   [...]
+    [...]
+    <titleStmt>
+    [...]
        <author>
            <name>Marin Dacos</name>
            <affiliation>
                Directeur du Cléo (Centre pour l'édition électronique ouverte)
            </affiliation>
            <roleName type="function">
-               <s>Directeur</s>
+               Directeur
            </roleName>
            <orgName>
-               <s>Cléo</s>
+               Cléo
            </orgName>
            <email>
-               <s>contact@openedition.org</s>
+               contact@openedition.org
            </email>
-           <ref target="http://www.openedition.org" type="website">http://www.openedition.org</​ref>
+           <ref target="http://www.openedition.org" type="website">http://www.openedition.org</ref>
            <roleName type="honorific">
-               <s>M.</s>
+               M.
            </roleName>
        </author>
        <editor role="translator">
@@ -202,47 +149,44 @@ préfixe et le site web.
            </persName>
            <affiliation>Développeur au Cléo</affiliation>
        </editor>
-   </titleStmt>
-   [...]
+    [...]
 
-.. _index--mots-clés-keywords--géographie--chronologie--thèmes--personnes-citées:
 
-Index : Mots-clés, keywords... ; géographie ; chronologie ; thèmes ; personnes citées
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _tei-fr-teiHeader-index:
 
-Comme pour les noms d’auteurs, l’orthographe et la casse des entrées
-d’index doivent toujours être les mêmes afin d’éviter les doublons dans
-les index.
+Index : mots clés, géographie, chronologie, thèmes, etc.
+==========================================================
 
-Pour les personnes citées, on peut utiliser la balise ``<name>`` ou
-``<persname>`` (se référer à la sections auteurs pour les précisions).
+**XPath**
 
-*Xpath*:
+| Index :  ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme and @xml:lang]/list/item``
 
--  Mots-clés, keywords, palabras claves, etc.
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='keyword' and xml:lang]/tei:list/tei:item``
-   Pour les keywords, l'attribut ``xml:lang`` est obligatoire avec un
-   valeur au format ISO 639-1.
+| Index de personnes, utilisation de ``<persName>`` : ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme]/list/item/persName/forename`` et ``/TEI/teiHeader/profileDesc/textClass/keywords[@scheme]/list/item/persName/surname``
+  
 
--  Index géographique
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='geographical']/tei:list/tei:item``
+**Recommandations d'usage**
 
--  Index chronologique
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='chronological']/tei:list/tei:item``
+- valeurs autorisées pour l'attribut 'scheme' :
 
--  Index thématique
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='subject']/tei:list/tei:item``
+ * ``<keywords scheme="keywords" lang="fr">`` : index de mots clés (attribut 'xml:lang' obligatoire avec une valeur au format ISO 639-1) ;
+ * ``<keywords scheme="geographical">`` : index géographique, lieux ;
+ * ``<keywords scheme="chronological">`` : index chronologique, périodes ;
+ * ``<keywords scheme="subject">`` : index thématique, sujets ;
+ * ``<keywords scheme="personcited">`` : personnes citées (index de personne).
 
--  Index des personnes citées utilisation de ``<name>`` :
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='personcited']/tei:list/tei:item/tei:name``
+- attention à la casse et à l'orthographe pour éviter les doublons dans les index.
 
-utilisation de ``<persName>`` :
-``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='personcited']/tei:list/tei:item/tei:persName/tei:forename``
-``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:textClass/tei:keywords[@scheme='personcited']/tei:list/tei:item/tei:persName/tei:surname``
 
-*Exemple*:
 
-.. code:: xml
+
+
+
+.. Pour les personnes citées, on peut utiliser la balise ``<name>`` ou ``<persname>`` (se référer à la sections auteurs pour les précisions).
+
+
+**Exemple**
+
+.. code-block:: xml
 
    <profileDesc>
    [...]
@@ -271,9 +215,6 @@ utilisation de ``<persName>`` :
            <keywords scheme="personcited">
              <list>
                  <item>
-                     <name>Pierre Durand</name>
-                 </item>
-                 <item>
                      <persName>
                          <forename>Olivier</forename>
                          <surname>Dumond</surname>
@@ -281,37 +222,36 @@ utilisation de ``<persName>`` :
                  </item>
              </list>
            </keywords>
-
    [...]
 
-Dates de publication papier et électronique
--------------------------------------------
+.. _tei-fr-teiHeader-dates:
 
-On distingue la date de publication papier et la date de publication
-électronique d’un document.
+Dates de publication
+========================================
 
-Si la date de publication électronique n’est pas indiquée dans le
-document, elle sera automatiquement renseignée par Lodel lors de
-l’importation du document et fixée au jour de l’importation du document.
-En cas de rechargement du document dans Lodel, si la date de publication
-électronique n’est pas indiquée dans le document elle sera fixée
-automatiquement au jour du rechargement du document. Afin de conserver
-une date de publication électronique stable, même en cas de rechargement
-du document, il est donc nécessaire de l’indiquer dans le document
-importé dans Lodel.
+**XPath**
 
-*Xpath*:
+| Date de publication électronique : ``/TEI/teiHeader/fileDesc/publicationStmt/date``
+| Date de publication papier : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/date``
 
--  Date de publication électronique :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date``
-   avec une date au format : JJ/MM/AAAA
--  Date de publication papier :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:publicationStmt/tei:date``
-   avec une date au format : JJ/MM/AAAA
 
-*Exemple*:
+**Recommandations d'usage**
 
-.. code:: xml
+- dates au format : JJ/MM/AAAA ;
+- ne pas utiliser ces dates pour OpenEdition Books ;
+- pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée sur Lodel et sera mis à jour en cas de rechargement du document.
+
+
+*Date de publication électronique pour les revues à barrière mobile sur OpenEdition Journals*
+
+- doit correspondre à la date de sortie de barrière mobile, calculée en ajoutant la durée de l'embargo à la date de publication papier ; 
+- utilisée par Lodel pour gérer la disponibilité du document : affichage des métadonnées et résumé pendant la période de barrière mobile puis accès au texte intégral ;
+
+
+
+**Exemple**
+
+.. code-block:: xml
 
    <fileDesc>
    [...]
@@ -329,56 +269,33 @@ importé dans Lodel.
        </sourceDesc>
    [...]
 
-Date de publication électronique et barrière mobile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Pour les revues adhérant à OpenEdition Journals et utilisant la fonction
-de « barrière mobile », la date de publication électronique sera
-utilisée par Lodel pour gérer l’affichage de l’article sous forme de
-résumé ou en texte intégral. Pour les articles ayant une date de
-publication électronique postérieure à la date de consultation de
-l’article, seules les métadonnées seront affichées (titre, auteur,
-résumés, abstract…) ; pour les articles ayant une date de publication
-électronique antérieure à la date de consultation de l’article seront
-affichés en texte intégral. Pour une « barrière mobile » de deux ans, la
-date de publication électronique devra être fixée deux ans après la date
-de publication papier. L’article sera ainsi accessible en texte intégral
-deux ans après sa parution dans la revue papier.
+.. _tei-fr-teiHeader-autres-md:
 
 Autres métadonnées
-------------------
+======================================
 
-*Xpath*:
+**XPath**
 
--  Langue :
-   ``/tei:TEI/tei:teiHeader/tei:profileDesc/tei:langUsage/tei:language``
-   avec une valeur au format ISO 639-1
--  Pagination :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:publicationStmt/tei:idno[@type='pp']``
+| Langue : ``/TEI/teiHeader/profileDesc/langUsage/language``
+| Pagination : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/idno[@type='pp']``
+| Numéro du document : ``/TEI/teiHeader/fileDesc/publicationStmt/idno[@type='documentnumber']``
+| Licence : ``/TEI/teiHeader/fileDesc/publicationStmt/availability``
+| Notice bibliographique du document : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/notesStmt/note[@type='bibl']``
 
-   -  La pagination papier d’un document peut être renseignée de
-      différentes façons : en chiffres romains et petites capitales
-      (V-XXV), en chiffres arabes (5-25).
-   -  Toutes les valeurs sont valides. On indique la pagination sans les
-      mentions p. ou pp., celles-ci étant généralement pris en charge
-      par la maquette.
+.. TODO : vérifie l'usage de licence et notice biblio
 
--  Numéro du document :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type='documentnumber']``
-   Il s’agit d’une information éditoriale qui peut être affichée dans la
-   maquette dans la référence électronique du document. Le numéro de
-   document peut être utilisé, par exemple, pour faciliter la citation
-   des documents électroniques.
--  Licence :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:availability``
--  Notice bibliographique du document :
-   ``/tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:biblFull/tei:notesStmt/tei:note[@type='bibl']``
-   Il est possible d'indiquer ici la référence bibliographique de
-   l'édition papier de ce document.
+**Recommandations d'usage**
 
-*Exemple*:
+- Langue : valeur au format ISO 639-1 ;
+- Pagination :  renseignée en chiffres romains et petites capitales (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
+- Numéro : information éditoriale affichée dans la référence électronique du document, utilisé pour faciliter la citation des documents électroniques ;
+- Licence : utilisé pour renseigner la licence qui s'applique au document, ajoute une entrée à l'index licence du site ;
+- Notice biblio : utilisée pour préciser la notice bibliographique du document papier
 
-.. code:: xml
+**Exemple**
+
+.. code-block:: xml
 
    <fileDesc>
    [...]
@@ -407,4 +324,3 @@ Autres métadonnées
            <language>fr</language>
        </langUsage>
    [...]
-
