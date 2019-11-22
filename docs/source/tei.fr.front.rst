@@ -4,7 +4,11 @@ text/front
 ############################################
 
 .. contents:: Sommaire
-   :depth: 2
+   :depth: 4
+
+.. sectnum::
+   :depth: 4
+   :start: 2
 
 .. _tei-fr-teifront-resume:
 

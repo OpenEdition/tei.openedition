@@ -1,11 +1,14 @@
 .. _tei-fr-body:
 
-body
+text/body
 ############################################
 
 .. contents:: Sommaire
-   :depth: 2
+   :depth: 4
 
+.. sectnum::
+   :depth: 4
+   :start: 3
 
 .. _tei-fr-teibody-intertitres:
 
