@@ -4,7 +4,7 @@ teiHeader
 ####################################################################
 
 .. contents:: Sommaire
-   :depth: 4
+   :depth: 5
 
 .. sectnum::
    :depth: 5
@@ -354,7 +354,7 @@ biblStruct
 .. _tei-fr-teiHeader-biblStruct-analytic:
 
 biblStruct/analytic
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **XPath**
 
@@ -377,62 +377,99 @@ Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les ti
 .. _tei-fr-teiHeader-biblStruct-monogr:
 
 biblStruct/monogr
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **XPath**
 
-| Titre de la revue:            ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='j']``
-| ISSN électronique :           ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='eISSN']``
-| ISSN édition papier :         ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='pISSN']``
-| ISBN électronique (livre) :   ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='eISBN']``
-| ISBN édition papier (livre) : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='pISBN']``
-| URL du numéro :               ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtyp='issue']``
-| URL du livre :                ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtyp='book']``
-| URL de la rubrique :          ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtyp='serie']``
-| DOI du numéro :               ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtyp='issue']``
-| DOI du livre :                ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtyp='book']``
-| URL de la rubrique :          ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtyp='serie']``
-| Titre du numéro ou du livre : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m']``
-| Titre traduit du numéro ou du livre : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m' and @type='alt']``
-| Titre de la collection (livre) ou de la rubrique (article publié hors numéro) : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s']``
-| Titre traduit de la collection (livre) ou de la rubrique (article publié hors numéro) : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s' and @type='alt']``
+- Titres
 
-| Pagination :                 ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='page']``
-| Numéro :                     ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='issue']``
-| Date de publication papier : ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/date[@type='published']``  
-| Éditeur :                    ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/publisher``
+| Titre de la revue (revue) :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='j']``
+| Titre de la rubrique pour les articles publiés hors numéro (revue) : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s']``
+| Titre traduit de la rubrique pour les articles publiés hors numéro (revue) : 
+| ``TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s' and @type='alt']``
+| Titre du livre ou du numéro (livre et revue) : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m']``
+| Titre traduit du livre ou du numéro (livre et revue) : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m' and @type='alt']``
+
+- Identifiants (revue)
+
+| ISSN électronique :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='eISSN']``
+| ISSN édition papier :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='pISSN']``
+| URL du numéro : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtype='issue']``
+| DOI du numéro : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtype='issue']``
+| URL de la rubrique : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtype='serie']``
+| DOI de la rubrique : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtype='serie']``
+
+- Identifiants (livre)
+
+| ISBN électronique :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='eISBN']``
+| ISBN édition papier : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='pISBN']``
+| URL du livre : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtype='book']``
+| DOI du livre : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtype='book']``
+
+- Informations sur l'édition papier
+
+| Pagination de l'édition papier (livre et revue):
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='page']``
+| Numéro (revue) :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='issue']``
+| Date de publication papier (livre et revue): 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/date[@type='published']``  
+| Éditeur (livre et revue): 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/publisher``
 
 .. TODO : corriger la date de publication papier dans article_tei et basictei
 .. TODO : noticebiblio papier ??? 
 
 **Recommandations d'usage**
 
-Utilisé dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (livre, numéro, rubrique, revue).
+- Dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (livre, numéro, rubrique, revue).
+- Pour l'import d'articles sur OpenEdition Jounrals (import OJ) ou de chapitres des livres sur OpenEdition Books (import OB), les éléments suivants sont utilisables :
 
+   - Pagination de l'édition papier (import OJ et import OB) 
+   - Date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
 
 .. _tei-fr-teiHeader-biblStruct-series:
 
 biblStruct/series
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **XPath**
 
-| Titre de la collection :              ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s']``
-| Titre traduit de la collection :      ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s' and @type='alt']``
-| ISSN électronique de la collection :  ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='eISSN']``
-| ISSN papier de la collection :        ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='pISSN']``
-| URL de la collection :                ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='url']``
+| Titre de la collection : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s']``
+| Titre traduit de la collection : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s' and @type='alt']``
+| ISSN électronique de la collection : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='eISSN']``
+| ISSN papier de la collection :
+| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='pISSN']``
+| URL de la collection : 
+| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='url']``
 
 **Recommandations d'usage**
 
-Utilisé dans l'export TEI OE pour les chapites de livre uniquement, l'élément ``series`` contient les métadonnées relatives à l'environnement de publication du document TEI (collection).
+Dans l'export OE pour les **chapitres de livre uniquement**, l'élément ``series`` contient les métadonnées relatives à l'environnement de publication du document TEI (collection).
 
 
 Exemples biblStruct
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-**Exemple d'article de revue**
+**Exemple d'article de revue (export OE)**
 
 .. code-block:: xml
 
@@ -473,7 +510,7 @@ Exemples biblStruct
     </sourceDesc> 
 
 
-**Exemple de chapitre de livre**
+**Exemple de chapitre de livre (export OE)**
 
 .. code-block:: xml
 
@@ -509,12 +546,25 @@ Exemples biblStruct
     </biblStruct>
 
 
+ 
+.. _tei-fr-teiHeader-encodingDesc:
+
+encodingDesc
+==========================================================
+
+Contient des déclarations de mise en formes dans l'élément ``tagsDecl``. Voir :ref:`tei-fr-teibody-mises-en-forme` 
+
+
+.. _tei-fr-teiHeader-profileDesc:
+
+profileDesc
+==========================================================
 
  
 .. _tei-fr-teiHeader-index:
 
 Index : mots clés, géographie, chronologie, thèmes, etc.
-==========================================================
+----------------------------------------------------------
 
 **XPath**
 
@@ -534,9 +584,6 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
  * ``<keywords scheme="personcited">`` : personnes citées (index de personne).
 
 - attention à la casse et à l'orthographe pour éviter les doublons dans les index.
-
-
-
 
 
 
@@ -584,10 +631,10 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
    [...]
 
 
-.. _tei-fr-teiHeader-autres-md:
+.. _tei-fr-teiHeader-langue:
 
-Autres métadonnées
-======================================
+Langue
+----------------------------------------------------------
 
 **XPath**
 
