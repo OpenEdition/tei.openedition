@@ -1,0 +1,9 @@
+.xpath{font-family:monospace;font-size:0.8em;color:indianred;}
+table.docutils{width:100%;}
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .rst-content table.docutils tr td{background-color:white;}
+.rst-content table.docutils thead th {border: solid 1px #e1e4e5;background-color:#f3f6f6;}
+.rst-content table.docutils thead p {margin-bottom:0}
+.rst-content table.docutils td,.rst-content table.field-list td,.rst-content table.docutils th,.rst-content table.field-list th{padding:8px;}
+.rst-content table.docutils td:first-child,.rst-content table.field-list td:first-child,.rst-content table.docutils th:first-child,.rst-content table.field-list th:first-child{width:100%;}
+
+

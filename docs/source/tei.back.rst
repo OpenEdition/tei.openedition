@@ -1,12 +1,15 @@
 .. _tei-fr-back:
 
 
-back
+text/back
 ############################################
 
 .. contents:: Sommaire
-   :depth: 2
+   :depth: 4
 
+.. sectnum::
+   :depth: 4
+   :start: 4
 
 .. _tei-fr-teiback-biblio:
 

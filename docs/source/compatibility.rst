@@ -1,8 +1,10 @@
-Compatibility 
+Compatibility (Editorial model, OTX) 
 #########################################################
 
-TODO
-Intro expliquant lien entre TEI et modèle éditorial et entre TEI et parser Lodel 
+.. warning::
+
+  TODO
+  Intro expliquant lien entre TEI et modèle éditorial et entre TEI et OTX
 
 
 Editorial Model
@@ -15,7 +17,7 @@ This version of OpenEdition TEI is compatible with the following editorial model
 
 
 
-Lodel  ?????
+OTX
 =========================================================
 
 This version of OpenEdition TEI is compatible with the branch master of the lodel GitHub repository

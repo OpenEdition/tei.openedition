@@ -2,10 +2,10 @@ OpenEdition TEI documentation
 ===========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: TEI
 
-   tei.fr.rst
+   tei.rst
    tei.en.rst
    validation.rst
    samples.rst

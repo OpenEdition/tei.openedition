@@ -3,6 +3,10 @@
 Documentation (français)
 ##########################################
 
+.. warning::
+   intro à reprendre
+
+
 Ce document présente les spécifications pour le balisage XML de
 documents en vue de leur importation dans Lodel 1.0. Les Xpath proposés
 ici sont définis dans le modèle éditorial de OpenEdition et dans le
@@ -18,12 +22,15 @@ schéma tei.openedition défini dans ce projet Github.
   `Lorem-ipsum-Lodel1.0.xml <https://github.com/OpenEdition/tei.openedition/blob/master/doc/lorem_ipsum_lodel_1.0.xml>`__.
 
 .. toctree::
-   :maxdepth: 2
-   :numbered: 2
+   :maxdepth: 4
    :caption: TEI
 
-   tei.fr.teiHeader.rst
-   tei.fr.front.rst
-   tei.fr.body.rst
-   tei.fr.back.rst
-   tei.fr.application.rst
+   tei.teiHeader.rst
+   tei.front.rst
+   tei.body.rst
+   tei.back.rst
+   tei.compatibility.rst
+
+
+
+..   :numbered: 4
