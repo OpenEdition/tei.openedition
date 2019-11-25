@@ -25,11 +25,11 @@ schéma tei.openedition défini dans ce projet Github.
    :maxdepth: 4
    :caption: TEI
 
-   tei.fr.teiHeader.rst
-   tei.fr.front.rst
-   tei.fr.body.rst
-   tei.fr.back.rst
-   tei.fr.application.rst
+   tei.teiHeader.rst
+   tei.front.rst
+   tei.body.rst
+   tei.back.rst
+   tei.compatibility.rst
 
 
 
