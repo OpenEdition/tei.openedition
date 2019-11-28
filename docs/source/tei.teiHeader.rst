@@ -24,7 +24,7 @@ L'élément ``fileDesc`` contient les métadonnées descriptives du document TEI
 .. _tei-fr-teiHeader-titleStmt:
 
 titleStmt
---------------------------------------------------------------------	
+--------------------------------------------------------------------
 
 .. _tei-fr-teiHeader-titres:
 

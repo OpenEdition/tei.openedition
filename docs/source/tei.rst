@@ -26,9 +26,7 @@ schéma tei.openedition défini dans ce projet Github.
    :caption: TEI
 
    tei.teiHeader.rst
-   tei.front.rst
-   tei.body.rst
-   tei.back.rst
+   tei.text.rst
    tei.compatibility.rst
 
 

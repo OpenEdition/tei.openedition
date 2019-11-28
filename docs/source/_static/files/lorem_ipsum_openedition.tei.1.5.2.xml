@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei/tei.openedition.1.6.1/document.xsd">
+	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei.openedition.1.5.2/tei.openedition.1.5.2.xsd">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -39,14 +39,19 @@
 				<idno type="documentnumber">25</idno>
 			</publicationStmt>
 			<sourceDesc>
-				<biblStruct>
-                    			<monogr>
-                        		<imprint>
-                            		<biblScope unit="page">29-44</biblScope>
-                            		<date type="published">2017-10-01</date>
-                        		</imprint>
-                    			</monogr>
-                		</biblStruct>
+				<biblFull>
+					<titleStmt>
+						<title>Lorem ipsum pour Lodel 1.0</title>
+					</titleStmt>
+					<publicationStmt>
+						<publisher>Cleo</publisher>
+						<date>01/07/2008</date>
+						<idno type="pp">10-27</idno>
+					</publicationStmt>
+					<notesStmt>
+						<note type="bibl">Référence bibliographique de l'édition papier de cet article.</note>
+					</notesStmt>
+				</biblFull>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>

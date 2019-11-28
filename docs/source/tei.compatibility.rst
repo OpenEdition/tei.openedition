@@ -29,7 +29,7 @@ Légende :
 
 .. sectnum::
    :depth: 4
-   :start: 5
+   :start: 3
 
 fileDesc
 ============================================================
@@ -146,9 +146,9 @@ sourceDesc/biblFull
 +===============================================+=======================+=============+=================+
 | :ref:`tei-fr-teiHeader-biblFull`                                                                      |
 +-----------------------------------------------+-----------------------+-------------+-----------------+
-| :xpath:`publicationStmt/tei:date`             | 1.5.2-                | \-          | 1.6.0+          |
+| :xpath:`publicationStmt/tei:date`             | 1.5.2-                | \-          | 1.6.0-          |
 +-----------------------------------------------+-----------------------+-------------+-----------------+
-| :xpath:`publicationStmt/tei:idno[@type='pp']` | 1.5.2-                | 1.5.2-      | 1.6.0+          |
+| :xpath:`publicationStmt/tei:idno[@type='pp']` | 1.5.2-                | 1.5.2-      | 1.6.0-          |
 +-----------------------------------------------+-----------------------+-------------+-----------------+
 | :xpath:`notesStmt/tei:note[@type='bibl']`     | ✓                     | \-          | \-              |
 +-----------------------------------------------+-----------------------+-------------+-----------------+
@@ -468,10 +468,10 @@ back
 
 
 .. [1] la valeur de l'attribut ``xml:lang`` doit être au format ISO 639-1
-.. [2] Certaines revues d'archéologie ont une modèle éditorial "archéo" proposant des éléments supplémentaires par rapport au modèle éditorial générique. Pour plus d'informations, contactez XXXX[at]openedition.org
-.. [3] Certaines revues ou éditeurs bénéficient d'un modèle éditorial contenant des éléments supplémentaires par rapport au modèle éditorial générique. Pour plus d'informations, contactez XXXX[at]openedition.org
+.. [2] Certaines revues d'archéologie ont une modèle éditorial "archéo" proposant des éléments supplémentaires par rapport au modèle éditorial générique.
+.. [3] Certaines revues ou éditeurs bénéficient d'un modèle éditorial contenant des éléments supplémentaires par rapport au modèle éditorial générique.
 .. [4] valeurs autorisées pour l'attribut 'rend' de l'élément ``<hi>`` : ``italic``, ``bold``, ``sup``, ``sub``, ``uppercase``, ``small-caps``, ``underline``
-.. [5] Certains sites utilisent MathJax pour intérpréter les formules LaTeX dans le navigateur. Pour plus d'informations, contactez XXXX[at]openedition.org
+.. [5] Certains sites utilisent MathJax pour interpréter les formules LaTeX dans le navigateur.
 
 
 
