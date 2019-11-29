@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenEdition
+# This file is distributed under the same license as the OpenEdition TEI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenEdition TEI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-29 13:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../source/validation.rst:2
+msgid "Validation avec le schéma XML"
+msgstr ""
+
+#: ../../source/validation.rst:8
+msgid "Toutes les versions du schéma XML TEI sont disponibles"
+msgstr ""
+
+#: ../../source/validation.rst:10
+msgid ""
+"sur Github : "
+"https://github.com/OpenEdition/tei.openedition/tree/master/xsd"
+msgstr ""
+
+#: ../../source/validation.rst:11
+msgid "sur lodel.org: http://lodel.org/ns/tei"
+msgstr ""
+
+#: ../../source/validation.rst:13
+msgid ""
+"Vous pouvez valider vos fichiers TEI avec votre éditeur XML en utilisant "
+"les attributs suivants sur l'élément racine ``/TEI`` du fichier TEI :"
+msgstr ""
+
+#: ../../source/validation.rst:24
+msgid "Vous pouvez également valider vos ficher XML sur Linux avec xmllint :"
+msgstr ""
+

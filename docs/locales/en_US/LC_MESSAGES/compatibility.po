@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenEdition
+# This file is distributed under the same license as the OpenEdition TEI
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenEdition TEI \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-29 13:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../source/compatibility.rst:2
+msgid "Compatibilité (Modèle éditorial, OTX)"
+msgstr ""
+
+#: ../../source/compatibility.rst:11
+msgid ""
+"TODO Intro expliquant lien entre TEI et modèle éditorial et entre TEI et "
+"OTX"
+msgstr ""
+
+#: ../../source/compatibility.rst:18
+msgid "Modèle éditorial"
+msgstr ""
+
+#: ../../source/compatibility.rst:22
+msgid ""
+"Cette version du schéma TEI OpenEdition est compatible avec les modèles "
+"éditoriaux suivants :"
+msgstr ""
+
+#: ../../source/compatibility.rst:24
+msgid "OEJ.1.X.X"
+msgstr ""
+
+#: ../../source/compatibility.rst:25
+msgid "OEB.1.X.X"
+msgstr ""
+
+#: ../../source/compatibility.rst:31
+msgid "OTX"
+msgstr ""
+
+#: ../../source/compatibility.rst:35
+msgid ""
+"Cette version du schéma TEI OpenEdition est compatible avec la branche "
+"master du `projet Github OpenEdition OTX "
+"<https://github.com/OpenEdition/OTX>`_"
+msgstr ""
+
