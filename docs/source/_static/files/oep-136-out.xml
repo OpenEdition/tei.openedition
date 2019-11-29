@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="3.1.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei/tei.openedition.1.6.1/document.xsd">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">Read/Write Book</title>
+                <title type="sub">Le livre inscriptible</title>
+                <author>
+                    <persName>
+                        <forename>Marin</forename>
+                        <surname>Dacos</surname>
+                    </persName>
+                    <affiliation>
+                        Agrégé d’histoire, ingénieur de recherches au CNRS, directeur du Centre pour l’édition électronique ouverte (Cléo), Marin Dacos est le fondateur de Revues.org, de Calenda et d’Hypothèses. Après avoir mené des recherches sur l’histoire de la photographie amateur dans les campagnes du premier <hi rendition="#style02">xx</hi><hi rendition="#style03">e</hi> siècle, il anime désormais un séminaire à l’EHESS sur les <hi rendition="#style01">Digital humanities</hi> avec Pierre Mounier. Il contribue régulièrement à <hi rendition="#style01">L’édition électronique ouverte</hi> (le blog du Cléo), au <hi rendition="#style01">Cléoradar</hi> (blog de veille et de repérage) et à <hi rendition="#style01">Blogo-numericus</hi>.
+                    </affiliation>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>OpenEdition Press</publisher>
+                <distributor>OpenEdition</distributor>
+                <date type="published" when="2010">2010</date>
+                <availability>
+                    <p>Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France</p>
+                </availability>
+                <idno type="url">http://books.openedition.org/oep/136</idno>
+                <idno type="doi">10.4000/books.oep.136</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <biblFull>
+                <!-- sourceDesc/biblFull is Deprecated: please use sourceDesc/biblStruct instead -->
+                    <titleStmt>
+                        <title/>
+                        <respStmt>
+                            <resp>auteur</resp>
+                            <name>Marin Dacos</name>
+                        </respStmt>
+                    </titleStmt>
+                    <publicationStmt>
+                        <publisher/>
+                        <date>2010</date>
+                        <idno type="pp">13-16</idno>
+                    </publicationStmt>
+                </biblFull>
+                <biblStruct type="chapter">
+                    <analytic>
+                        <title level="a" type="main">Read/Write Book</title>
+                        <title type="sub">Le livre inscriptible</title>
+                        <author>
+                            <persName>
+                                <forename>Marin</forename>
+                                <surname>Dacos</surname>
+                            </persName>
+                            <affiliation>
+                                Agrégé d’histoire, ingénieur de recherches au CNRS, directeur du Centre pour l’édition électronique ouverte (Cléo), Marin Dacos est le fondateur de Revues.org, de Calenda et d’Hypothèses. Après avoir mené des recherches sur l’histoire de la photographie amateur dans les campagnes du premier xxe siècle, il anime désormais un séminaire à l’EHESS sur les Digital humanities avec Pierre Mounier. Il contribue régulièrement à L’édition électronique ouverte (le blog du Cléo), au Cléoradar (blog de veille et de repérage) et à Blogo-numericus.
+                            </affiliation>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">Read/Write Book</title>
+                        <idno type="pISBN">9782953641905</idno>
+                        <idno type="eISBN">9782821809529</idno>
+                        <idno type="doi" subtype="book">10.4000/books.oep.128</idno>
+                        <idno type="url" subtype="book">http://books.openedition.org/oep/128</idno>
+                        <imprint>
+                            <publisher>OpenEdition Press</publisher>
+                            <biblScope unit="page">13-16</biblScope>
+                            <date type="published" when="2010">2010</date>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Read/Write Book</title>
+                        <idno type="pISSN">2263-312X</idno>
+                        <idno type="eISSN">1968-3812</idno>
+                        <idno type="url">http://books.openedition.org/oep/126</idno>
+                    </series>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <schemaRef type="ODD" url="http://lodel.org/ns/odd/tei.openedition.1.6.1.odd.xml"/>
+            <appInfo>
+                <application version="1.0" ident="Lodel">
+                    <label>Lodel</label>
+                    <desc><ref target="http://www.tei-c.org/">We use TEI</ref></desc>
+                </application>
+            </appInfo>
+            <tagsDecl>
+                    <rendition xml:id="style01" scheme="css">font-style:italic;</rendition><rendition xml:id="style02" scheme="css">font-variant:small-caps;</rendition><rendition xml:id="style03" scheme="css">vertical-align:super;</rendition>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage><language ident="fr">fr</language></langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+                                                                                                                                                                        
+                    </front>
+        <body>
+                                                <p>Les généticiens, ces spécialistes de la genèse des œuvres, qui travaillent par exemple sur les brouillons de <hi rendition="#style01">Madame Bovary</hi>, savent qu’il y a une vie avant le livre. Tout un monde d’essais, de mots, de phrases, d’empilements, de ratures, de remords, d’errements, de découpages et de collages, d’associations et de désassociations, de traits, de flèches et de cercles entourant des blocs qui doivent glisser ici ou s’en aller là, glisser au-dessous ou au-dessus, tout une vie de paragraphes qui enflent, de phrases qui maigrissent, de mots qui s’éclipsent, d’expressions qui l’emportent. Bref, un dialogue explosif entre l’auteur et son œuvre, jusqu’à ce que celle-ci soit soumise à un éditeur qui, lui-même, va lui faire subir divers traitements – la correction, la mise en collection et la mise en page n’étant pas les moindres. On sait également qu’il y a une vie après le livre. Une vie publique, sous forme de recensions, comptes rendus, débats, citations, évocations, imitations. Une vie privée, plus encore. La photocopie partielle, la glose, l’annotation, le surlignage, l’opération du stabilo, le coin corné. Et même le classement, qu’il soit alphabétique ou thématique, par éditeur ou par pays, par couleur ou par collection, par taille ou par date d’achat. Un continent d’appropriations individuelles, dont l’essentiel est intime, conservé dans les bibliothèques de chacun. En amont comme en aval, donc, plusieurs mondes du livre s’ignorent largement, et qui pourtant font partie du livre lui-même. Avec le numérique, ces continents immergés semblent se remplir d’oxygène, se connecter entre eux et remonter à la surface.</p><p>Les carnets de George Orwell reparaissent en ligne, soixante-dix ans après leur rédaction, billet par billet, au rythme quotidien de leur écriture, sous les atours inattendus d’un blogposthume. L’éditeur y ajoute des liens internes, des liens externes, des <hi rendition="#style01">tags</hi>, des rubriques. Et les lecteurs d’aujourd’hui naviguent dans le corpus, formulent leurs réactions, leurs questions, apportent des précisions<note place="foot" n="1"><p> Voir à ce sujet : Marin Dacos, « La mécanique des fluides. L’édition électronique du journal de George Orwell sur Wordpress.com », <hi rendition="#style01">Blogo-numericus, </hi>03/09/08, http://blog.homo-numericus.net/spip.php?article162, consulté le 11 août 2009.</p></note>. Les auteurs contemporains exploitent la forme du blog pour tester leurs idées et les soumettre au débat, en prélude à celui qui pourra avoir lieu lors de la publication. Ils associent, ainsi, leur lectorat à la genèse de l’ouvrage. Sur Wikipedia, la notice « Johannes Gutenberg » a été créée en 2003, éditée 836 fois depuis, dont 291 corrections mineures, par 375 personnes différentes. Dans les 12 derniers mois, 197 modifications ont été apportées à la notice<note place="foot" n="2"><p> Voir l’historique des statistiques pour la notice « Johannes Gutenberg » : http://vs.aka-online.de/cgi-bin/wppagehiststat.pl?lang=fr.wikipedia&amp;page=Johannes_Gutenberg. Consultée le 11 août 2009.</p></note>. Zotero, Delicious, CiteUlike, Librarything et bien d’autres récoltent les moissons de lecture des internautes, autant de signets conservés, classés par <hi rendition="#style01">tags</hi> et rendus publics. L’internaute peut parcourir ces corpus inédits verticalement, horizontalement, ou même en diagonale, dans l’ivresse désordonnée des <hi rendition="#style01">tags</hi> collectifs ou dans la linéarité de l’ordre antéchronologique. Ces listes de lectures peuvent être répercutées sur les sites personnels du lecteur lui-même, constituant une offre de partage de lectures, qui a tendance à déborder sur le monde matériel. En témoignent les nombreuses initiatives d’échanges et de partages de livres dans la cité<note place="foot" n="3"><p> Voir www.bookcrossing.com.</p></note>. Les exemples d’interactions, d’inter-écritures, entre le livre et le reste du monde semblent innombrables et appelés à se développer. Même sur Amazon.fr, de telles inscriptions se développent. Les lecteurs écrivent leur émotion à la lecture de <hi rendition="#style01">Lettre à D. </hi>d’André Gorz. Ils créent des listes de livres préférés qu’ils rendent publiques. Ils laissent également des traces lors de leurs achats, qui permettent à Amazon de proposer, autour de la notice du <hi rendition="#style01">Creuset français</hi> de Gérard Noiriel, d’autres livres qui ont été acquis par des acheteurs de l’ouvrage. D’ambition commerciale, une telle fonctionnalité construit également des propositions de lecture et de découverte qui étaient autrefois l’apanage des gens instruits, disposant d’un environnement culturel privilégié. Elle offre à tous une forme de cartographie de la culture. Elle rend publique des informations de sociologie de la culture inaccessibles, autrefois, sans une longue et coûteuse enquête de terrain. Surtout, elle offre des conseils de lectures qui étaient autrefois l’apanage de ceux qui disposaient des clés permettant de s’aventurer jusqu’au bureau de la bibliothécaire du quartier ou jusqu’à l’office du libraire.</p><p>Cette liste d’interactions entre le livre, l’auteur et le lecteur est très partielle et pourrait s’énumérer sur des dizaines de pages. Elle permet, cependant, de distinguer l’écriture, l’inscription et la lecture. Le lecteur inscrit le livre dans sa trajectoire et certaines de ces inscriptions laissent une trace qui contribue au savoir de l’humanité. Le lecteur devient un des auteurs du complexe de livres qu’il lit et qu’il parcourt.</p><p>En entrant dans l’ère de l’informatique en réseau, le livre semble appelé à devenir de plus en plus réinscriptible. Il n’est plus seulement séquentiel comme autrefois, dans cette fameuse chaîne du livre qui mène de l’amont vers l’aval en ligne droite. Il est aussi réticulaire. Comme un oignon, il se pare de multiples couches, un ensemble d’informations ajoutées par des dizaines de métiers différents, qui participent à une vaste entreprise d’enrichissement documentaire, et par des auteurs secondaires qui, par leurs inscriptions, contribuent, à toutes les étapes de la vie du texte, à enrichir la grille de lecture du texte, à ajouter des strates supplémentaires au texte initial.</p><p>Le livre devient inscriptible, dans un système d’information riche, polymorphe, mouvant et encore très fragile. C’est le <hi rendition="#style01">Read/Write Book</hi>, expression proposée par Hubert Guillaud<note place="foot" n="4"><p> Voir « Qu’est-ce qu’un livre à l’heure du numérique » d’Hubert Guillaud, ici-même, p. 53.</p></note>, sur le modèle du magnifique <hi rendition="#style01">Read/Write Web</hi>. Le livre qui s’écrit et qui se lit. Ou bien le livre qui se lit puis qui s’écrit. Comme on voudra. Les inquiets y verront la disparition des figures de proue du navire livre : l’auteur, l’éditeur, le libraire. Et, trop souvent, de dénoncer Wikipedia comme le paroxysme de la démocratie des médiocres et de l’absence de hiérarchie, d’ordre et de valeurs. La transposition sur internet de l’ancienne prophétie concernant les quinze minutes de célébrité offertes à chacun. Ce contre-sens est lié à la confusion entre l’encyclopédie des Lumières et l’encyclopédie collaborative, en train de se faire, du <hi rendition="#style02">xxi</hi><hi rendition="#style03">e</hi>siècle. Les autres y voient un enrichissement historique, qui se dotera peu à peu de repères, de règles, de lieux, de formes et de codes. Et qui nécessite la mise en place de grilles de lecture. La « prison de papier », selon l’expression de Christian Vandendorpe<note place="foot" n="5"><p> Christian Vandendorpe, « Le livre et la lecture dans l’univers numérique », <hi rendition="#style01">in</hi> Éric Le Ray et Jean-Paul Lafrance (sous la dir. de), <hi rendition="#style01">La bataille de l’imprimé à l’ère du papier électronique</hi>, Montréal, Presses de l’Université de Montréal, 2008, p. 191-209.</p></note>, dans laquelle le livre avait atteint son âge d’or, pourrait donc céder la place à un écosystème inédit, vivant et puissant.</p><p>Mais le palimpseste n’est pas le modèle du <hi rendition="#style01">Read/Write Book</hi>. Pour inscrire leurs prières sur un parchemin, des prêtres du <hi rendition="#style02">xii</hi><hi rendition="#style03">e</hi> siècle ont effacé des traités de mathématiques d’Archimède<note place="foot" n="6"><p> http://www.archimedespalimpsest.org/</p></note>. La rareté du support a mené au sacrifice d’œuvres anciennes. Le <hi rendition="#style01">Read/Write Book</hi> n’est pas l’autodafé ou le monde sans hiérarchie ni auteur que redoutent certains fidèles du livre traditionnel. L’auteur et l’éditeur restent libres de rendre le noyau de l’œuvre réinscriptible ou de le refuser. À terme, même, ils devraient pouvoir régler de nombreux curseurs d’inscriptibilité, comme on décide de modérer <hi rendition="#style01">a priori</hi> ou <hi rendition="#style01">a posteriori</hi> les commentaires d’un site web. Le modèle du <hi rendition="#style01">Read/Write Book</hi> ne s’impose pas à tous les niveaux, comme une solution de substitution à la définition traditionnelle de l’auteur ! Yves Bonnefoy et Michel Foucault restent Bonnefoy et Foucault, et rien n’indique que doive disparaître l’auteur solitaire, travaillant des années dans son atelier, signant de sa plume un livre marqué de l’empreinte de sa personnalité ou, même, de son génie. Le paradigme du <hi rendition="#style01">Read/Write Book</hi> ne se substitue pas à celui du livre classique, il s’y ajoute. Ils devront désormais cohabiter. Notre thèse est que le livre se situe à un tournant de son histoire et que, malgré les chausses-trapes qui l’attendent, et à condition d’abandonner tout fétichisme<note place="foot" n="7"><p> Voir à ce sujet Milad Douehi, « Le livre à l’heure du numérique : objet fétiche, objet de résistance », ici-même, p. 99. </p></note>, sa vitalité, sa liberté et sa force sont en mesure d’être décuplées avec l’arrivée du numérique en réseau. Révolution de l’accès, bien entendu, mais aussi révolution des usages, qu’ils soient d’écriture, de lecture ou d’inscription. Le livre, donc, sans cesse, se réinvente, et réinvente notre société par la même occasion. </p><p>De telles évolutions vont jusqu’à poser la question ontologique de la définition du livre, qui semble avoir perdu ses repères historiques, patiemment construits au fil des siècles. C’est l’objet de la première partie un, qui regroupe des contributions importantes sur ce que devient le livre au <hi rendition="#style02">xxi</hi><hi rendition="#style03">e</hi> siècle, lorsqu’il s’installe « dans les nuages » du réseau. Mais ces évolutions attisent également les convoitises, car un marché en devenir s’ouvre devant nos yeux, et une bataille s’engage entre diverses conceptions du réseau. Doit-il être centralisé ou distribué, les contenus en accès restreint ou en libre accès, avec ou sans DRM<note place="foot" n="8"><p> Digital Rights Management (DRM). Voir à ce sujet : http://fr.wikipedia.org/wiki/Gestion_des_droits_num%C3%A9riques, consulté le 12 août 2009.</p></note>, dans des formats propriétaires ou dans des formats ouverts ? Quels modèles d’organisation pour les métiers du livre, quels acteurs, quelles compétences, quels canaux, quels lieux de pouvoirs peuvent, doivent ou risquent d’émerger ? Ces questions sont débattues en une deuxième partie, qui concerne la bataille du livre numérique, désormais engagée. Le scénario le plus sombre déboucherait sur ce que nous avons appelé un <hi rendition="#style01">monopolivre</hi>, c’est-à-dire un univers complètement noyauté par une poignée d’acteurs tenant les leviers de l’écriture, de l’inscription et de la lecture, de l’accès au savoir et à la possibilité de confronter les points de vue. Pour que le livre soit au service de la société, il ne doit pas être inféodé à quelques intérêts, mais devenir un bien largement public, tout en s’inscrivant dans une économie libre. La deuxième partie, enfin, cherche à replacer la science au cœur du questionnement sur l’avenir du livre, elle qui a si largement contribué à l’histoire du livre et à la naissance d’internet. Elle qui se situe au cœur des enjeux de la société et de la connaissance.</p>                                    </body>
+            </text>
+</TEI>
