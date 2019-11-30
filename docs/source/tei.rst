@@ -1,6 +1,6 @@
 .. _tei-fr:
 
-Documentation (français)
+Documentation 
 ##########################################
 
 .. warning::
