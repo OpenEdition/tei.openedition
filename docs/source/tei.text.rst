@@ -103,11 +103,15 @@ Métadonnées d'oeuvres commentées
 Note de l’auteur, note de la rédaction, erratum, remerciements
 --------------------------------------------------------------------
 
+.. warning::
+
+   Pour l'import des documents, les Xpath indiquées pour les notes de l'auteur et de la rédaction sont compatibles avec les versions 1.6.2 et supérieures du schéma TEI OpenEdition.
+
 **XPath**
 
 
-| Note de l’auteur : ``/TEI/text/front/note[@resp='author']/p``
-| Note de la rédaction : ``/TEI/text/front/note[@resp='editor']/p``
+| Note de l’auteur : ``/TEI/text/front/note[@type='author']/p``
+| Note de la rédaction : ``/TEI/text/front/note[@type='publisher']/p``
 | Erratum : ``/TEI/text/front/div[@type='correction']/p``
 | Dédicace : ``/TEI/text/front/div[@type='dedication']/p``
 | Remerciements : ``/TEI/text/front/div[@type='ack']/p``
@@ -136,12 +140,12 @@ Note de l’auteur, note de la rédaction, erratum, remerciements
            <div type="correction">
                <p>L'erratum permet de signaler les modifications apportées au texte après sa publication.</p>
            </div>
-           <note resp="editor">
+           <note type="publisher">
                <p>
                    Le texte de ce document a été généré sur le site <ref target="http://www.blindtextgenerator.com/">http://www.blindtextgenerator.com</ref>.
                </p>
            </note>
-           <note resp="author">
+           <note type="author">
                <p>
                    Les résumés français, anglais et espagnol sont des extraits de <hi rend="italic">La Métamorphose</hi> de Franz Kafka.
                </p>

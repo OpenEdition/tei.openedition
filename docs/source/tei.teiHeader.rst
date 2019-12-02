@@ -104,8 +104,6 @@ Auteurs, éditeurs, traducteurs
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/editor/email``
 | Site web : ``/TEI/teiHeader/fileDesc/titleStmt/editor/ref[@type='website']``
 
-.. TODO : vérifier usage de l'élément s
-
 
 **Recommandations d'usage**
 
