@@ -1,3 +1,5 @@
+.. _compatibility:
+
 Compatibilité (Modèle éditorial, OTX) 
 #########################################################
 

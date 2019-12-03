@@ -25,11 +25,9 @@ Légende :
 - X.X.X- : l'élément est utilisable jusqu'à la version X.X.X du schéma TEI OpenEdition
 
 
-.. TODO à détailler ?
-
-.. sectnum::
-   :depth: 4
-   :start: 3
+.. .. sectnum::
+..   :depth: 4
+..   :start: 3
 
 fileDesc
 ============================================================
