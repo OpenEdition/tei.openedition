@@ -9,7 +9,7 @@ Cette documentation présente les spécifications du format TEI OpenEdition :
 - Le support des éléments selon le contexte (Import OpenEdition Journals ou Books, Export TEI OpenEdition) et la version du schéma TEI est précisé dans la partie : :ref:`tei-fr-application`
 - La compatibilité entre les versions du schéma TEI, les modèles éditoriaux et OTX (pour les usages hors plateforme OpenEdition) est décrite dans la partie :  :ref:`compatibility`
 
-Cette documentation est disponible en `français <https://tei-openedition.readthedocs.io/en/latest/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/latest/>`_.
+Cette documentation est disponible en `français <https://tei-openedition.readthedocs.io/fr/latest/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/latest/>`_.
 
 Vous pouvez retrouver la documentation correspondant aux versions antérieures du schéma TEI en cliquant sur **ReadTheDocs** en bas du menu de gauche.
 
