@@ -1,4 +1,4 @@
-.. _tei-fr-text:
+.. _tei-text:
 
 text
 ############################################
@@ -10,7 +10,7 @@ text
    :depth: 4
    :start: 2
 
-.. _tei-fr-text-front:
+.. _tei-text-front:
 
 front
 ==============================================
@@ -19,7 +19,7 @@ front
 L'élément ``front`` contient tout ce qui est avant le corps du texte : résumés, éléments sur l'oeuvre commentée, note de l'auteur, dédicaces, etc.
 
 
-.. _tei-fr-teifront-resume:
+.. _tei-teifront-resume:
 
 Résumés
 -----------------------------------------------
@@ -56,7 +56,7 @@ Résumé : ``/TEI/text/front/div[@type='abstract' and @xml:lang]``
            </div>
    [...]
 
-.. _tei-fr-teifront-oeuvres:
+.. _tei-teifront-oeuvres:
 
 Métadonnées d'oeuvres commentées
 -----------------------------------------
@@ -98,7 +98,7 @@ Métadonnées d'oeuvres commentées
    [...]
 
 
-.. _tei-fr-teifront-notes:
+.. _tei-teifront-notes:
 
 Note de l’auteur, note de la rédaction, erratum, remerciements
 --------------------------------------------------------------------
@@ -157,7 +157,7 @@ Note de l’auteur, note de la rédaction, erratum, remerciements
 
 
 
-.. _tei-fr-text-body:
+.. _tei-text-body:
 
 body
 ============================================
@@ -166,7 +166,7 @@ body
 L'élément ``body`` contient tout le corps de texte à l'exclusion des parties pré- ou post-liminaire
 
 
-.. _tei-fr-teibody-intertitres:
+.. _tei-teibody-intertitres:
 
 Structure du texte et intertitres
 -----------------------------------------------
@@ -212,7 +212,7 @@ Structure du texte et intertitres
    [...]
 
 
-.. _tei-fr-teibody-notes:   
+.. _tei-teibody-notes:   
 
 Notes de bas de page et notes de fin
 -----------------------------------------------
@@ -255,7 +255,7 @@ Notes de bas de page et notes de fin
      <a class="endnotecall" id="bodyftn2" href="#ftn2">i</a>
    </p>
 
-.. _tei-fr-teibody-mises-en-forme:
+.. _tei-teibody-mises-en-forme:
 
 Mises en forme du texte : balises hi, attributs rend et rendition
 --------------------------------------------------------------------------------
@@ -313,7 +313,7 @@ Mises en forme du texte : balises hi, attributs rend et rendition
     <strong><span style="text-decoration:underline;">ridiculus mus</span></strong>.
   </p>
 
-.. _tei-fr-teibody-citations:
+.. _tei-teibody-citations:
 
 Citations 
 -----------------------------------------------
@@ -360,7 +360,7 @@ Citations
    </blockquote>
 
 
-.. _tei-fr-teibody-paragraphes:
+.. _tei-teibody-paragraphes:
 
 
 Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, épigraphe)
@@ -418,7 +418,7 @@ Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, ép
    <p class="separateur">* * *</p>   
 
 
-.. _tei-fr-teibody-listes:
+.. _tei-teibody-listes:
 
 
 Listes
@@ -577,7 +577,7 @@ Pour les listes ordonnées :
        <li>item 3</li>
    </ol>
 
-.. _tei-fr-teibody-tableaux:   
+.. _tei-teibody-tableaux:   
 
 Tableaux
 -----------------------------------------------
@@ -652,7 +652,7 @@ Tableaux
   </table>
 
 
-.. _tei-fr-teibody-liens: 
+.. _tei-teibody-liens: 
 
 Liens hypertextes
 -----------------------------------------------
@@ -681,7 +681,7 @@ Liens : ``//ref[@target]``
 
   <p><a href="http://www.openedition.org/">OpenEdition : portail de ressources électroniques en sciences humaines et sociales</a></p>
 
-.. _tei-fr-teibody-illustrations: 
+.. _tei-teibody-illustrations: 
 
 Illustrations
 -----------------------------------------------
@@ -718,7 +718,7 @@ Illustrations
    [...]
 
 
-.. _tei-fr-teibody-formule: 
+.. _tei-teibody-formule: 
 
 Formules
 -----------------------------------------------
@@ -755,7 +755,7 @@ Formule : ``//p/formula``
    ]]>
 
 
-.. _tei-fr-teibody-code:    
+.. _tei-teibody-code:    
 
 Code
 -----------------------------------------------
@@ -798,7 +798,7 @@ Code : ``//p/code[@lang]``
    [...]</code></pre>
 
 
-.. _tei-fr-teibody-linguistique:
+.. _tei-teibody-linguistique:
 
 Exemples de linguistique
 -----------------------------------------------
@@ -941,7 +941,7 @@ Exemples de linguistique
 
 
 
-.. _tei-fr-text-back:
+.. _tei-text-back:
 
 
 back
@@ -949,7 +949,7 @@ back
 
 L'élément ``back`` contient tous les suppléments placés après le corps de texte : annexes, bibliographies, etc.
 
-.. _tei-fr-teiback-biblio:
+.. _tei-teiback-biblio:
 
 
 Bibliographie
@@ -1000,7 +1000,7 @@ Bibliographie
 
 
 
-.. _tei-fr-teiback-annexes:   
+.. _tei-teiback-annexes:   
 
 Annexes
 -----------------------------------------------

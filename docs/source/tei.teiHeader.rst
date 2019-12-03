@@ -1,4 +1,4 @@
-.. _tei-fr-teiHeader:
+.. _tei-teiHeader:
 
 teiHeader
 ####################################################################
@@ -10,7 +10,7 @@ teiHeader
    :depth: 5
    :start: 1
 
-.. _tei-fr-teiHeader-fileDesc:
+.. _tei-teiHeader-fileDesc:
 
 fileDesc
 ====================================================================
@@ -21,12 +21,12 @@ L'élément ``fileDesc`` contient les métadonnées descriptives du document TEI
 - ``publicationStmt`` : informations relatives à la publication électronique
 - ``sourceDesc`` : informations relatives à la source du document. Elles prendront un sens différent selon l'usage du document TEI 
 
-.. _tei-fr-teiHeader-titleStmt:
+.. _tei-teiHeader-titleStmt:
 
 titleStmt
 --------------------------------------------------------------------
 
-.. _tei-fr-teiHeader-titres:
+.. _tei-teiHeader-titres:
 
 titres, sous-titres, surtitres, titres traduits
 ********************************************************************
@@ -63,7 +63,7 @@ titres, sous-titres, surtitres, titres traduits
 
 
 
-.. _tei-fr-teiHeader-auteurs:
+.. _tei-teiHeader-auteurs:
 
 Auteurs, éditeurs, traducteurs
 ********************************************************************
@@ -167,12 +167,12 @@ Auteurs, éditeurs, traducteurs
     [...]
 
 
-.. _tei-fr-teiHeader-publicationStmt:
+.. _tei-teiHeader-publicationStmt:
 
 publicationStmt
 --------------------------------------------------------------------
 
-.. _tei-fr-teiHeader-date:
+.. _tei-teiHeader-date:
 
 Date de publication électronique
 ********************************************************************
@@ -194,7 +194,7 @@ Date de publication électronique
 - utilisée par Lodel pour gérer la disponibilité du document : affichage des métadonnées et résumé pendant la période de barrière mobile puis accès au texte intégral ;
 
 
-.. _tei-fr-teiHeader-publisher:
+.. _tei-teiHeader-publisher:
 
 Éditeur, Distributeur
 ********************************************************************
@@ -220,7 +220,7 @@ Utilisé dans la TEI produite en sortie de la plateforme uniquement.
         [...]
     </publicationStmt>
 
-.. _tei-fr-teiHeader-idno:
+.. _tei-teiHeader-idno:
 
 Identifiant
 ********************************************************************
@@ -251,7 +251,7 @@ Identifiant
 
 
 
-.. _tei-fr-teiHeader-availability:
+.. _tei-teiHeader-availability:
 
 Licence
 ********************************************************************
@@ -280,7 +280,7 @@ Utilisé pour renseigner la licence qui s'applique au document, ajoute une entr�
 
 
 
-.. _tei-fr-teiHeader-sourceDesc:
+.. _tei-teiHeader-sourceDesc:
 
 sourceDesc
 --------------------------------------------------------------------	
@@ -294,7 +294,7 @@ sourceDesc
    - à l'export ``sourceDesc`` contiendra les métadonnées du contexte de publication sur OpenEdition (sur la revue, le numéro, le livre...)
 
 
-.. _tei-fr-teiHeader-biblFull:
+.. _tei-teiHeader-biblFull:
 
 biblFull
 ********************************************************************
@@ -336,7 +336,7 @@ biblFull
     </sourceDesc>
 
 
-.. _tei-fr-teiHeader-biblStruct:
+.. _tei-teiHeader-biblStruct:
 
 biblStruct
 ********************************************************************
@@ -349,7 +349,7 @@ biblStruct
    - export OE : à partir de la version 1.6.0 du schéma XML TEI OpenEdition
 
 
-.. _tei-fr-teiHeader-biblStruct-analytic:
+.. _tei-teiHeader-biblStruct-analytic:
 
 biblStruct/analytic
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -372,7 +372,7 @@ biblStruct/analytic
 
 Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les titres et les contributeurs du docuent TEI.
 
-.. _tei-fr-teiHeader-biblStruct-monogr:
+.. _tei-teiHeader-biblStruct-monogr:
 
 biblStruct/monogr
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -440,7 +440,7 @@ biblStruct/monogr
    - Pagination de l'édition papier (import OJ et import OB) 
    - Date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
 
-.. _tei-fr-teiHeader-biblStruct-series:
+.. _tei-teiHeader-biblStruct-series:
 
 biblStruct/series
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -545,21 +545,21 @@ Exemples biblStruct
 
 
  
-.. _tei-fr-teiHeader-encodingDesc:
+.. _tei-teiHeader-encodingDesc:
 
 encodingDesc
 ==========================================================
 
-Contient des déclarations de mise en formes dans l'élément ``tagsDecl``. Voir :ref:`tei-fr-teibody-mises-en-forme` 
+Contient des déclarations de mise en formes dans l'élément ``tagsDecl``. Voir :ref:`tei-teibody-mises-en-forme` 
 
 
-.. _tei-fr-teiHeader-profileDesc:
+.. _tei-teiHeader-profileDesc:
 
 profileDesc
 ==========================================================
 
  
-.. _tei-fr-teiHeader-index:
+.. _tei-teiHeader-index:
 
 Index : mots clés, géographie, chronologie, thèmes, etc.
 ----------------------------------------------------------
@@ -629,7 +629,7 @@ Index : mots clés, géographie, chronologie, thèmes, etc.
    [...]
 
 
-.. _tei-fr-teiHeader-langue:
+.. _tei-teiHeader-langue:
 
 Langue
 ----------------------------------------------------------
