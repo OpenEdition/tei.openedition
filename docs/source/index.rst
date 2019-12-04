@@ -18,7 +18,6 @@ Vous pouvez retrouver la documentation correspondant aux versions antérieures d
    :caption: TEI
 
    tei.rst
-   tei.compatibility.rst
    compatibility.rst
    validation.rst
    samples.rst

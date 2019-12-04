@@ -1,15 +1,17 @@
-.. role:: xpath
 
 .. _tei-application:
 
-Compatibilité des éléments TEI
-##########################################
+.. role:: xpath
 
-Cette page présente les possibilités d'utlisation des éléments du schéma OpenEdition pour : 
+
+Utilisation des éléments TEI
+############################################################
+
+Les tableaux ci-dessous présentent les possibilités d'utilisation des éléments du schéma OpenEdition pour : 
 
 - l'import de documents sur OpenEdition Journals (Import OJ) ; 
 - l'import de documents sur OpenEdition Books (Import OB) ;
-- l'utilisation de ces éléments pour l'export des documents au format TEI OpenEdition (Export OE).
+- l'export des documents au format TEI OpenEdition (Export OE).
 
 L'export TEI est utilisé dans les cas suivants :
 

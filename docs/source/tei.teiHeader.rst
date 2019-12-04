@@ -370,7 +370,7 @@ biblStruct/analytic
 
 **Recommandations d'usage**
 
-Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les titres et les contributeurs du docuent TEI.
+Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les titres et les contributeurs du document TEI.
 
 .. _tei-teiHeader-biblStruct-monogr:
 

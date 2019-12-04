@@ -326,7 +326,7 @@ Citations
 
 **Recommandations d'usages**
 
-- utiliser de préférence ``<q rend='citation'>`` ;
+- utiliser de préférence ``<q rend='quotation'>`` ;
 - les 2 autres styles de citations servent à différencier plusieurs niveaux de citation au niveau de l'affichage html.
 
 **Exemple**
