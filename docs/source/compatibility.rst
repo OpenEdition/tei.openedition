@@ -7,8 +7,9 @@ Compatibilité
    :maxdepth: 2
    :caption: TEI
 
-   compatibility.lodel.rst
    compatibility.tei.rst
+   compatibility.lodel.rst
+
 
 
 

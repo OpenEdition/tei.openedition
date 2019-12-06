@@ -11,22 +11,19 @@ Pour l'import de document au format texte (doc, docx, odt), il faut utiliser la 
 
 
 
-Modèle éditorial
+Compatibilité des versions
 =========================================
 
-
-Le schéma TEI 1.6.1 OpenEdition est compatible avec les modèles éditoriaux suivants :
-
-- OEJ.1.X.X 
-- OEB.1.X.X
-
-
-OTX
-=========================================
++-------------------+-----------------------+----------------------+-----------------+
+| TEI OpenEdition   | Modèle éditorial OJ   |Modèle éditorial OB   | OTX             |
++===================+=======================+======================+=================+
+| 1.6.2             | 1.0.1                 | 1.0.1                | v1.2.0          |
++-------------------+-----------------------+----------------------+-----------------+
+| 1.6.1             | 1.0.0                 | 1.0.0                | v1.1.2          |
++-------------------+-----------------------+----------------------+-----------------+
 
 
-
-Le schéma TEI OpenEdition 1.6.1 est compatible avec la version 1.1.1 du `projet Github OpenEdition OTX <https://github.com/OpenEdition/OTX/tree/v1.1.1>`_
-
-
+- `Modèle éditorial OpenEdition Journals <https://github.com/OpenEdition/oej.em/releases>`_
+- `Modèle éditorial OpenEdition Books <https://github.com/OpenEdition/oeb.em/releases>`_
+- `OTX <https://github.com/OpenEdition/OTX/releases>`_
 

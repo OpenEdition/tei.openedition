@@ -21,14 +21,16 @@ Vous pouvez retrouver la documentation correspondant aux versions antérieures d
    compatibility.rst
    validation.rst
    samples.rst
+   planning.rst
+   changelog.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: À propos 
 
-   openedition
-   license
-   changelog
+   openedition.rst
+   license.rst
+
 
    
 
