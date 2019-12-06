@@ -2,10 +2,7 @@ Planning
 ###############################
 
 
-Sur les plateformes OpenEdition Books et Journals le suivi des évolutions de schéma TEI nécessite une mise à jour des logiciels pour assurer la compatibilité (voir :ref:`compatibility-lodel`).
-
-
-Ci-dessous le planning défini par OpenEdition pour l'utilisation des différentes versions :
+Versions applicables sur les plateformes OpenEdition :
 
 
 

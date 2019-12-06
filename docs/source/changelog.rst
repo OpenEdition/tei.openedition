@@ -26,7 +26,7 @@ Version 1.6.1
 - xsd
     + add xsd/tei.openedition.1.6.1
 - other
-    + update <body> behaviour and avoid the xsd/tei.openedition.1.6.0/document.xsd validity error: 'cos-nonambig' (using ROMA 5.0.0 with TEI 3.5.0). See commit 6ade00f
+    + update <body> behaviour and avoid the xsd/tei.openedition.1.6.0/document.xsd validity error: 'cos-nonambig' (using ROMA 5.0.0 with TEI 3.5.0). See commit `6ade00f <https://github.com/OpenEdition/tei.openedition/commit/6ade00f94960c97f684077615217a6fbff87809e>`_
 
 
 
