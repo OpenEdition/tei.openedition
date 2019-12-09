@@ -687,7 +687,7 @@ Illustrations
 **Xpath**
 
 | Titre de l’illustration : ``//p[@rend='figure-title']``
-| Illustration : ``//figure/graphic[@url]``
+| Illustration : ``//p/figure/graphic[@url]``
 | Légende de l’illustration : ``//p[@rend='figure-legend']``
 | Crédits de l’illustration : ``//p[@rend='figure-license']``
 

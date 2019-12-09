@@ -312,7 +312,7 @@ biblFull
 **Recommandations d'usage**
 
 - Date de publication papier : dates au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
-- Pagination :  renseignée en chiffres romains et petites capitales (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
+- Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
 - Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
 
 
@@ -437,6 +437,10 @@ biblStruct/monogr
 
    - pagination de l'édition papier (import OJ et import OB) ; 
    - date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
+
+- Date de publication papier : dates au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
+- Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
+- Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
 
 .. _tei-teiHeader-biblStruct-series:
 
