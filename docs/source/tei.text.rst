@@ -32,7 +32,7 @@ Résumé : ``/TEI/text/front/div[@type='abstract' and @xml:lang]``
 **Recommandations d'usage**
 
 - l'attribut ``xml:lang`` est obligatoire avec un valeur au format ISO 639-1 ;
-- un seul paragraphe, saut de ligne autorisés (balise ``<lb />``) ; 
+- un seul paragraphe, sauts de ligne autorisés (balise ``<lb />``) ; 
 - pas d'appel de notes.
 
 
@@ -77,7 +77,7 @@ Métadonnées d'oeuvres commentées
 - ne pas indiquer « Note de lecture » dans le titre du document ;
 - l'ajout du titre du compte-rendu ou note de lecture reste obligatoire, forme recommandée : Auteur oeuvre commentée, *Titre oeuvre commentée* ;
 - possibilité d'ajouter les éléments bibliographiques (éditeur, lieu et année d’édition…) en sous-titre ;
-- les métadonnées d'oeuvres commentées permettent de créer des index spécifiques pour les comptes-rendus sur le site de la revue
+- les métadonnées d'oeuvres commentées permettent de créer des index spécifiques pour les comptes-rendus sur le site de la revue.
 
 
 **Exemple**
@@ -119,11 +119,9 @@ Note de l’auteur, note de la rédaction, erratum, remerciements
 
 **Recommandations d'usage**
 
-- plusieurs paragraphes autorisés
-- saut de ligne autorisés (balise ``<lb />``) ; 
+- plusieurs paragraphes autorisés ;
+- sauts de ligne autorisés (balise ``<lb />``).
     
-.. TODO : vérifier si on peut ajouter plusieurs paragraphes
-
 
 **Exemple**
 
@@ -163,7 +161,7 @@ body
 ============================================
 
 
-L'élément ``body`` contient tout le corps de texte à l'exclusion des parties pré- ou post-liminaire
+L'élément ``body`` contient tout le corps de texte à l'exclusion des parties pré- ou post-liminaire.
 
 
 .. _tei-teibody-intertitres:
@@ -179,7 +177,7 @@ Structure du texte et intertitres
 **Recommandations d'usages**
 
 - le texte du document doit être structuré par des sections (balises ``<div>``) ;
-- les intertitres doivent être indiqués comme premier élément de la section dans une balise ``<head>`` avec un attribut ``subtype="leveln"``  où 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6'
+- les intertitres doivent être indiqués comme premier élément de la section dans une balise ``<head>`` avec un attribut ``subtype="leveln"``  où 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6'.
 
 **Exemple**
 
@@ -327,7 +325,7 @@ Citations
 **Recommandations d'usages**
 
 - utiliser de préférence ``<q rend='quotation'>`` ;
-- les 2 autres styles de citations servent à différencier plusieurs niveaux de citation au niveau de l'affichage html.
+- les 2 autres styles peuvent servir à différencier plusieurs niveaux de citation au niveau de l'affichage html.
 
 **Exemple**
 
@@ -377,8 +375,8 @@ Styles de paragraphe (question, réponse, paragraphe sans retrait, encadré, ép
 
 **Recommandations d'usages**
 
-- les styles questions / réponses permettent de différencier ces éléments au niveau de l'affichage html dans les entretiens
-- le paragraphe sans retrait est utilisé pour exprimer une continuité d'idée, il ne comporte pas de numérotation de paragraphe
+- les styles questions / réponses permettent de différencier ces éléments dans le rendu html des entretiens ;
+- le paragraphe sans retrait est utilisé pour exprimer une continuité d'idée, il ne comporte pas de numérotation de paragraphe.
 
 **Exemple**
 
@@ -432,7 +430,7 @@ Listes
 **Recommandations d'usages**
 
 - possibilité d'imbriquer des éléments de listes ordonnées ou non ordonnées ; 
-- possibilité de définir un type de numérotation avec l' attribut 'rendition' sur l'élément ``<list>``. 
+- possibilité de définir un type de numérotation avec l' attribut 'rendition' sur l'élément ``<list>`` ; 
 - l'attribut 'rendition' fait référence à un style défini dans la balise ``<tagsDecl>`` du header.
   
 Valeurs autorisées de l'attribut 'rendition' pour les listes non ordonnées :
@@ -663,7 +661,7 @@ Liens : ``//ref[@target]``
 
 **Recommandations d'usages**
 
-- indiquer l'url dans l'attribut target, avec le protocole (http, https, etc.)
+- indiquer l'url dans l'attribut target, avec le protocole (http, https, etc.).
 
 **Exemple**
 
@@ -689,7 +687,7 @@ Illustrations
 **Xpath**
 
 | Titre de l’illustration : ``//p[@rend='figure-title']``
-| Illustration : ``//figure[@url]``
+| Illustration : ``//figure/graphic[@url]``
 | Légende de l’illustration : ``//p[@rend='figure-legend']``
 | Crédits de l’illustration : ``//p[@rend='figure-license']``
 
@@ -698,8 +696,8 @@ Illustrations
 
 - respecter l'ordre des éléments : titre de l'illustration, illustration, légende, crédits ;
 - créer une archive zip contenant le fichier TEI du document à la racine et les illustrations qui peuvent être placées dans une arborescence de répertoire ;
-- l'attribut 'url' de la balise ``<figure>`` contient le chemin relatif au fichier à l'intérieur de l'archive ;
-- les formats autorisés pour les illustrations sont : png, jpg, gif, svg ; 
+- l'attribut 'url' de la balise ``<graphic>`` contient le chemin relatif au fichier à l'intérieur de l'archive ;
+- les formats autorisés pour les illustrations sont : png, jpg, gif, svg.
 
 
 **Exemple**
@@ -729,8 +727,8 @@ Formule : ``//p/formula``
 
 **Recommandations d'usages**
 
-- inclure les formules à l'intérieur de la balise ``<formula>`` dans un CDATA, le contenu ne sera pas traité par Lodel.
-- Sur certains sites, le navigateur peut interpréter le LaTeX avec MathJax pour afficher les formules.
+- inclure les formules à l'intérieur de la balise ``<formula>`` dans un CDATA, le contenu ne sera pas traité par Lodel ;
+- sur certains sites, le navigateur peut interpréter le LaTeX avec MathJax pour afficher les formules.
 
 
 **Exemple**
@@ -968,8 +966,8 @@ Bibliographie
 - la section bibliographie est définie avec une balise ``<div type='bibliography'>`` et commence par une balise par une balise ``<listBibl>`` ;
 - ``<listBibl>`` ne peut contenir de balises ``<div>`` ; 
 - utilisation des balises ``<head>`` pour placer des intertitres, l'attribut 'leveln' peut prendre toutes les valeurs comprises entre 'level1' et 'level6' ;
-- les balises ``<listBibl>`` peuvent être imbiquées en fonction de la structuration des niveaux de titres dans la bibliographie ;
-- les références bibliographiques sont indiquées avec des balises ``<bibl>``
+- les balises ``<listBibl>`` peuvent être imbriquées en fonction de la structuration des niveaux de titres dans la bibliographie ;
+- les références bibliographiques sont indiquées avec des balises ``<bibl>``.
 
 **Exemple**
 
@@ -1011,8 +1009,8 @@ Annexes :  ``/TEI/text/back/div[@type='appendix']``
 
 **Recommandations d'usage**
 
-- La section annexe est définie avec une balise ``<div type='appendix'>``
-- tous les éléments utilisables dans ``<body>`` sont utilisables dans cette section
+- la section annexe est définie avec une balise ``<div type='appendix'>`` ;
+- tous les éléments utilisables dans ``<body>`` sont utilisables dans cette section.
 
 
 **Exemple**

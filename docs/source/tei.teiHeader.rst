@@ -15,7 +15,7 @@ teiHeader
 fileDesc
 ====================================================================
 
-L'élément ``fileDesc`` contient les métadonnées descriptives du document TEI organisés dans les éléments suivants : 
+L'élément ``fileDesc`` contient les métadonnées descriptives du document TEI organisées dans les éléments suivants : 
 
 - ``titleStmt`` : titres et contributeurs 
 - ``publicationStmt`` : informations relatives à la publication électronique
@@ -184,9 +184,9 @@ Date de publication électronique
 
 **Recommandations d'usage**
 
-- dates au format : JJ/MM/AAAA ;
+- dates au format JJ/MM/AAAA ;
 - ne pas utiliser pour OpenEdition Books (la date est définie au niveau du livre) ;
-- pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée sur Lodel et sera mis à jour en cas de rechargement du document.
+- pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée par Lodel et sera mis à jour en cas de rechargement du document.
 
 *Date de publication électronique pour les revues à barrière mobile sur OpenEdition Journals*
 
@@ -207,7 +207,7 @@ Date de publication électronique
 
 **Recommandations d'usage**
 
-Utilisé dans la TEI produite en sortie de la plateforme uniquement.
+- Utilisés dans la TEI produite en sortie de la plateforme uniquement.
 
 **Exemple**
 
@@ -235,7 +235,7 @@ Identifiant
 **Recommandations d'usage**
 
 - Numéro du document : information éditoriale affichée dans la référence électronique du document, utilisé pour faciliter la citation des documents électroniques ;
-- URL et DOI : utilisé dans la TEI produite en sortie de la plateforme uniquement.
+- URL et DOI : utilisés dans la TEI produite en sortie de la plateforme uniquement.
 
 **Exemple**
 
@@ -262,7 +262,7 @@ Licence
 
 **Recommandations d'usage**
 
-Utilisé pour renseigner la licence qui s'applique au document, ajoute une entrée à l'index licence du site ;
+- Utilisé pour renseigner la licence qui s'applique au document, ajoute une entrée à l'index licence du site.
 
 **Exemple**
 
@@ -290,8 +290,8 @@ sourceDesc
    L'élément ``sourceDesc`` contient les informations relatives au document source qui a servi à produire ce document TEI. 
    Il prendra un sens différent selon l'usage du document TEI :
 
-   - à l'import dans Lodel, ``sourceDesc`` contiendra les métadonnées relatives à l'édition papier le cas échéant
-   - à l'export ``sourceDesc`` contiendra les métadonnées du contexte de publication sur OpenEdition (sur la revue, le numéro, le livre...)
+   - à l'import dans Lodel, ``sourceDesc`` contiendra les métadonnées relatives à l'édition papier le cas échéant ;
+   - à l'export ``sourceDesc`` contiendra les métadonnées du contexte de publication sur OpenEdition (sur la revue, le numéro, le livre...).
 
 
 .. _tei-teiHeader-biblFull:
@@ -311,9 +311,9 @@ biblFull
 
 **Recommandations d'usage**
 
-- Date de publication papier : dates au format : JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
+- Date de publication papier : dates au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
 - Pagination :  renseignée en chiffres romains et petites capitales (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
-- Notice biblio : utilisée pour préciser la notice bibliographique du document papier
+- Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
 
 
 **Exemple**
@@ -345,8 +345,8 @@ biblStruct
 
    L'élément ``biblStruct`` est supporté :
    
-   - import OEJ et OEB : à partir de la version 1.6.2 du schéma XML TEI OpenEdition
-   - export OE : à partir de la version 1.6.0 du schéma XML TEI OpenEdition
+   - import OEJ et OEB : à partir de la version 1.6.2 du schéma XML TEI OpenEdition ;
+   - export OE : à partir de la version 1.6.0 du schéma XML TEI OpenEdition.
 
 
 .. _tei-teiHeader-biblStruct-analytic:
@@ -370,7 +370,7 @@ biblStruct/analytic
 
 **Recommandations d'usage**
 
-Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les titres et les contributeurs du document TEI.
+- Utilisé uniquement à l'export TEI OE, l'élément ``analytic`` contient les titres et les contributeurs du document TEI.
 
 .. _tei-teiHeader-biblStruct-monogr:
 
@@ -429,16 +429,14 @@ biblStruct/monogr
 | Éditeur (livre et revue): 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/publisher``
 
-.. TODO : corriger la date de publication papier dans article_tei et basictei
-.. TODO : noticebiblio papier ??? 
 
 **Recommandations d'usage**
 
-- Dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (livre, numéro, rubrique, revue).
-- Pour l'import d'articles sur OpenEdition Jounrals (import OJ) ou de chapitres des livres sur OpenEdition Books (import OB), les éléments suivants sont utilisables :
+- dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (livre, numéro, rubrique, revue) ;
+- pour l'import d'articles sur OpenEdition Journals (import OJ) ou de chapitres des livres sur OpenEdition Books (import OB), les éléments suivants sont utilisables :
 
-   - Pagination de l'édition papier (import OJ et import OB) 
-   - Date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
+   - pagination de l'édition papier (import OJ et import OB) ; 
+   - date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
 
 .. _tei-teiHeader-biblStruct-series:
 
@@ -460,7 +458,7 @@ biblStruct/series
 
 **Recommandations d'usage**
 
-Dans l'export OE pour les **chapitres de livre uniquement**, l'élément ``series`` contient les métadonnées relatives à l'environnement de publication du document TEI (collection).
+- Dans l'export OE pour les **chapitres de livre uniquement**, l'élément ``series`` contient les métadonnées relatives à l'environnement de publication du document TEI (collection).
 
 
 Exemples biblStruct
