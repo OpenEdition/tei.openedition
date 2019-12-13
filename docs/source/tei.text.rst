@@ -31,7 +31,7 @@ Résumé : ``/TEI/text/front/div[@type='abstract' and @xml:lang]``
 
 **Recommandations d'usage**
 
-- l'attribut ``xml:lang`` est obligatoire avec un valeur au format ISO 639-1 ;
+- l'attribut ``xml:lang`` est obligatoire avec une valeur au format ISO 639-1 ;
 - un seul paragraphe, sauts de ligne autorisés (balise ``<lb />``) ; 
 - pas d'appel de notes.
 
@@ -105,7 +105,7 @@ Note de l’auteur, note de la rédaction, erratum, remerciements
 
 .. warning::
 
-   Pour l'import des documents, les Xpath indiquées pour les notes de l'auteur et de la rédaction sont compatibles avec les versions 1.6.2 et supérieures du schéma TEI OpenEdition.
+   Pour l'import des documents, les Xpath indiqués pour les notes de l'auteur et de la rédaction sont compatibles avec les versions 1.6.2 et supérieures du schéma TEI OpenEdition.
 
 **XPath**
 
@@ -430,7 +430,7 @@ Listes
 **Recommandations d'usages**
 
 - possibilité d'imbriquer des éléments de listes ordonnées ou non ordonnées ; 
-- possibilité de définir un type de numérotation avec l' attribut 'rendition' sur l'élément ``<list>`` ; 
+- possibilité de définir un type de numérotation avec l'attribut 'rendition' sur l'élément ``<list>`` ; 
 - l'attribut 'rendition' fait référence à un style défini dans la balise ``<tagsDecl>`` du header.
   
 Valeurs autorisées de l'attribut 'rendition' pour les listes non ordonnées :

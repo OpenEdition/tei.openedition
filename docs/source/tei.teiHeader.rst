@@ -184,9 +184,9 @@ Date de publication électronique
 
 **Recommandations d'usage**
 
-- dates au format JJ/MM/AAAA ;
+- date au format JJ/MM/AAAA ;
 - ne pas utiliser pour OpenEdition Books (la date est définie au niveau du livre) ;
-- pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée par Lodel et sera mis à jour en cas de rechargement du document.
+- pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée par Lodel et sera mise à jour en cas de rechargement du document.
 
 *Date de publication électronique pour les revues à barrière mobile sur OpenEdition Journals*
 
@@ -311,7 +311,7 @@ biblFull
 
 **Recommandations d'usage**
 
-- Date de publication papier : dates au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
+- Date de publication papier : date au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
 - Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
 - Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
 
@@ -438,7 +438,7 @@ biblStruct/monogr
    - pagination de l'édition papier (import OJ et import OB) ; 
    - date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
 
-- Date de publication papier : dates au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
+- Date de publication papier : date au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
 - Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
 - Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
 
@@ -552,7 +552,7 @@ Exemples biblStruct
 encodingDesc
 ==========================================================
 
-Contient des déclarations de mise en formes dans l'élément ``tagsDecl``. Voir :ref:`tei-teibody-mises-en-forme` 
+Contient des déclarations de mise en forme dans l'élément ``tagsDecl``. Voir :ref:`tei-teibody-mises-en-forme` 
 
 
 .. _tei-teiHeader-profileDesc:

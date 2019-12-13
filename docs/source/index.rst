@@ -3,18 +3,24 @@ Documentation TEI OpenEdition
 
 .. image:: _static/openedition.png
 
-Cette documentation présente les spécifications du format TEI OpenEdition :
+.. note::
 
-- Les éléments TEI gérés par OpenEdition et leur usage sont décrits dans la partie : :ref:`tei` 
-- Le support des éléments selon le contexte (Import OpenEdition Journals ou Books, Export TEI OpenEdition) et la version du schéma TEI est précisé dans la partie : :ref:`tei-application`
-- La compatibilité entre les versions du schéma TEI, les modèles éditoriaux et OTX (pour les usages hors plateforme OpenEdition) est décrite dans la partie :  :ref:`compatibility-lodel`
+      Cette documentation suit l'évolution des versions du `schéma TEI OpenEdition <https://github.com/openEdition/tei.openedition>`_, une nouvelle version de la documentation est disponible en `français <https://tei-openedition.readthedocs.io/fr/latest/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/latest/>`_ pour chaque release.
 
-Cette documentation est disponible en `français <https://tei-openedition.readthedocs.io/fr/latest/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/latest/>`_.
+      Cliquez sur **ReadTheDocs** en bas du menu de gauche pour choisir la langue et la version.
 
-Vous pouvez retrouver la documentation correspondant aux versions antérieures du schéma TEI en cliquant sur **ReadTheDocs** en bas du menu de gauche.
+
+
+Les éléments TEI gérés par OpenEdition et leur usage sont décrits dans la partie : :ref:`tei` 
+
+Le support des éléments selon le contexte (Import OpenEdition Journals ou Books, Export TEI OpenEdition) et la version du schéma TEI est précisé dans la partie : :ref:`tei-application`
+
+La compatibilité entre les versions du schéma TEI, les modèles éditoriaux et OTX (pour les usages hors plateforme OpenEdition) est décrite dans la partie :  :ref:`compatibility-lodel`
+
+La page :ref:`changelog` précise les évolutions des versions du schéma TEI
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 2   
    :caption: TEI
 
    tei.rst
