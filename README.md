@@ -12,7 +12,7 @@ When validating an XML file against this schema, you can use the Schema locally 
 
 See: https://github.com/OpenEdition/tei.openedition/releases for the successive versions of the Schema.
 
-The usage recommendations and examples are here: https://github.com/OpenEdition/tei.openedition/wiki  
+The usage recommendations and examples are here: https://tei-openedition.readthedocs.io/  
 
 # Schema TEI OpenEdition 
 
@@ -28,4 +28,4 @@ Pour valider un fichier XML avec ce schéma, il est possible d'utiliser le sché
 
 Se reporter aux releases (https://github.com/OpenEdition/tei.openedition/releases) pour connaitre les évolutions du schéma.
 
-Les recommandations d'usage sont décrites avec des exemples dans le wiki du projet (https://github.com/OpenEdition/tei.openedition/wiki) 
+Les recommandations d'usage sont décrites avec des exemples dans le wiki du projet (https://tei-openedition.readthedocs.io/) 
