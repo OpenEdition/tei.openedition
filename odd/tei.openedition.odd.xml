@@ -48,7 +48,6 @@
 				<elementRef key="availability"/>
 				<elementRef key="back"/>
 				<elementRef key="bibl"/>
-				<elementRef key="biblFull"/>
 				<elementRef key="biblScope"/>
 				<elementRef key="biblStruct"/>
 				<elementRef key="body"/>
@@ -89,7 +88,6 @@
 				<elementRef key="name"/>
 				<elementRef key="nameLink"/>
 				<elementRef key="note"/>
-				<elementRef key="notesStmt"/>
 				<elementRef key="orgName"/>
 				<elementRef key="p"/>
 				<elementRef key="pb"/>
@@ -638,49 +636,6 @@
 							@xml:lang</p>
 					</remarks>
 				</elementSpec>
-
-
-
-				<elementSpec ident="biblFull" mode="change">
-					<content>
-						<rng:ref name="titleStmt"/>
-						<!--
-						<rng:optional>
-							<rng:ref name="editionStmt"/>
-						</rng:optional>
-						-->
-						<rng:ref name="publicationStmt"/>
-						<rng:optional>
-							<rng:ref name="notesStmt"/>
-						</rng:optional>
-					</content>
-					<attList>
-						<attDef ident="ana" mode="delete"/>
-						<attDef ident="change" mode="delete"/>
-						<attDef ident="copyOf" mode="delete"/>
-						<attDef ident="corresp" mode="delete"/>
-						<attDef ident="default" mode="delete"/>
-						<attDef ident="exclude" mode="delete"/>
-						<attDef ident="facs" mode="delete"/>
-						<attDef ident="n" mode="delete"/>
-						<attDef ident="next" mode="delete"/>
-						<attDef ident="prev" mode="delete"/>
-						<attDef ident="rend" mode="delete"/>
-						<attDef ident="rendition" mode="delete"/>
-						<attDef ident="sameAs" mode="delete"/>
-						<attDef ident="select" mode="delete"/>
-						<attDef ident="sortKey" mode="delete"/>
-						<attDef ident="status" mode="delete"/>
-						<attDef ident="style" mode="delete"/>
-						<attDef ident="synch" mode="delete"/>
-						<attDef ident="xml:base" mode="delete"/>
-						<attDef ident="xml:space" mode="delete"/>
-					</attList>
-					<remarks>
-						<p>Authorized attributes: @xml:id, @xml:lang</p>
-					</remarks>
-				</elementSpec>
-
 
 
 				<elementSpec ident="biblScope" mode="change">
@@ -2463,38 +2418,6 @@
 
 
 
-				<elementSpec ident="notesStmt" mode="change">
-					<content>
-						<rng:oneOrMore>
-							<rng:ref name="note"/>
-						</rng:oneOrMore>
-					</content>
-					<attList>
-						<attDef ident="ana" mode="delete"/>
-						<attDef ident="change" mode="delete"/>
-						<attDef ident="copyOf" mode="delete"/>
-						<attDef ident="corresp" mode="delete"/>
-						<attDef ident="exclude" mode="delete"/>
-						<attDef ident="facs" mode="delete"/>
-						<attDef ident="n" mode="delete"/>
-						<attDef ident="next" mode="delete"/>
-						<attDef ident="prev" mode="delete"/>
-						<attDef ident="rend" mode="delete"/>
-						<attDef ident="rendition" mode="delete"/>
-						<attDef ident="sameAs" mode="delete"/>
-						<attDef ident="select" mode="delete"/>
-						<attDef ident="style" mode="delete"/>
-						<attDef ident="synch" mode="delete"/>
-						<attDef ident="xml:base" mode="delete"/>
-						<attDef ident="xml:space" mode="delete"/>
-					</attList>
-					<remarks>
-						<p>Authorized attributes: @xml:id, @xml:lang</p>
-					</remarks>
-				</elementSpec>
-
-
-
 				<elementSpec ident="orgName" mode="change">
 					<content>
 						<rng:zeroOrMore>
@@ -3558,12 +3481,9 @@
 									<rng:ref name="ab"/>
 								</rng:choice>
 							</rng:oneOrMore>
-							<rng:oneOrMore>
-								<rng:choice>
-									<rng:ref name="biblFull"/>
-									<rng:ref name="biblStruct"/>
-								</rng:choice>
-							</rng:oneOrMore>
+							<rng:zeroOrMore>
+								<rng:ref name="biblStruct"/>
+							</rng:zeroOrMore>
 						</rng:choice>
 					</content>
 					<attList>
@@ -3947,10 +3867,10 @@
  these elements want both : hi p q table
 
 @xml:id and xml:lang are also provided by att.global
- * these elements want just xml:id : anchor appInfo, application, biblFull
+ * these elements want just xml:id : anchor appInfo, application, 
    author, availability bibl cell code date desc edition editor email
    encodingDesc extent figure fileDesc forename graphic head idno item
-   label langUsage language lb list listBibl meeting note notesStmt
+   label langUsage language lb list listBibl meeting note 
    orgName pb profileDesc projectDesc ptr publicationStmt publisher
    pubPlace q ref relatedItem rendition resp respStmt roleName row
    sourceDesc surname table tagsDecl textClass titleStmt TEI
