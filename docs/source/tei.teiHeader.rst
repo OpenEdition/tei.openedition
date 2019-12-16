@@ -303,38 +303,6 @@ biblFull
 
    L'élément ``biblFull`` n'est plus supporté à partir de la version 1.6.2 du schéma XML TEI OpenEdition
 
-**XPath**
-
-| Date de publication papier : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/date``
-| Pagination : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/publicationStmt/idno[@type='pp']``
-| Notice bibliographique du document : ``/TEI/teiHeader/fileDesc/sourceDesc/biblFull/notesStmt/note[@type='bibl']``
-
-**Recommandations d'usage**
-
-- Date de publication papier : date au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
-- Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
-- Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
-
-
-**Exemple**
-
-.. code-block:: xml
-
-    [...]
-    </publicationStmt>
-    <sourceDesc>
-        <biblFull>
-            <publicationStmt>
-                <date>01/07/2008</date> <!--date de publication papier-->
-                <idno type="pp">10-27</idno>
-            </publicationStmt>
-           <notesStmt>
-               <note type="bibl">Référence bibliographique de l'édition papier de cet article.</note>
-           </notesStmt>
-    [...]
-        </biblFull>
-    </sourceDesc>
-
 
 .. _tei-teiHeader-biblStruct:
 
@@ -467,6 +435,23 @@ biblStruct/series
 
 Exemples biblStruct
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Exemple d'article de revue (import OEJ)**
+
+.. code-block:: xml
+
+    [...]
+    <sourceDesc>
+       <biblStruct>
+           <monogr>
+               <imprint>
+                    <biblScope unit="page">39-56</biblScope>
+                    <date type="published" when="2016-10-24">2016-10-24</date>
+                </imprint>
+            </monogr>
+        </biblStruct>
+    </sourceDesc> 
+
 
 
 **Exemple d'article de revue (export OE)**

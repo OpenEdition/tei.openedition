@@ -156,14 +156,14 @@
 				</p>
 				<p rend="review-date">1938</p>
 			</div>
-			<note resp="editor">
+			<note type="publisher">
 				<p>
 					Le texte de ce document a été généré sur le site
 					<ref target="http://www.blindtextgenerator.com/">http://www.blindtextgenerator.com</ref>
 					.
 				</p>
 			</note>
-			<note resp="author">
+			<note type="author">
 				<p>
 					Les résumés français, anglais et espagnol sont des extraits de
 					<hi rendition="#T4">La Métamorphose</hi>

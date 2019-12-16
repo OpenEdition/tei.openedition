@@ -6,16 +6,21 @@ Changelog and roadmap
 
 
 
-Version 1.6.2 (not yet released)
+Version 1.6.2 
 =========================================
 
-- remove sourceDesc/biblFull
+[2019-12-17]
 
+- removed element
+    + sourceDesc/biblFull
+- xsd
+    + add xsd/tei.openedition.1.6.2
 
 
 Version 1.6.1
 =========================================
 
+[2019-07-22]
 
 - new attribute support
     + head\@rend
@@ -32,8 +37,10 @@ Version 1.6.1
 
 
 
-Version 1.6.0
+Version 1.6.0 
 =========================================
+
+[2019-05-28]
 
 - odd
     + schemaSpec/source use now https

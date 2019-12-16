@@ -26,22 +26,7 @@
                 <idno type="doi">10.4000/books.oep.136</idno>
             </publicationStmt>
             <sourceDesc>
-                <biblFull>
-                <!-- sourceDesc/biblFull is Deprecated: please use sourceDesc/biblStruct instead -->
-                    <titleStmt>
-                        <title/>
-                        <respStmt>
-                            <resp>auteur</resp>
-                            <name>Marin Dacos</name>
-                        </respStmt>
-                    </titleStmt>
-                    <publicationStmt>
-                        <publisher/>
-                        <date>2010</date>
-                        <idno type="pp">13-16</idno>
-                    </publicationStmt>
-                </biblFull>
-                <biblStruct type="chapter">
+               <biblStruct type="chapter">
                     <analytic>
                         <title level="a" type="main">Read/Write Book</title>
                         <title type="sub">Le livre inscriptible</title>
