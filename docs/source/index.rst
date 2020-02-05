@@ -10,7 +10,7 @@ Version 1.6.2
 
 .. note::
 
-      Cette documentation suit l'évolution des versions du `schéma TEI OpenEdition <https://github.com/openEdition/tei.openedition>`_, une nouvelle version de la documentation est disponible en `français <https://tei-openedition.readthedocs.io/fr/1.6.2/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/1.6.2/>`_ pour chaque release.
+      Cette documentation suit l'évolution des versions du `schéma TEI OpenEdition <https://github.com/openEdition/tei.openedition>`_, une nouvelle version de la documentation est disponible en `français <https://tei-openedition.readthedocs.io/fr/latest/>`_ et `anglais <https://tei-openedition.readthedocs.io/en/latest/>`_ pour chaque release.
 
       Cliquez sur **ReadTheDocs** en bas du menu de gauche pour choisir la langue et la version.
 
