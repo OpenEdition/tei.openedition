@@ -5,6 +5,15 @@ Changelog and roadmap
 
 
 
+Version 1.6.3 
+=========================================
+
+[2023-03-14]
+
+- new attribute support
+    + item\@rendition
+    + note\@rendition
+
 
 Version 1.6.2 
 =========================================
