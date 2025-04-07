@@ -90,6 +90,7 @@ Auteurs, éditeurs, traducteurs
 
 | Description : ``/TEI/teiHeader/fileDesc/titleStmt/author/affiliation``
 | Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/author/orgName``
+| IdRef : ``/TEI/teiHeader/fileDesc/titleStmt/author/idno[@type="IDREF"]``
 | Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='function']``
 | Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='honorific']``
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/author/email``
@@ -99,6 +100,7 @@ Auteurs, éditeurs, traducteurs
 
 | Description : ``/TEI/teiHeader/fileDesc/titleStmt/editor/affiliation``
 | Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/editor/orgName``
+| IdRef : ``/TEI/teiHeader/fileDesc/titleStmt/author/idno[@type="IDREF"]``
 | Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='function']``
 | Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='honorific']``
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/editor/email``
@@ -109,7 +111,8 @@ Auteurs, éditeurs, traducteurs
 
 - possibilité d'indiquer plusieurs auteurs, traducteurs, etc. pour le document ;
 - possibilité d'ajouter des descriptions pour chacun des contributeurs, la description générale est indiquée dans la balise ``<affiliation>`` ;
-- attention à la casse et à l'orthographe pour éviter les doublons dans les index.
+- attention à la casse et à l'orthographe pour éviter les doublons dans les index ;
+- IdRef : ajouter un identifiant valide défini dans le référentiel https://www.idref.fr/.
 
 .. 2 possibilités d'encodage pour les noms de personnes : ``<name>`` ou ``<persName>``
 
@@ -136,6 +139,7 @@ Auteurs, éditeurs, traducteurs
            <affiliation>
                Directeur du Cléo (Centre pour l'édition électronique ouverte)
            </affiliation>
+           <idno type="IDREF">139753753</idno>
            <roleName type="function">
                Directeur
            </roleName>

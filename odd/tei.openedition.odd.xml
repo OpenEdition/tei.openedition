@@ -475,6 +475,7 @@
 								<rng:ref name="roleName"/>
 								<rng:ref name="name"/>
 								<rng:ref name="persName"/>
+								<rng:ref name="idno"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
@@ -1209,6 +1210,7 @@
 								<rng:ref name="roleName"/>
 								<rng:ref name="name"/>
 								<rng:ref name="persName"/>
+								<rng:ref name="idno"/>
 							</rng:choice>
 						</rng:zeroOrMore>
 					</content>
