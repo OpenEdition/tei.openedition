@@ -90,6 +90,7 @@ Auteurs, éditeurs, traducteurs
 
 | Description : ``/TEI/teiHeader/fileDesc/titleStmt/author/affiliation``
 | Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/author/orgName``
+| IdRef : ``/TEI/teiHeader/fileDesc/titleStmt/author/idno[@type="IDREF"]``
 | Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='function']``
 | Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/author/roleName[@type='honorific']``
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/author/email``
@@ -99,6 +100,7 @@ Auteurs, éditeurs, traducteurs
 
 | Description : ``/TEI/teiHeader/fileDesc/titleStmt/editor/affiliation``
 | Affiliation : ``/TEI/teiHeader/fileDesc/titleStmt/editor/orgName``
+| IdRef : ``/TEI/teiHeader/fileDesc/titleStmt/author/idno[@type="IDREF"]``
 | Fonction : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='function']``
 | Préfixe : ``/TEI/teiHeader/fileDesc/titleStmt/editor/roleName[@type='honorific']``
 | Courriel : ``/TEI/teiHeader/fileDesc/titleStmt/editor/email``
@@ -109,7 +111,8 @@ Auteurs, éditeurs, traducteurs
 
 - possibilité d'indiquer plusieurs auteurs, traducteurs, etc. pour le document ;
 - possibilité d'ajouter des descriptions pour chacun des contributeurs, la description générale est indiquée dans la balise ``<affiliation>`` ;
-- attention à la casse et à l'orthographe pour éviter les doublons dans les index.
+- attention à la casse et à l'orthographe pour éviter les doublons dans les index ;
+- IdRef : Utiliser le référentiel https://www.idref.fr/ pour récupérer un identifiant valide, correspondant à l'auteur. Indiquer uniquement l'identifiant (8 chiffres + 1 chiffre ou X). Les outils Métopes permettent la récupération correcte d'un IdRef.
 
 .. 2 possibilités d'encodage pour les noms de personnes : ``<name>`` ou ``<persName>``
 
@@ -136,6 +139,7 @@ Auteurs, éditeurs, traducteurs
            <affiliation>
                Directeur du Cléo (Centre pour l'édition électronique ouverte)
            </affiliation>
+           <idno type="IDREF">139753753</idno>
            <roleName type="function">
                Directeur
            </roleName>
@@ -185,7 +189,6 @@ Date de publication électronique
 **Recommandations d'usage**
 
 - date au format JJ/MM/AAAA ;
-- ne pas utiliser pour OpenEdition Books (la date est définie au niveau du livre) ;
 - pour OpenEdition Journals il est important d'indiquer une date de publication électronique : en cas d'absence elle sera automatiquement renseignée par Lodel et sera mise à jour en cas de rechargement du document.
 
 *Date de publication électronique pour les revues à barrière mobile sur OpenEdition Journals*
@@ -291,7 +294,7 @@ sourceDesc
    Il prendra un sens différent selon l'usage du document TEI :
 
    - à l'import dans Lodel, ``sourceDesc`` contiendra les métadonnées relatives à l'édition papier le cas échéant ;
-   - à l'export ``sourceDesc`` contiendra les métadonnées du contexte de publication sur OpenEdition (sur la revue, le numéro, le livre...).
+   - à l'export ``sourceDesc`` contiendra les métadonnées du contexte de publication sur OpenEdition (sur la revue, le numéro...).
 
 
 .. _tei-teiHeader-biblFull:
@@ -313,7 +316,7 @@ biblStruct
 
    L'élément ``biblStruct`` est supporté :
    
-   - import OEJ et OEB : à partir de la version 1.6.2 du schéma XML TEI OpenEdition ;
+   - import OEJ : à partir de la version 1.6.2 du schéma XML TEI OpenEdition ;
    - export OE : à partir de la version 1.6.0 du schéma XML TEI OpenEdition.
 
 
@@ -355,9 +358,9 @@ biblStruct/monogr
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s']``
 | Titre traduit de la rubrique pour les articles publiés hors numéro (revue) : 
 | ``TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='s' and @type='alt']``
-| Titre du livre ou du numéro (livre et revue) : 
+| Titre du numéro (revue) : 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m']``
-| Titre traduit du livre ou du numéro (livre et revue) : 
+| Titre traduit du numéro (revue) : 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/title[@level='m' and @type='alt']``
 
 - Identifiants (revue)
@@ -375,62 +378,29 @@ biblStruct/monogr
 | DOI de la rubrique : 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtype='serie']``
 
-- Identifiants (livre)
-
-| ISBN électronique :
-| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='eISBN']``
-| ISBN édition papier : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='pISBN']``
-| URL du livre : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='url' and @subtype='book']``
-| DOI du livre : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/idno[@type='doi' and @subtype='book']``
-
 - Informations sur l'édition papier
 
-| Pagination de l'édition papier (livre et revue):
+| Pagination de l'édition papier (revue):
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='page']``
 | Numéro (revue) :
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/biblScope[@unit='issue']``
-| Date de publication papier (livre et revue): 
+| Date de publication papier (revue): 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/date[@type='published']``  
-| Éditeur (livre et revue): 
+| Éditeur (revue): 
 | ``/TEI/teiHeader/sourceDesc/biblStruct/monogr/imprint/publisher``
 
 
 **Recommandations d'usage**
 
-- dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (livre, numéro, rubrique, revue) ;
-- pour l'import d'articles sur OpenEdition Journals (import OJ) ou de chapitres des livres sur OpenEdition Books (import OB), les éléments suivants sont utilisables :
+- dans l'export TEI OE, l'élément ``monogr`` contient les métadonnées relatives à l'environnement de publication du document TEI (numéro, rubrique, revue) ;
+- pour l'import d'articles sur OpenEdition Journals (import OJ), les éléments suivants sont utilisables :
 
-   - pagination de l'édition papier (import OJ et import OB) ; 
-   - date de publication papier (import OJ). Sur OpenEdition Books la date de publication papier est définie au niveau du livre.
+   - pagination de l'édition papier (import OJ) ; 
+   - date de publication papier (import OJ). 
 
-- Date de publication papier : date au format JJ/MM/AAAA ; ne pas utiliser cette date pour OpenEdition Books ;
+- Date de publication papier : date au format JJ/MM/AAAA ; 
 - Pagination :  renseignée en chiffres romains (V-XXV) ou en chiffres arabes (5-25), sans les mentions p. ou pp. ;
 - Notice biblio : utilisée pour préciser la notice bibliographique du document papier.
-
-.. _tei-teiHeader-biblStruct-series:
-
-biblStruct/series
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**XPath**
-
-| Titre de la collection : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s']``
-| Titre traduit de la collection : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/series/title[@level='s' and @type='alt']``
-| ISSN électronique de la collection : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='eISSN']``
-| ISSN papier de la collection :
-| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='pISSN']``
-| URL de la collection : 
-| ``/TEI/teiHeader/sourceDesc/biblStruct/series/idno[@type='url']``
-
-**Recommandations d'usage**
-
-- Dans l'export OE pour les **chapitres de livre uniquement**, l'élément ``series`` contient les métadonnées relatives à l'environnement de publication du document TEI (collection).
 
 
 Exemples biblStruct
@@ -451,84 +421,6 @@ Exemples biblStruct
             </monogr>
         </biblStruct>
     </sourceDesc> 
-
-
-
-**Exemple d'article de revue (export OE)**
-
-.. code-block:: xml
-
-    [...]
-    <sourceDesc>
-       <biblStruct type="article">
-            <analytic>
-                <title level="a" type="main">La formation des étudiants marocains dans les pays de l’Est de l’Europe (1960-2015)</title>
-                <title level="a" type="alt" xml:lang="en">Moroccan Students’ Training in Eastern Europe Countries (1960-2015)</title>
-                <title level="a" type="alt" xml:lang="es">La formación de los estudiantes marroquíes en los países de Europa del Este (1960-2015)</title>
-                <author>
-                    <persName>
-                        <forename>Kamal</forename>
-                        <surname>Mellakh</surname>
-                    </persName>
-                    <affiliation>
-                        Enseignant-chercheur, Département de sociologie, Faculté des lettres et sciences humaines de Mohammedia, Université Hassan II, Casablanca B.P 546, Mohammedia, Maroc ; kmellakh@yahoo.fr
-                    </affiliation>
-                </author>
-            </analytic>
-            <monogr>
-                <title level="j">Revue européenne des migrations internationales</title>
-                <idno type="eISSN">1777-5418</idno>
-                <idno type="pISSN">0765-0752</idno>
-                <title level="m">Former des élites : mobilités des étudiants d'Afrique au nord du Sahara dans les pays de l'ex-bloc socialiste</title>
-                <title level="m" type="alt" xml:lang="en">Training Elites: Mobilities of Students of Africa North of Sahara to the Former Socialist Block</title>
-                <title level="m" type="alt" xml:lang="es">Formar a las élites: movilidades de los estudiantes de África del norte del Sáhara hacia el ex-bloque socialista</title>
-                <idno type="doi" subtype="issue">10.4000/remi.7751</idno>
-                <idno type="url" subtype="issue">http://journals.openedition.org/remi/7751</idno>
-                <imprint>
-                    <publisher>Université de Poitiers</publisher>
-                    <biblScope unit="page">39-56</biblScope>
-                    <biblScope unit="issue">vol. 32 - n°2</biblScope>
-                    <date type="published" when="2016-10-24">2016-10-24</date>
-                </imprint>
-            </monogr>
-        </biblStruct>
-    </sourceDesc> 
-
-
-**Exemple de chapitre de livre (export OE)**
-
-.. code-block:: xml
-
-    [...]
-    <biblStruct type="chapter">
-        <analytic>
-            <title level="a" type="main">Albert Cossery écrit‑il arabe ?</title>
-            <author>
-                <persName>
-                    <forename>Frédéric</forename>
-                    <surname>Lagrange</surname>
-                </persName>
-            </author>
-        </analytic>
-        <monogr>
-            <title level="m">Savants, amants, poètes et fous</title>
-            <idno type="pISBN">9782351597521</idno>
-            <idno type="eISBN">9782351595503</idno>
-            <idno type="doi" subtype="book">10.4000/books.ifpo.13332</idno>
-            <idno type="url" subtype="book">http://books.openedition.org/ifpo/13332</idno>
-            <imprint>
-                <publisher>Presses de l’Ifpo</publisher>
-                <publisher>Centre français d'archéologie et de sciences sociales (Cefas)</publisher>
-                <biblScope unit="page">133-157</biblScope>
-                <date type="published" when="2019">2019</date>
-            </imprint>
-        </monogr>
-        <series>
-            <title level="s">Contemporain publications</title>
-            <idno type="pISSN">2225-7578</idno>
-            <idno type="url">http://books.openedition.org/ifpo/62</idno>
-        </series>
-    </biblStruct>
 
 
  

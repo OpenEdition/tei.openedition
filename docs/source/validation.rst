@@ -14,14 +14,14 @@ Vous pouvez valider vos fichiers TEI avec votre éditeur XML en utilisant les at
    <TEI 
 	xmlns="http://www.tei-c.org/ns/1.0" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei/tei.openedition.1.6.3/document.xsd">
+	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://lodel.org/ns/tei/tei.openedition.1.6.4/document.xsd">
 
 
 Vous pouvez également valider vos fichiers XML sur Linux avec xmllint :
 
 .. code-block:: shell 
 
-  xmllint --schema http://lodel.org/ns/tei/tei.openedition.1.6.3/document.xsd XML-FILE.tei.xml --noout 
+  xmllint --schema https://lodel.org/ns/tei/tei.openedition.1.6.4/document.xsd XML-FILE.tei.xml --noout 
 
 
 
