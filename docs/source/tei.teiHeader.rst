@@ -112,7 +112,7 @@ Auteurs, éditeurs, traducteurs
 - possibilité d'indiquer plusieurs auteurs, traducteurs, etc. pour le document ;
 - possibilité d'ajouter des descriptions pour chacun des contributeurs, la description générale est indiquée dans la balise ``<affiliation>`` ;
 - attention à la casse et à l'orthographe pour éviter les doublons dans les index ;
-- IdRef : ajouter un identifiant valide défini dans le référentiel https://www.idref.fr/.
+- IdRef : Utiliser le référentiel https://www.idref.fr/ pour récupérer un identifiant valide, correspondant à l'auteur. Indiquer uniquement l'identifiant (8 chiffres + 1 chiffre ou X). Les outils Métopes permettent la récupération correcte d'un IdRef.
 
 .. 2 possibilités d'encodage pour les noms de personnes : ``<name>`` ou ``<persName>``
 
