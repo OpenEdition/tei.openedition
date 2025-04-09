@@ -5,6 +5,17 @@ Changelog and roadmap
 
 
 
+Version 1.6.4 
+=========================================
+
+[2025-04-09]
+
+- new element support
+    + author/idno
+    + editor/idno
+- end of support for OpenEdition Books
+
+
 Version 1.6.3 
 =========================================
 

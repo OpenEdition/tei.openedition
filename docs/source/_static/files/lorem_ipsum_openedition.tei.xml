@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei/tei.openedition.1.6.1/document.xsd">
+	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://lodel.org/ns/tei/tei.openedition.1.6.4/document.xsd">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -13,6 +13,7 @@
 				<author>
 					<name>Marin Dacos</name>
 					<affiliation> Directeur du Cléo (Centre pour l'édition électronique ouverte)</affiliation>
+					<idno type="IDREF">139753753</idno>
 					<roleName> Directeur</roleName>
 					<orgName> Cléo</orgName>
 					<email> contact@revues.org</email>

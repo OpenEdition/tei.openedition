@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="3.1.0" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://lodel.org/ns/tei/tei.openedition.1.6.4/document.xsd">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">Utilité des recherches sur « l’activité et
+                    l’expérience » pour former à l’intervention en Éducation physique : illustration
+                    dans le Programme de Recherche du Cours d’action</title>
+                <title level="a" type="alt" xml:lang="en">Using Research on ‘Activity and
+                    Experience’ for Training in Physical Education : an Illustration in the ‘Course
+                    of Action’ Research Program</title>
+                <author>
+                    <persName>
+                        <forename>Gal-Petitfaux</forename>
+                        <surname>Nathalie</surname>
+                    </persName>
+                    <idno type="IDREF">074723758</idno>
+                    <idno type="VIAF">37047580</idno>
+                    <idno type="ISNI">0000000001944709</idno>
+                    <idno type="BNF">ark:/12148/cb12946041v</idno>
+                    <affiliation> ACTé (EA 4281), Université Clermont Auvergne, France
+                    </affiliation>
+                </author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Presses universitaires de Franche-Comté</publisher>
+                <distributor>OpenEdition</distributor>
+                <date type="published" when="2025-01-28">2025-01-28</date>
+                <availability>
+                    <p>CC-BY-4.0</p>
+                </availability>
+                <idno type="url">http://journals.openedition.org/ejrieps/9683</idno>
+                <idno type="doi">10.4000/136m4</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="article">
+                    <analytic>
+                        <title level="a" type="main">Utilité des recherches sur « l’activité et
+                            l’expérience » pour former à l’intervention en Éducation physique :
+                            illustration dans le Programme de Recherche du Cours d’action</title>
+                        <title level="a" type="alt" xml:lang="en">Using Research on ‘Activity and
+                            Experience’ for Training in Physical Education : an Illustration in the
+                            ‘Course of Action’ Research Program</title>
+                        <author>
+                            <persName>
+                                <forename>Gal-Petitfaux</forename>
+                                <surname>Nathalie</surname>
+                            </persName>
+                            <affiliation> ACTé (EA 4281), Université Clermont Auvergne, France
+                            </affiliation>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">EJRIEPS</title>
+                        <idno type="eISSN">2105-0821</idno>
+                        <title level="m">Recherches sur l’intervention – Recherches pour
+                            l’intervention – Recherches-Interventions</title>
+                        <idno type="doi" subtype="issue">10.4000/136m7</idno>
+                        <idno type="url" subtype="issue"
+                            >http://journals.openedition.org/ejrieps/9638</idno>
+                        <imprint>
+                            <publisher>Presses universitaires de Franche-Comté</publisher>
+                            <biblScope unit="issue">56</biblScope>
+                            <date type="published" when="2024">2024</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <schemaRef type="ODD" url="http://lodel.org/ns/odd/tei.openedition.1.6.3.odd.xml"/>
+            <appInfo>
+                <application version="1.0" ident="Lodel">
+                    <label>Lodel</label>
+                    <desc><ref target="http://www.tei-c.org/">We use TEI</ref></desc>
+                </application>
+            </appInfo>
+            <tagsDecl>
+                <rendition xml:id="style01" scheme="css">font-style:italic;</rendition>
+                <rendition xml:id="style02" scheme="css">vertical-align:super;</rendition>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="fr">fr</language>
+            </langUsage>
+            <textClass>
+                <keywords scheme="keyword" xml:lang="en">
+                    <list>
+                        <item>training</item>
+                        <item>activity</item>
+                        <item>experience</item>
+                        <item>research</item>
+                        <item>Course of Action Research Program</item>
+                    </list>
+                </keywords>
+                <keywords scheme="keyword" xml:lang="fr">
+                    <list>
+                        <item>activité</item>
+                        <item>formation</item>
+                        <item>expérience</item>
+                        <item>recherche</item>
+                        <item>Programme de Recherche du Cours d’Action</item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="abstract" xml:lang="fr">
+                <p>Cet article interroge les rapports entre les activités de recherche et les
+                    pratiques d’intervention, en se questionnant sur l’utilité sociale de la
+                    recherche en formation d’enseignants. Il étudie les rapports entre le champ des
+                    recherches optant pour une « entrée activité et expérience » et le champ des
+                    pratiques professionnelles d’enseignement de l’Éducation physique. La première
+                    partie montre comment les concepts d’activité et d’expérience sont devenus des
+                    objets « frontière » entre la recherche sur l’intervention et la formation,
+                    notamment dans le contexte de professionnalisation de la formation des
+                    enseignants. La deuxième partie illustre l’utilisation de concepts, de méthodes
+                    et de résultats issus du Programme de Recherche du Cours d’action – PRCA –
+                    (Theureau, 1992, 2004) dans la formation d’étudiants de licence STAPS. L’auteur
+                    discute les apports, les conditions et les limites de l’usage des recherches
+                    « Cours d’action » en formation.</p>
+            </div>
+            <div type="abstract" xml:lang="en">
+                <p>This article examines the relationship between research activities and
+                    intervention practices, looking at the social utility of research in teacher
+                    training. It examines the relationship between the field of research opting for
+                    an ’activity and experience approach’ and the field of professional practice in
+                    physical education teaching. The first part shows how the concepts of activity
+                    and experience have become ‘boundary’ objects between research on intervention
+                    and training, particularly in the context of the professionalisation of
+                    teacher’s training. The second part illustrates the use of concepts, methods and
+                    results from the Course of Action Research Program (Theureau, 1992, 2004) in the
+                    training of STAPS undergraduate students. The author discusses the
+                    contributions, conditions and limits of the use of ‘Course of action’ research
+                    in training.</p>
+            </div>
+        </front>
+        <body>
+            <div type="div1">
+                <head subtype="level1">1. Introduction</head>
+                <p>Dans le domaine de la recherche en sciences humaines et sociales, « l’entrée
+                    activité » représente un objet commun à différents champs scientifiques (Barbier
+                    et Durand, 2003). Ce champ de recherche, fortement mobilisé notamment pour
+                    étudier l’intervention en sport et en Éducation physique (EP), s’intéresse au
+                    champ des pratiques sociales et professionnelles (<hi rendition="#style01"
+                        >e. g.</hi> management, conseil, travail social, santé, loisir,
+                    communication, formation, éducation, vie quotidienne, etc.). Il défend une
+                    visée à la fois épistémique et transformative et adopte un regard théorique et
+                    des méthodes pour approcher le plus souvent deux dimensions de ces pratiques :
+                    l’activité des professionnels en situation écologique ; et l’expérience vécue de
+                    ces professionnels, c’est-à-dire leur engagement en tant que sujets humains dans
+                    leurs activités quotidiennes. Ce champ de recherche sur l’intervention,
+                    qualifié de « sciences de l’intervention » (Lémonie et al., 2012), s’inscrit
+                    dans une actualité qui questionne la finalisation des recherches, notamment leur
+                    utilité sociale pour mieux comprendre les activités humaines et sociales dans la
+                    diversité de leurs conditions d’exercice. En s’attachant à rendre intelligible
+                    ces activités et l’expérience des acteurs, à les transformer et les améliorer,
+                    ce courant de recherche conduit à tisser des liens organiques et conceptuels
+                    entre la recherche et les champs professionnels : ce rapprochement s’opère par
+                    l’intermédiaire de l’objet de recherche « activité » qui devient un objet
+                    significatif pour les chercheurs comme pour les acteurs professionnels (Barbier
+                    et Durand, 2003). Le rapprochement des enjeux scientifiques et des enjeux
+                    professionnels dans le monde de la recherche, notamment par l’attention portée
+                    au caractère situé et vécu des pratiques professionnelles, a des incidences sur
+                    le monde professionnel de la formation. On assiste alors à un double
+                    mouvement en recherche et en formation.</p>
+                <p>En recherche, l’attention portée à l’intervention professionnelle a donné lieu à
+                    l’émergence de la « recherche-intervention ». Au-delà des différences
+                    disciplinaires, ce champ de recherche repose sur l’idée que, dans le domaine de
+                    l’intervention, le chercheur peut développer une science de l’action, différente
+                    de celle inspirée du modèle classique de la science appliquée (St-Arnaud, 1992).
+                    Ces démarches de recherche sur l’intervention sont ancrées dans une démarche
+                    compréhensive fondée sur une « épistémologie de l’agir en situation » ou des
+                    « sciences de l’action », en opposition à une démarche positiviste et
+                    prescriptive fondée sur une « épistémologie du savoir » ou de « la science
+                    appliquée ». Elles se développent fortement en EP (Lémonie et al., 2012), sous
+                    des appellations différentes : recherche-action, recherche en action, recherche
+                    par l’action, recherche développementale, recherche intervention, recherche
+                    collaborative, recherche participative, recherche avec et pour les acteurs,
+                    recherche compréhensive.</p>
+                <p>En formation, le contexte de la mastérisation et des concours de recrutement des
+                    enseignants depuis 2010, ainsi que l’approche par compétence et l’alternance
+                    université/stages professionnels, a conduit les formateurs à se questionner sur
+                    les conditions pouvant favoriser les transitions professionnelles au service du
+                    développement professionnel des étudiants. La formation des enseignants d’EP
+                    n’échappe pas à la règle et de nouveaux dispositifs de formation se développent
+                    autour de l’analyse de pratiques pour accompagner les situations de transitions
+                    professionnelles entre l’université et l’établissement scolaire, entre les
+                    savoirs scientifiques et les savoirs de terrain. Dans ce contexte où l’analyse
+                    de pratiques prend une place importante pour professionnaliser les enseignants,
+                    le recours à l’analyse de l’activité et de l’expérience comme objet de recherche
+                    fait son entrée en formation comme un levier à la professionnalisation.</p>
+                <p>L’entrée « activité et expérience » devient alors un objet-frontière (Lémonie et
+                    al., 2012 ; Vinck, 2009) qui permet (a) d’articuler les enjeux pragmatiques et
+                    les enjeux scientifiques à la fois dans la recherche et dans la formation
+                    universitaire, (b) d’établir le dialogue entre chercheurs et praticiens, (c) de
+                    répondre à la question de l’utilité des recherches en formation et (d) d’ouvrir
+                    le débat sur l’utilisation des recherches à des fins de formation ou de
+                    formation par la recherche. Cet article s’inscrit dans ce questionnement
+                    épistémologique sur l’utilité de la recherche en formation initiale des
+                    enseignants d’EP. Une première partie consiste à montrer comment les liens entre
+                    la recherche sur l’intervention, les pratiques sociales d’enseignement et la
+                    formation des enseignants, se sont construits autour d’un objet intégrateur :
+                    l’activité. Une seconde partie vise à illustrer l’usage, en formation initiale
+                    des enseignants d’EP, des recherches conduites dans le Programme de Recherche du
+                    Cours d’action – PRCA – (Theureau, 1992, 2004), à travers deux exemples sur la
+                    formation en STAPS d’étudiants de licence 3<hi rendition="#style02">e</hi>
+                    année.</p>
+            </div>
+            <div type="div1">
+                <head subtype="level1">2. L’activité et l’expérience comme objets intégrateurs en
+                    recherche et en formation</head>
+                <p>« L’entrée activité » prend une place dominante dans la recherche en sciences
+                    humaines et sociales (SHS) : elle se manifeste comme un objet commun à
+                    différents champs scientifiques, au point de devenir un objet intégrateur pour
+                    les sciences humaines et sociales (Barbier, 2013 ; Barbier et Durand, 2003). Ce
+                    nouvel objet théorique – l’activité – structure aujourd’hui un champ de
+                    recherche s’intéressant au champ des pratiques sociales et professionnelles,
+                    avec une centration sur les activités des professionnels de terrain. L’accent
+                    porté sur l’activité conduit au développement des théories de l’activité et des
+                    méthodes pour en rendre compte, et à l’émergence de démarches scientifiques
+                    pouvant se résumer comme suit (Barbier, 2013) : une posture du chercheur de
+                    nature compréhensive ; la participation des acteurs sociaux à l’analyse de leur
+                    activité dans la production des connaissances scientifiques ; l’effet
+                    transformatif de l’analyse de leur activité par les acteurs, susceptible de
+                    transformer ces derniers et d’influencer leur activité postérieure ; des savoirs
+                    scientifiques éclairant les activités singulières et situées des professionnels
+                    de terrain, qui sont réinvestissables dans l’action par ces derniers et qui
+                    sont utiles à la formation.</p>
+                <div type="div2">
+                    <head subtype="level2">2.1. L’activité et l’expérience vécue : une entrée des
+                        chercheurs pour analyser les pratiques sociales</head>
+                    <p>La recherche sur l’intervention en EP s’inscrit dans l’histoire de la
+                        recherche en SHS, que l’on peut résumer par (Vors et al., 2023) : une
+                        suprématie de l’approche quantitative marquée par l’épistémologie et les
+                        méthodes des sciences de la nature ; puis, l’avènement de l’approche
+                        qualitative, en opposition à l’approche quantitative ; le recours,
+                        aujourd’hui, à des approches mixtes défendant une articulation des méthodes
+                        et données qualitatives et quantitatives dans une optique de complémentarité
+                        plutôt qu’une position dualiste. </p>
+                    <div type="div3">
+                        <head subtype="level3">2.1.1. La recherche qualitative et compréhensive sur
+                            l’intervention pour défendre un lien entre recherche et pratiques</head>
+                        <p>En EP, les recherches sur l’intervention en sport et en EP défendent un
+                            lien entre la science et les pratiques de terrain qui, au plan
+                            épistémologique, rompt avec une conception prescriptive de la recherche
+                            qui envisage les pratiques comme gouvernées par l’application de lois,
+                            ou de règles, définies a priori sur la base de connaissances
+                            scientifiques et de façon indépendante des pratiques professionnelles
+                            réelles (Lémonie et al., 2012). Une autre conception du lien
+                            recherche-pratique défend une « nouvelle épistémologie de la pratique »
+                            (Schön, 1996) et des savoirs pratiques, c’est-à-dire les registres de
+                            savoirs qui organisent véritablement les actions efficaces des
+                            praticiens et qui ne peuvent être étudiés qu’à partir d’une analyse des
+                            activités situées. Les sciences de l’intervention visent ainsi à
+                            développer un corps de savoirs permettant de décrire et de comprendre
+                            les pratiques d’intervention telles qu’elles sont accomplies, en même
+                            temps qu’elles visent en retour à les transformer, voire à les
+                            optimiser. Pour cela, elles s’appuient sur des théories de l’activité et
+                            des méthodologies issues de la recherche dite qualitative et
+                            compréhensive, en poursuivant une double visée épistémique et
+                            transformative. D’une part, la recherche qualitative sur l’intervention
+                            est de nature descriptive : elle vise à caractériser le phénomène
+                            étudié, par exemple en examinant les comportements observables dans
+                            l’activité des enseignants, des apprenants, des formateurs ou des
+                            stagiaires. D’autre part, elle recourt le plus souvent à des méthodes
+                            qui cherchent à comprendre la complexité des pratiques d’intervention,
+                            dans leur contexte effectif de leur mise en œuvre, en examinant les
+                            expériences subjectives des acteurs. La posture compréhensive du
+                            chercheur consiste alors à se centrer sur les pratiques d’intervention
+                            en EP, en observant les comportements des acteurs et en cherchant à
+                            comprendre le sens que ces comportements ont pour les acteurs eux-mêmes.
+                            Cette centration sur l’activité et l’expérience conduit à la prise en
+                            compte et l’implication, dans la démarche de recherche, du praticien
+                            donnant vie à cette pratique.</p>
+                    </div>
+                    <div type="div3">
+                        <head subtype="level3">2.1.2. Des recherches participatives au plus près des
+                            acteurs et des pratiques professionnelles favorisant leur entrée en
+                            formation</head>
+                        <p>Les recherches sur l’intervention adoptant une entrée « activité et
+                            expérience » s’inscrivent dans un changement paradigmatique au sein des
+                            sciences humaines, sociales et éducatives, qui opère un renversement de
+                            la suprématie du chercheur dans la production de connaissances en
+                            accordant aux sujets participants, et à leur point de vue subjectif, un
+                            rôle central dans cette production. Elles recourent à des méthodologies
+                            mobilisant des approches biographiques et narratives, en vue de
+                            comprendre l’intervention là où elle se produit et en examinant les
+                            expériences subjectives des acteurs. Ces approches recourent au récit de
+                                vie<hi rendition="#style01"> </hi>(le fait de raconter) en tant que
+                            technique de collecte de données en recherche. La démarche narrative
+                            repose sur une quête de sens grâce à la mise en langage, par l’individu,
+                            de ses expériences de vie ou de ses problèmes vécus. Elle répond à trois
+                            finalités : produire des connaissances (recherche), améliorer le vivre
+                            individuel et collectif (l’intervention transformative) et la mise en
+                            forme de soi (la formation du professionnel) (Desmarais et Gusew, 2021).
+                            Mobilisée en recherche et exploitée en formation, la démarche narrative
+                            est envisagée aujourd’hui comme une démarche de « Recherche – Action
+                            (intervention) – Formation » : elle incarne à la fois une méthode de
+                            recherche à part entière, et une méthode de recherche utilisée – et
+                            utile – pour la formation. </p>
+                    </div>
+                </div>
+                <div type="div2">
+                    <head subtype="level2">2.2. L’utilité sociale de la recherche en formation des
+                        enseignants</head>
+                    <p>L’entrée « activité et expérience » devient un objet-frontière qui permet
+                        d’articuler les enjeux pragmatiques et les enjeux scientifiques dans la
+                        recherche sur l’intervention dans les sciences humaines et sociales,
+                        notamment en STAPS et en Sciences de l’éducation. Elle devient également un
+                        nouvel enjeu pour la recherche en formation professionnelle, amenant les
+                        formateurs à entrer également par l’activité et l’expérience (Barbier, 2013)
+                        comme objet d’analyse pour servir l’enjeu de professionnalisation des
+                        formations.</p>
+                    <div type="div3">
+                        <head subtype="level3">2.2.1. L’enjeu de professionnalisation de la
+                            formation des enseignants : un besoin d’éclairage scientifique de la
+                            pratique comme objet de formation</head>
+                        <p>La dynamique de professionnalisation s’inscrit dans un contexte global
+                            d’évolution du système éducatif dont l’élévation du niveau de formation
+                            constitue le principal enjeu. La professionnalisation des formations
+                            universitaires dans l’enseignement supérieur s’est notamment accélérée
+                            depuis la réforme Licence-Master-Doctorat (LMD) en Europe autour des
+                            années 2000, cette dernière ayant ouvert la voie aux formations
+                            professionnalisantes. Aujourd’hui, l’enjeu des formations universitaires
+                            est d’assurer une formation adaptée au monde professionnel, impliquant
+                            pour cela (a) de concevoir et proposer une formation au plus proche des
+                            réalités de terrain, (b) notamment en proposant aux étudiants des mises
+                            en stages et (c) des enseignements universitaires d’accompagnement de la
+                            pratique en stage. Ce contexte de professionnalisation dans
+                            l’enseignement supérieur conduit également à une demande sociale de
+                            formalisation des pratiques professionnelles pour produire des
+                            référentiels de compétences et établir des bases de connaissances
+                            pouvant servir à la formation (Barbier, 2013).</p>
+                        <p>Un nouveau besoin voit le jour chez les formateurs, celui de pouvoir se
+                            référer aux sciences qui prennent pour objet, et qui peuvent éclairer,
+                            les pratiques professionnelles auxquelles les formateurs doivent former.
+                            S’opère alors un formatage des objets de formation en termes d’activité
+                            et d’expérience, en écho aux objets de la recherche sur l’intervention.
+                            L’objet « activité et expérience » devient désormais un objet
+                            significatif à la fois pour les chercheurs, les formateurs et les
+                            étudiants, et permet de construire une perméabilité entre les mondes
+                            différents de la recherche et de la formation (Barbier, 2013 ; Barbier
+                            et Durand, 2003).</p>
+                        <div type="div4">
+                            <head subtype="level4">2.2.2. La formation par l’analyse de l’activité
+                                et de l’expérience au service du développement professionnel des
+                                enseignants en formation initiale</head>
+                            <p>Le développement professionnel est un objet important en recherche,
+                                ainsi qu’en formation dans le cas de la professionnalisation des
+                                enseignants (Brau-Antony, 2013). Il est un exemple d’objet-frontière
+                                entre la recherche et la formation. Pour permettre le développement
+                                professionnel des enseignants, les formateurs universitaires
+                                recourent à l’analyse de pratiques avec les formés, pour accompagner
+                                notamment les étudiants dans l’entrée dans le métier. Se développe
+                                alors le besoin ou l’envie chez les formateurs de se former à et/ou
+                                par la recherche :</p>
+                            <q rend="quotation">Les formateurs mettent en avant l’importance que
+                                peut jouer la recherche dans la formation des enseignants à
+                                condition, d’une part, qu’elle soit proche des situations
+                                professionnelles rencontrées par le praticien (« au plus près du
+                                terrain ») et, d’autre part, de « la rendre plus accessible ».
+                                Certains formateurs revendiquent même un travail en partenariat avec
+                                les enseignants-chercheurs pour s’initier à la recherche
+                                (Brau-Antony, 2013, p. 2).</q>
+                            <p>Pour envisager le développement professionnel dans une perspective
+                                professionnalisante, l’entrée par l’activité et l’expérience devient
+                                un nouvel enjeu pour la recherche en formation (Barbier, 2013 ;
+                                Mayen et Mayeux, 2003). Ces recherches dites « activité et
+                                expérience » trouvent un écho chez les formateurs, mais dont
+                                l’exploitation par ces derniers ne va pas de soi. Brau-Antony (2013)
+                                montre que la circulation des savoirs de la recherche en formation
+                                repose sur des conditions à prendre en compte : créer des espaces
+                                d’intéressement autour de préoccupations professionnelles
+                                partagées entre formateurs et chercheurs ; former les formateurs
+                                aux outils de la recherche, pour pouvoir former par la recherche ;
+                                faire subir aux savoirs issus de la recherche un certain nombre de
+                                traitements afin que les formateurs puissent s’en emparer comme
+                                instrument de travail. </p>
+                        </div>
+                    </div>
+                    <div type="div3">
+                        <head subtype="level3">2.2.3. L’expérience : une notion importée de la
+                            recherche en formation</head>
+                        <p>Dans les dispositifs de formation visant le développement professionnel
+                            des enseignants, l’expérience, notion importée de la recherche pour
+                            penser la formation, devient une modalité d’apprentissage en formation
+                            (Mayen et Mayeux, 2003 ; Mouchet, 2018). Les formateurs prennent
+                            l’expérience professionnelle des étudiants-apprenants comme objet de
+                            travail pour en modifier l’orientation, afin de transformer le vécu en
+                            connu (connaissance). La formation se centre alors sur l’intériorité des
+                            formés, en complément d’un regard en extériorité.</p>
+                        <p>Cet intérêt porté à l’expérience dans la formation, c’est-à-dire à la
+                            construction de significations par les acteurs au cœur de leur
+                            activité, conduit les formateurs à mobiliser des méthodes
+                            d’explicitation de l’expérience empruntées à la recherche. Par la
+                            narration de leur propre expérience, les formateurs cherchent à
+                            « transformer l’expérience vécue en expérience analysée et, par la
+                            suite, en connaissance » (Desmarais et Gusew, 2021, p. 27). </p>
+                    </div>
+                    <div type="div3">
+                        <head subtype="level3">2.2.4. Apports des méthodes mixtes de recherche à
+                            l’instrumentation de la formation en EP</head>
+                        <p>Aujourd’hui, la recherche sur l’activité et l’expérience en sport et en
+                            EP dispose d’un large éventail de ressources (théories, concepts,
+                            méthodes, résultats) permettant de soutenir la conception et la mise en
+                            œuvre de formations à et par la recherche (Vors et al., 2023). Des
+                            travaux récents (Vors et al., 2023) défendent un dépassement de
+                            l’opposition des démarches qualitatives et quantitatives. Ils
+                            questionnent d’un point de vue épistémologique et méthodologique, d’une
+                            part les usages par les chercheurs des méthodes mixtes de recherche
+                            (MMR) pour l’analyse de l’activité et de l’expérience en EP, d’autre
+                            part le potentiel heuristique de ces méthodes en recherche et en
+                            formation. L’ouvrage coordonné par Boizumault et Gottsmann (2024) est un
+                            recueil d’articles illustrant une diversité de ressources (outils,
+                            méthodes, données) issues de la recherche, exploitées et exploitables
+                            par les enseignants d’EP pour analyser l’activité des élèves en cours
+                            d’EPS. Ces ressources fournissent des indicateurs sur « ce que l’élève
+                            donne à voir », des aides pour « enquêter sur ce que vivent les élèves
+                            (leur expérience) » et des MMR pour « articuler ce que l’élève vit et
+                            donne à voir ».</p>
+                        <p>Cette évolution historique des méthodes montre un déplacement des
+                            préoccupations des chercheurs centrées sur les méthodes et
+                            l’hétérogénéité des données, vers des préoccupations de mixité
+                            méthodologique, pour améliorer la compréhension du phénomène étudié et
+                            pour outiller davantage les formations. Les données de natures
+                            différentes qui sont collectées et articulées au sein des MMR, et
+                            exploitables en formation, sont le plus souvent de deux types. Le
+                            premier type de données, dites en troisième personne, porte sur des
+                            indicateurs comportementaux et concerne des données de l’activité non
+                            accessibles à la conscience de l’acteur. Ces données</p>
+                        <p>Auteur0000-00-00T00:00:00AAuteur0000-00-00T00:00:00Acorrespondent aux
+                            informations qui peuvent être obtenues depuis un observateur extérieur,
+                            indépendamment de ce que vit l’acteur. Le codeur, non impliqué dans la
+                            situation, cherche à documenter la facette publique, visible,
+                            ostensible, en un mot comportemental des conduites. Sont ici incluses
+                            des mesures […] qui peuvent être “captées” ou “enregistrées” comme les
+                            signaux neuro-électriques, les variables physiologiques, les paramètres
+                            biomécaniques… (Quidu et Favier-Ambrosini, 2014, p. 8<hi
+                                rendition="#style01">)</hi><hi rendition="#style01">.</hi>
+                        </p>
+                        <p>Le deuxième type de données dites en première personne renvoie à des
+                            données sur l’activité en partie conscientisable et racontable par
+                            l’acteur, issues de son expérience vécue. Elles </p>
+                        <p>vAuteur0000-00-00T00:00:00Aisent à renseigner les facettes intimes,
+                            privées, ressenties, subjectives, singulières des actions. On
+                            s’intéresse ici à l’expérience vécue par le sujet selon son propre point
+                            de vue. Le sujet accède au statut d’“informateur principal”, qu’il soit
+                            aidé ou non par un tiers pour accéder à son propre vécu. […] l’enjeu des
+                            données en première personne, d’inspiration phénoménologique, consiste à
+                            accéder à ce qui fait sens pour l’acteur (Quidu et Favier-Ambrosini,
+                            2014, p. 9).</p>
+                        <p>Même si les recherches sur l’intervention en sport et EP, empruntant aux
+                            MMR, ne sont pas unitaires, deux points communs les rassemblent en
+                            termes d’analyse de l’activité : le recueil de traces des comportements
+                            des acteurs engagés dans leur situation de travail ; et la posture
+                            épistémologique du chercheur qualifiée de compréhensive, visant à
+                            comprendre les significations par lesquelles ces derniers organisent
+                            leurs comportements. Ces deux invariants servent aujourd’hui d’outils
+                            pour les formations par la recherche.</p>
+                    </div>
+                </div>
+            </div>
+            <div type="div1">
+                <head subtype="level1">3. Utilité des recherches « Cours d’action » pour l’analyse
+                    de l’activité et de l’expérience : exemples d’usage de concepts, de méthodes et
+                    de résultats en formation d’étudiants de licence</head>
+                <p>Cette seconde partie vise à illustrer des possibilités d’usage des concepts, des
+                    méthodes et des résultats d’études conduites dans le Programme de Recherche du
+                    Cours d’action (PRCA) à des fins de formation initiale d’étudiants en Licence
+                    STAPS. L’objectif est de montrer comment des traces de l’activité et de
+                    l’expérience d’enseignants d’EP recueillies par les chercheurs peuvent être
+                    exploitées par des formateurs pour engager les étudiants dans une démarche
+                    compréhensive des pratiques d’enseignement de l’EP. Dans une première section,
+                    nous présentons le PRCA pour montrer la pertinence épistémologique, théorique et
+                    méthodologique de ce programme de recherche pour étudier les pratiques d’EP en
+                    tant qu’activités situées et vécues. La seconde partie vise à illustrer, au
+                    travers de deux exemples, des utilisations possibles du PRCA par le formateur et
+                    des étudiants de 3<hi rendition="#style02">e</hi> année de Licence STAPS.</p>
+                <div type="div2">
+                    <head subtype="level2">3.1. Le Cours d’action : un programme de recherche fondé
+                        sur une théorie anthropologique de l’activité et de l’expérience</head>
+                    <p>La question de l’utilité sociale de la recherche en formation des enseignants
+                        ouvre celle de l’utilisabilité des outils et des produits de la recherche
+                        dans le contexte de la formation. Comme l’avancent Terré et Adé (2022),
+                        « une telle entreprise ne peut se contenter de mettre à la disposition des
+                        enseignants des notions et méthodes de recueil et de traitement des
+                        données. Les enseignants ont besoin de se les approprier, c’est-à-dire de
+                        les adapter à leurs conditions d’enseignement tout en conservant leur
+                        cohérence théorique  » (p. 2). Nous retenons cette précaution avancée par
+                        les auteurs sur l’enseignement de l’EP, en l’appliquant à l’appropriation de
+                        la recherche en formation en EP.</p>
+                    <p>Terré et Adé (2022) considèrent que l’importation de la recherche dans un
+                        champ professionnel (enseignement ou formation) ne va pas de soi. lls
+                        avancent la nécessité d’une délimitation préalable de possibles en
+                        matière d’appropriation d’outils et de méthodes, qu’ils illustrent à
+                        travers le PRCA. Pour eux, trois conditions sont nécessaires pour garantir
+                        cette appropriation de la recherche sur l’intervention en EP, aux niveaux
+                        épistémologique, conceptuel et méthodologique. La première condition est que
+                        le cadre théorique des chercheurs doit être pertinent pour éclairer des
+                        pratiques sociales en EP, notamment au travers de présupposés théoriques et
+                        d’objets théoriques relatifs à l’activité humaine. La deuxième condition est
+                        la mise à disposition par le chercheur de catégories descriptives
+                        génériques qui : d’une part, servent de langage pour enquêter sur une
+                        pratique professionnelle et construire une « littéralisation de
+                        l’empirique » (Theureau, 2004) ; d’autre part, permettent la reconstruction
+                        d’une activité et d’une expérience professionnelle qui n’est jamais livrée
+                        en tant que telle par les acteurs ; et enfin, garantissent un consensus
+                        entre les notions mobilisées par le chercheur et les notions « indigènes »
+                        de l’enseignant (ou du formateur). La troisième et dernière condition est
+                        que les outils de recueil de données soient compatibles avec les conditions
+                        écologiques des situations de classe. En nous appuyant sur ces conditions
+                        d’appropriation de la recherche dans le champ de l’EP, nous présentons ici
+                        la pertinence épistémologique, théorique et méthodologique du PRCA pour
+                        étudier des pratiques d’EP en tant qu’activités situées et vécues, et pour
+                        outiller la formation professionnelle des enseignants d’EP.</p>
+                    <p>Le PRCA est reconnu comme l’un des courants de recherche francophone et
+                        international sur l’intervention en sport et en EP (Vors et al., 2020).
+                        Développé en France par Theureau (1992, 2004) pour étudier les situations de
+                        travail dans l’industrie et l’informatique, il a été appliqué au sport et à
+                        l’EP par Marc Durand et ses collaborateurs (<hi rendition="#style01"
+                            >e. g.</hi> Durand, 2001 ; Gal-Petitfaux, 2001 ; Sève et Saury, 2010).
+                        Le PRCA est à la fois un cadre théorique et méthodologique d’analyse de
+                        l’activité humaine en-train-de-se faire, avec une centration sur
+                        l’expérience vécue par les acteurs. Il adopte une perspective
+                        anthropologique et phénoménologique sur l’activité humaine, et prend son
+                        origine dans les théories anglophones de l’action et cognition situées (<hi
+                            rendition="#style01">e. g.</hi> Suchman, 1987) et la théorie de
+                        l’enaction et de l’inscription corporelle de l’esprit (Varela, 1989). Il
+                        propose un observatoire de l’activité humaine, et de sa dimension
+                        expérientielle, à l’aide d’outils et de procédures permettant de rendre
+                        compte des comportements observables des acteurs en situation écologique, et
+                        d’aider ces derniers à expliciter la dimension vécue (l’expérience) de leur
+                        activité. Il postule qu’en explicitant son expérience, une personne peut
+                        apprendre de cette dernière.</p>
+                    <p>Six postulats orientent cette approche : (a) l’action et la cognition sont
+                        situées et émergent de la dynamique des interactions individu-situation ;
+                        (b) ces interactions constituent un couplage structurel asymétrique, selon
+                        le principe d’autonomie ou autopoïèse (Varela, 1989) : l’individu interagit
+                        avec ce qui est pertinent pour lui, en fonction de sa propre histoire ;
+                        (c) l’activité est toujours vécue : elle est liée à ce que l’acteur vit et
+                        interprète en situation, c’est-à-dire à ce qui fait sens pour lui à chaque
+                        instant. Le sens en action correspond à l’expérience ou « conscience
+                        pré-réflexive » de l’acteur, et il définit son « monde propre » à un
+                        instant t (Varela, 1989) ; (d) la cognition est enaction : elle émerge de
+                        l’action, et cette dimension cognitive, enchâssée dans l’action, forme un
+                        tout indissociable avec d’autres dimensions de l’activité (sensorielles,
+                        motrices, émotionnelles) ; (e) l’activité se transforme en continu en lien
+                        avec la dynamique de la situation qui, elle, évolue constamment au gré des
+                        interactions acteur-environnement. Les couplages
+                        action-cognition-perception-situation se modifient seconde après seconde ;
+                        (f) ces couplages action-cognition-perception-situation se typicalisent : la
+                        typification de l’activité, et de l’expérience vécue, est un processus
+                        intrinsèque aux activités humaines par lequel les acteurs expriment des
+                        régularités intra et inter-individuelles dans leur façon d’agir, penser,
+                        ressentir, lorsqu’ils sont engagés dans des situations ayant des éléments
+                        de ressemblance.</p>
+                    <p>Le PRCA propose plusieurs objets théoriques, dont le « cours d’action » et le
+                        « cours d’expérience ». Le cours d’action est :</p>
+                    <q rend="quotation">[…] l’activité d’un acteur déterminé, engagé dans un
+                        environnement physique et social déterminé et appartenant à une culture
+                        déterminée, activité qui est significative pour ce dernier, c’est-à-dire
+                        montrable, racontable et commentable par lui à tout instant de son
+                        déroulement à un observateur-interlocuteur (Theureau et Jeffroy, 1994,
+                        p. 19).</q>
+                    <p>La méthodologie du cours d’action repose sur l’enregistrement vidéo des
+                        comportements des acteurs en situation réelle, pour en recueillir des
+                        traces, suivi d’entretiens d’auto-confrontation. Le cours d’expérience est
+                        défini comme une réduction de l’activité à la partie qui est significative
+                        pour l’acteur. Ce niveau de l’activité renvoie à la compréhension du vécu
+                        par l’acteur, cette compréhension n’englobant pas tout le vécu, mais
+                        seulement la fraction du vécu dont l’acteur peut rendre compte. Pour rendre
+                        compte de ce vécu, la méthodologie du cours d’expérience repose sur des
+                        entretiens d’autoconfrontation.</p>
+                </div>
+                <div type="div2">
+                    <head subtype="level2">3.2. Exemples d’utilisations possibles du Programme de
+                        Recherche du Cours d’Action en formation des étudiants de Licence
+                        STAPS</head>
+                    <p>Cette partie illustre plusieurs utilisations possibles, par le formateur et
+                        les étudiants, du PRCA en formation pré-professionnelle d’étudiants de 3<hi
+                            rendition="#style02">e</hi> année de Licence STAPS. Ces exemples portent
+                        sur : (a) l’utilisation de traces des comportements de l’enseignant (données
+                        en troisième personne) en situation d’observation et de guidage de
+                        l’activité motrice des élèves en Natation ; (b) l’articulation de ces
+                        données comportementales avec des traces de l’expérience vécue par
+                        l’enseignant dans la même situation (données en première personne), dans une
+                        visée de complémentarité ; (c) l’usage des catégories conceptuelles du PRCA
+                        pour aider et guider les étudiants à documenter les récits de leur
+                        expérience d’enseignement vécue en stage ; (d) l’exploitation de ces récits
+                        d’expérience pour faciliter, grâce aux catégories conceptuelles utilisées,
+                        le partage d’expériences et la prise de conscience par le groupe d’étudiants
+                        des singularités et similarités dans leurs expériences.</p>
+                    <div type="div3">
+                        <head subtype="level3">3.2.1. Exemple 1. Montrer des régularités et
+                            singularités dans les comportements d’enseignants pour susciter, chez
+                            l’étudiant, un questionnement sur ses comportements et son expérience
+                            vécue</head>
+                        <p>Ce premier exemple est issu d’une recherche dont l’objectif était
+                            d’analyser le cours d’action d’enseignants d’EP expérimentés et novices
+                            lors de leçons de natation de vitesse au cours desquelles les élèves
+                            nageaient en file indienne dans les couloirs de nage (n<hi
+                                rendition="#style02">o</hi> 1, 2 et 3) proches du bord
+                            (Gal-Petitfaux, 2000 ; Gal-Petitfaux et al., 1998). L’objectif de
+                            l’étude était : d’une part, de rendre compte au moyen de graphes de
+                            l’organisation des comportements des enseignants au fil de la leçon, au
+                            niveau de leurs déplacements et de leurs interactions verbales avec les
+                            élèves ; d’autre part, de comprendre, à l’aide d’entretiens
+                            d’autoconfrontation, leur monde propre pour guider les élèves dans
+                            l’action de nage ; enfin, d’identifier des régularités et singularités
+                            au niveau des comportements des enseignants et de leurs expériences
+                            vécues.</p>
+                        <p>Pour recueillir des traces des comportements des enseignants à la
+                            piscine, le chercheur avait filmé les enseignants et les élèves
+                            (Figure 1). Il avait aussi quadrillé la piscine en 17 zones (Figure 2)
+                            de façon à relever toutes les 10 secondes la position de l’enseignant
+                            (dans les zones x0) et les zones de ses interventions verbales auprès
+                            des élèves dans les couloirs de nage (dans les zones x1 et x5). Le
+                            traitement des données a consisté à repérer, et à retranscrire par un
+                            graphe (Figure 3) : (a) les zones d’occupation et les déplacements de
+                            l’enseignant dans l’espace ; (b) la nature des communications de
+                            l’enseignant avec les élèves (en fonction du temps, des zones, du
+                            groupe, d’élèves singuliers, de la durée des communications
+                            individuelles avec un élève ; (c) les formes typiques de comportements
+                            de l’enseignant au niveau de l’occupation de l’espace et de ses modes de
+                            communication au même moment.</p>
+                        <p rend="figure-title">Figure 1 : capture d’images extraites des
+                            enregistrements audiovisuels de l’activité des enseignants et des élèves
+                            en Natation</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-1.png"
+                                />
+                            </figure></p>
+                        <p rend="figure-title">Figure 2 : quadrillage de la piscine en 17 zones pour
+                            repérer et coder les comportements de l’enseignant (zones 10, 20, etc.)
+                            et la position des élèves dans les couloirs de nage de ses interactions
+                            verbales avec eux (zones 21, 31, etc. ; 25, 35, etc.)</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-2.png"
+                                />
+                            </figure></p>
+                        <p rend="figure-title">Figure 3 : exemple de graphe d’occupation de l’espace
+                            et des communications d’un enseignant en natation</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-3.png"
+                                />
+                            </figure></p>
+                        <p>Le chercheur a conduit des entretiens d’autoconfrontation avec les
+                            enseignants pour documenter leur expérience vécue au fil de la leçon.
+                            Puis, il a mis ces données « en première personne » en correspondance
+                            temporelle avec les données comportementales « en troisième personne »,
+                            afin d’identifier des formes typiques d’organisation de l’activité de
+                            l’enseignant au cours de la leçon. Les résultats ont permis de repérer
+                            trois formes typiques d’activités de l’enseignant pour guider les
+                            élèves : par « Flash », par « Suivi », par « Arrêt » (Gal-Petitfaux,
+                            2010). Ces formes typiques de guidage ont été repérées en associant les
+                            comportements typiques d’occupation de l’espace et les verbatims
+                            d’entretien.</p>
+                        <p>La situation de formation retenue partait du constat d’une difficulté
+                            vécue par les étudiants pour mettre en action les élèves rapidement et
+                            guider leurs apprentissages moteurs. Pour former les étudiants à
+                            comprendre l’intervention d’enseignants d’EP, ainsi que la leur, le
+                            formateur a procédé en quatre étapes :</p>
+                        <list type="unordered">
+                            <item><p>Étape 1 : il a d’abord présenté un exemple de graphe (Figure 3)
+                                    et un extrait vidéo correspondant, en expliquant la démarche du
+                                    chercheur et en demandant aux étudiants d’interpréter les
+                                    graphes. Puis, à partir de leurs réponses, il les a aidés à
+                                    identifier différents types de comportements d’occupation de
+                                    l’espace et de communications au fil de la leçon.</p></item>
+                            <item><p>Étape 2 : le formateur a ensuite présenté des graphes
+                                    illustrant des comportements d’enseignants débutants (Figure 4)
+                                    et des comportements d’enseignants expérimentés (Figure 5), en
+                                    demandant aux étudiants de comparer et d’interpréter les
+                                    graphes. À partir de leurs réponses, il les a aidés à identifier
+                                    des comportements typiques, en procédant en trois temps :
+                                    a) tout d’abord, il a cherché à faire identifier par les
+                                    étudiants les comportements qui ressortaient chez tous les
+                                    enseignants ; son objectif était qu’ils parviennent à repérer
+                                    les trois comportements-types d’occupation de l’espace
+                                    correspondant à trois communications-types pour corriger les
+                                    élèves, qu’il a nommées par guidages par « flash », par
+                                    « suivi » et par « arrêt » ; b) puis, ils a fait analyser les
+                                    graphes des enseignants débutants ; son objectif était qu’ils
+                                    repèrent que ces derniers ont une forte immobilisation en bout
+                                    de ligne d’eau, avec le groupe, ainsi que peu de corrections
+                                    individualisées, plutôt rapides ou en suivant des élèves sur
+                                    quelques mètres dès qu’ils s’élancent dans le couloir
+                                    (zones 10-20) ; c) enfin, il a opéré de même avec les graphes
+                                    des enseignants expérimentés afin qu’ils repèrent que ces
+                                    derniers ont un déplacement important le long du bassin, de
+                                    nombreuses corrections individualisées, rapides ou par suivi des
+                                    élèves sur plusieurs mètres.</p></item>
+                            <item><p>Étape 3 : le formateur a ensuite présenté des extraits
+                                    d’entretiens pour documenter l’expérience vécue par les
+                                    enseignants débutants et expérimentés lors de moments (cercles
+                                    avec un chiffre, Figures 4 et 5) correspondant aux trois
+                                    comportements-types de guidage : par Flash, par Suivi, par
+                                    Arrêt.</p></item>
+                            <item><p>Étape 4 : il a ensuite invité les étudiants à évoquer leur
+                                    propre expérience d’enseignement, en s’appuyant sur ces traces
+                                    d’activité présentées.</p></item>
+                        </list>
+                        <p rend="figure-title">Figure 4 : Exemple de graphe montrant l’occupation de
+                            l’espace et les communications d’un étudiant de licence en Natation</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-4.png"
+                                />
+                            </figure></p>
+                        <p rend="figure-title">Figure 5 : exemple de graphe montrant l’occupation de
+                            l’espace et les communications d’un enseignant d’EP expérimenté en
+                            Natation</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-5.png"
+                                />
+                            </figure></p>
+                    </div>
+                    <div type="div3">
+                        <head subtype="level3">3.2.2. Exemple 2. Utiliser les catégories
+                            conceptuelles du PRCA pour aider les étudiants à documenter et partager
+                            leur expérience d’enseignement vécue en stage</head>
+                        <p>Le scénario de formation s’appuie sur le constat d’une difficulté des
+                            étudiants de Licence à conduire avec efficacité les moments
+                            d’explication collective des consignes. Lors de ces moments, les
+                            étudiants se retrouvent dans un face-à-face pédagogique avec toute la
+                            classe qui génère chez eux une situation d’inconfort, voire anxiogène,
+                            par peur de se tromper dans les explications ou d’oublier des consignes.
+                            Le scénario de formation avait pour objectif : d’apprendre aux étudiants
+                            à utiliser des catégories conceptuelles du PRCA pour les aider à
+                            documenter leur expérience vécue ; et d’aider les étudiants à
+                            reconnaitre, grâce à ces catégories, des typicalités et singularités
+                            dans leurs expériences vécues. Il comportait quatre étapes :</p>
+                        <list type="unordered">
+                            <item><p>Étape 1 : le formateur avait demandé aux étudiants de produire,
+                                    dans leur journal de bord, un récit de leur expérience vécue
+                                    lors de ce moment. Pour les aider à raconter leur expérience, il
+                                    leur a présenté les catégories conceptuelles utilisées par les
+                                    chercheurs dans le PRCA pour documenter une expérience vécue. Il
+                                    leur a alors demandé de faire le récit d’un moment d’explication
+                                    collective, marquant pour eux, en renseignant les catégories
+                                    suivantes du PRCA : leurs préoccupations à chaque instant du
+                                    déroulement de l’explication collective des consignes (ce qu’il
+                                    cherchait à faire à chaque instant) ; leurs perceptions (les
+                                    informations dans la situation sur lesquelles ils focalisaient
+                                    leur attention) ; les connaissances et raisonnements qu’ils
+                                    mobilisaient (la façon dont ils interprétaient ce qui se
+                                    passait) ; leurs émotions (la façon dont ils vivaient
+                                    émotionnellement le moment).</p></item>
+                            <item><p>Étape 2 : le formateur avait invité les étudiants à présenter
+                                    un de leur récit d’expérience à un autre étudiant, pour partager
+                                    son expérience à un pair et susciter ses réactions
+                                    (Tableau I).</p></item>
+                            <item><p>Étape 3 : il avait ensuite demandé à chaque étudiant
+                                    d’identifier dans le récit de son camarade ce qui correspondait
+                                    à ses préoccupations, ses perceptions, ses connaissances, ses
+                                    émotions, en utilisant des surligneurs et un code couleur
+                                    (Tableau II - Pour les besoins de la publication de l’article,
+                                    les couleurs ont été remplacées par le gras et le
+                                    soulignement).</p></item>
+                            <item><p>Étape 4 : enfin, il avait invité les deux étudiants à échanger
+                                    sur leur expérience, à partir du contenu renseignant ces
+                                    catégories d’expérience.</p></item>
+                        </list>
+                        <p>L’exemple ci-dessous illustre le récit d’expérience d’Ophélie, au début
+                            de sa 3<hi rendition="#style02">e</hi> année de Licence Éducation et
+                            Motricité, lors d’une leçon de Badminton (Tableau I).</p>
+                        <p rend="figure-title">Tableau I : exemple de récit d’expérience produit par
+                            Ophélie en début de sa 3<hi rendition="#style02">e</hi> année de
+                            Licence, en utilisant les catégories d’analyse de l’expérience issues du
+                            Cours d’Action</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-6.png"
+                                />
+                            </figure></p>
+                        <p rend="figure-title">Tableau II : identification des composantes du Cours
+                            d’Action dans le récit d’expérience d’Ophélie</p>
+                        <p><figure>
+                                <graphic
+                                    url="http://journals.openedition.org/ejrieps/docannexe/image/9683/img-7.png"
+                                />
+                            </figure></p>
+                        <p>Cet exemple montre le caractère heuristique des catégories génériques du
+                            PRCA pour analyser une expérience humaine. Grâce à l’utilisation de ces
+                            catégories, Ophélie parvient à rendre compte, à travers son récit, de
+                            l’épaisseur phénoménologique de son expérience à forte charge
+                            émotionnelle. Le partage, entre pairs, de récits d’expérience construits
+                            par les étudiants à l’aide des catégories du PRCA, les aide à :
+                            identifier, partager et comparer leur monde propre ; prendre conscience
+                            des singularités et similarités dans leurs expériences ; discuter de
+                            leurs difficultés similaires ; dédramatiser leurs expériences
+                            émotionnellement marquantes. </p>
+                    </div>
+                </div>
+            </div>
+            <div type="div1">
+                <head subtype="level1">4. Conclusion</head>
+                <div type="div2">
+                    <head subtype="level2">4.1. L’« entrée activité et expérience » : des recherches
+                        au service de la formation des enseignants</head>
+                    <p>L’objectif de cet article était de s’interroger sur les rapports entre les
+                        activités de recherche et les pratiques d’intervention, en se questionnant
+                        sur l’utilité sociale de la recherche en formation d’enseignants. Nous avons
+                        appréhendé cette question de l’usage et de l’impact des travaux de recherche
+                        sur l’intervention, en étudiant les rapports entre le champ des recherches
+                        optant pour une « entrée activité et expérience » et le champ des pratiques
+                        professionnelles d’enseignement de l’EP.</p>
+                    <p>Dans une première partie, nous nous sommes interrogés sur les conditions
+                        pouvant expliquer un rapprochement entre ces deux mondes et la construction
+                        de significations partagées. Pour cela, nous avons d’abord montré que les
+                        concepts d’activité et d’expérience sont devenus des objets intégrés à la
+                        fois dans la recherche en sciences humaines et sociales et dans la
+                        formation. Cette double intégration a été permise : d’une part, grâce au
+                        développement de la recherche qualitative et compréhensive sur
+                        l’intervention, et de son lien aux pratiques sociales ; d’autre part, grâce
+                        à des recherches participatives au plus près des acteurs et des pratiques
+                        professionnelles. Puis, nous avons centré notre analyse sur l’utilité
+                        sociale de la recherche en formation des enseignants, en expliquant comment
+                        l’entrée « activité et expérience » est devenue un objet-frontière entre la
+                        recherche sur l’intervention et la formation à l’enseignement. Pour cela,
+                        nous avons montré : (a) en quoi l’enjeu de professionnalisation de la
+                        formation des enseignants a fait émerger un besoin d’éclairage scientifique
+                        de la pratique chez les formateurs ; (b) la place et le rôle de la formation
+                        par l’analyse de l’activité au service du développement professionnel des
+                        enseignants ; (c) le rôle de l’analyse de l’expérience comme modalité
+                        d’apprentissage en formation ; (d) l’apport des méthodes mixtes de recherche
+                        à l’instrumentation de la formation en EP.</p>
+                    <p>Dans une deuxième partie, nous avons montré l’utilité et l’impact possible
+                        des recherches conduites dans le Programme de Recherche du « Cours
+                        d’action ». Pour cela, nous avons présenté deux exemples d’usage des
+                        concepts, des méthodes et des résultats issus d’études « Cours d’action » en
+                        formation initiale des étudiants de licence STAPS 3<hi rendition="#style02"
+                            >e</hi> année.</p>
+                </div>
+                <div type="div2">
+                    <head subtype="level2">4.2. Apports, conditions et limites de l’usage des
+                        recherches « Cours d’action » en formation</head>
+                    <p>Les réflexions et illustrations que nous avons apportées appuient l’idée que
+                        la recherche constitue une composante du processus de formation au métier
+                        d’enseignant (Adé et Piot, 2018). Les étudiants sont désormais formés à
+                        et par la recherche. Formateurs et étudiants apprennent non seulement à
+                        s’initier à la recherche pour analyser, comprendre et améliorer leurs
+                        pratiques de formation ou d’enseignement, et développer leur
+                        professionnalité. En même temps, la circulation des savoirs entre la
+                        recherche et la formation ne va pas de soi, et des conditions et limites
+                        sont à considérer pour permettre l’émergence de véritables significations
+                        partagées entre les deux mondes des chercheurs et des formateurs. Nous
+                        exposons ci-après les apports, conditions et limites de l’usage des
+                        recherches « Cours d’action » en formation.</p>
+                    <p>Les apports possibles des recherches « activité et expérience » en formation
+                        des enseignants d’EP peuvent s’envisager de deux façons. D’une part, l’usage
+                        en formation de traces comportementales et de récits d’expérience,
+                        construits par le chercheur, peuvent outiller les étudiants et les
+                        formateurs en leur fournissant une méthode d’analyse d’une activité située
+                        et vécue. D’autre part, par l’usage de ces ressources, les étudiants peuvent
+                        opérer un travail réflexif sur leur propre pratique : l’exploitation de
+                        traces variées contribue à l’enrichissement de leur compréhension de
+                        l’activité, à une projection possible de leurs actions futures et à la
+                        transformation de leur expérience. Nos exemples ont montré comment ces
+                        traces pouvaient leur permettre d’identifier des comportements typiques en
+                        classe, de dégager le sens de ces comportements, et d’identifier/construire
+                        les savoirs de l’action.</p>
+                    <p>Les conditions nécessaires pour garantir une appropriation de la recherche
+                        sur l’intervention en EP en formation pourraient être les suivantes :
+                        (a) garantir l’accessibilité des concepts, des théories et des méthodes de
+                        la recherche aux formateurs, sans dénaturer les outils de la recherche lors
+                        de leur importation/appropriation (Terré et Adé, 2022) ; (b) former le
+                        formateur à une posture de chercheur (Desmarais et Gusew, 2021), par exemple
+                        s’appuyer sur des théories qui donnent des outils pour penser l’expérience,
+                        ne pas faire dériver la parole des sujets narratifs (formateurs, étudiants)
+                        vers les propres intérêts ou questions du chercheur, et savoir poser des
+                        questions qui suscitent la réflexion d’une expérience vécue ; (c) recourir à
+                        la contribution des co-apprenants pour enrichir la production de sens,
+                        notamment quand ils ont vécu la même situation.</p>
+                    <p>Des limites doivent aussi être envisagées. Les produits de la recherche ne
+                        sont pas d’emblée appropriables par les formateurs, pour au moins deux
+                        raisons. Les formateurs n’ont pas attendu les productions de la recherche
+                        pour outiller leur formation ; ils construisent eux aussi des outils adaptés
+                        à leurs conditions écologiques de travail, dont l’articulation avec les
+                        outils de la recherche n’est pas toujours facile ou possible. De plus,
+                        l’importation des produits de la recherche en formation suppose, pour le
+                        chercheur, un travail de simplification de son langage scientifique, voire
+                        de didactisation de ses travaux, afin de garantir leur portée et leur
+                        vulgarisation (Desmarais et Gusew, 2021) dans le champ de la formation.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl>Adé, D. et Piot, T. (dir.) (2018). <hi rendition="#style01">La formation
+                            entre universitarisation et professionnalisation : tensions et
+                            perspectives dans les métiers de l’interaction humaine</hi>. Éditions
+                        des PURH.</bibl>
+                    <bibl>Barbier, J.M. (2013). Un nouvel enjeu pour la recherche en formation :
+                        entrer par l’activité. <hi rendition="#style01">Savoirs, 3</hi>(33), 9-22.
+                            <ref target="https://doi.org/10.3917/savo.033.0009"
+                            >https://doi.org/10.3917/savo.033.0009</ref>
+                    </bibl>
+                    <bibl>Barbier, J.M. et Durand, M. (2003). L’activité : un objet intégrateur
+                        pour les sciences sociales. Dans J.M. Barbier et M. Durand (dir.), L’analyse
+                        de l’activité. Approches situées. <hi rendition="#style01">Recherche et
+                            Formation</hi>, 42, 99-117. <ref
+                            target="https://doi.org/10.3406/refor.2003.1831"
+                            >https://doi.org/10.3406/refor.2003.1831</ref>.</bibl>
+                    <bibl>Boizumault, M. et Gottsmann, L. (2024). <hi rendition="#style01">Outils et
+                            méthodes d’analyse de l’activité d’élèves en EPS. Regards croisés sur ce
+                            qui se voit et ce qui se vit</hi>. Éditions A.E.E.P.S.</bibl>
+                    <bibl>Brau-Antony, S. (2013). La place de la recherche dans le développement
+                        professionnel des formateurs IUFM. <hi rendition="#style01">Tréma, 39</hi>,
+                        22-35. <ref target="https://doi.org/10.4000/trema.2930"
+                            >https://doi.org/10.4000/trema.2930</ref>.</bibl>
+                    <bibl>Desmarais, D. et Gusew, A. (2021). L’approche biographique et l’approche
+                        narrative : contributions à l’intervention sociale. <hi rendition="#style01"
+                            >Nouvelles pratiques sociales, 32</hi>(2), 20-45. <ref
+                            target="https://doi.org/10.7202/1085511ar"
+                            >https://doi.org/10.7202/1085511ar</ref>.</bibl>
+                    <bibl>Durand, M. (2001). <hi rendition="#style01">Chronomètre et survêtement.
+                            Reflets de l’expérience quotidienne d’enseignants en éducation
+                            physique</hi>. Éditions Revue EPetS.</bibl>
+                    <bibl>Gal-Petitfaux, N., Ria, L., Sève, C. et Durand, M. (1998). <hi
+                            rendition="#style01">La “file indienne” en natation : un dispositif de
+                            déplacement des élèves jouant le rôle d’artefact cognitif.</hi> Actes du
+                        Colloque International du DREEPS “Recherches sur l’Intervention en E.P.S. en
+                        sport”. Antibes, décembre.</bibl>
+                    <bibl>Gal-Petitfaux, N. (2000). <hi rendition="#style01">Typicalité dans la
+                            signification et l’organisation de l’intervention des professeurs d’EPS
+                            en situation d’enseignement de la natation : le cas des </hi>situations
+                        de nage en file indienne. Thèse de doctorat, Université de Montpellier
+                        1.</bibl>
+                    <bibl>Gal-Petitfaux, N. (2010). L’activité en classe de l’enseignant d’EPS et le
+                        caractère « situé » des connaissances dans l’action : contribution d’un
+                        programme de recherche en anthropologie cognitive. <hi rendition="#style01"
+                            >eJRIEPS, 19</hi>, 27-45. <ref
+                            target="https://doi.org/10.4000/ejrieps.5441"
+                            >https://doi.org/10.4000/ejrieps.5441</ref>.</bibl>
+                    <bibl>Gal-Petitfaux, N. et Durand, M. (2001). L’enseignement de l’Education
+                        physique comme « action située » : propositions pour une approche
+                        d’anthropologie cognitive. <hi rendition="#style01">STAPS, 55</hi>, 79-100.
+                            <ref target="https://doi.org/10.3917/sta.055.0079"
+                            >https://doi.org/10.3917/sta.055.0079</ref>.</bibl>
+                    <bibl>Lémonie, Y., Gal-Petitfaux, N., et Wallian, N. (2012). Sciences,
+                        intervention et Éducation Physique et Sportive : Des relations entre
+                        pratique et théorie. <hi rendition="#style01">Cahier du CEDREPS, 12</hi>,
+                        177-190.</bibl>
+                    <bibl>Mayen, P. et Mayeux, C. (2003). Expérience et formation. <hi
+                            rendition="#style01">Savoirs, 1</hi>, 13-53. <ref
+                            target="https://doi.org/10.3917/savo.001.0013"
+                            >https://doi.org/10.3917/savo.001.0013</ref>.</bibl>
+                    <bibl>Mouchet, A. (2018). <hi rendition="#style01">L’expérience subjective en
+                            recherche et en formation.</hi> Presses universitaires du
+                        Septentrion.</bibl>
+                    <bibl>Quidu, M. et Favier-Ambrosini, B. (2014). L’articulation des données en
+                        première et troisième personnes. De la genèse d’une méthodologie
+                        originale en Science du sport<hi rendition="#style01">. Intellectica,
+                            62</hi>(2), 7-34. https://doi. org/10.3406/intel.2014.1031.</bibl>
+                    <bibl>Schön, D.A. (1996). À la recherche d’une nouvelle épistémologie de la
+                        pratique et de ce qu’elle implique pour l’éducation des adultes. Dans J-M.
+                        Barbier (dir.), <hi rendition="#style01">Savoirs théoriques et savoirs
+                            d’action </hi>(p. 201-222). Presses universitaires de France.</bibl>
+                    <bibl>Sève, C. et Saury, J. (2010). <hi rendition="#style01">Un programme de
+                            recherche en STAPS fondé sur la théorie du cours d’action.</hi> <hi
+                            rendition="#style01">eJRIEPS</hi>. <ref
+                            target="https://doi.org/10.4000/ejrieps.4829"
+                            >https://doi.org/10.4000/ejrieps.4829</ref>
+                    </bibl>
+                    <bibl>St-Arnaud, Y. (1992). <hi rendition="#style01">Connaître par
+                        l’action</hi>. Les Presses de l’Université de Montréal.</bibl>
+                    <bibl>Suchman, L. A. (1987). <hi rendition="#style01">Plans and Situated
+                            Actions : The Problem of Human-Machine Communication.</hi> Cambridge
+                        University Press.</bibl>
+                    <bibl>Terré, N. et Adé, D. (2022). L’appropriation d’outils de la recherche
+                        par les enseignants d’Éducation Physique : illustration dans une leçon
+                        d’escalade. <hi rendition="#style01">eJRIEPS, 5</hi>. <ref
+                            target="https://doi.org/10.4000/ejrieps.8128"
+                            >https://doi.org/10.4000/ejrieps.8128</ref>.</bibl>
+                    <bibl>Theureau, J. (1992). <hi rendition="#style01">Le cours d’action : analyse
+                            sémio-logique. Essai d’une </hi>anthropologie cognitive située. Peter
+                        Lang.</bibl>
+                    <bibl>Theureau, J. et Jeffroy, F. (1994). Ergonomie des situations
+                        informatisées : la conception centrée sur le cours d’action des
+                        utilisateurs. [Ergonomics of computerized situations : the conception
+                        centered on users’ course of action]. Octarès. <ref
+                            target="https://doi.org/10.1007/s11097-005-9003-x"
+                            >https://doi.org/10.1007/s11097-005-9003-x</ref>.</bibl>
+                    <bibl>Theureau, J. (2004). <hi rendition="#style01">Le cours d’action : Méthode
+                            élémentaire.</hi> Octarès.</bibl>
+                    <bibl>Varela, F. (1989). <hi rendition="#style01">Autonomie et connaissance.
+                            Essai sur le vivant. [Autonomy and Knowledge : Essay about living
+                            system].</hi> Seuil.</bibl>
+                    <bibl>Vinck, D. (2009). De l’objet intermédiaire à l’objet-frontière. Vers la
+                        prise en compte du travail d’équipement. <hi rendition="#style01">Revue
+                            d’anthropologie des connaissances</hi>, 3(1), 51-72. <ref
+                            target="https://doi.org/10.3917/rac.006.0051"
+                            >https://doi.org/10.3917/rac.006.0051</ref>.</bibl>
+                    <bibl>Vors, O., Adé, D., Gal-Petitfaux, N., Joing, I. et Andrieu, B. (2023). Les
+                        méthodes mixtes de recherche pour l’analyse de l’activité et de l’expérience
+                        en Éducation physique et en Sport. Articulation des données et des
+                        épistémologies. <hi rendition="#style01">STAPS, 141</hi>, 5-19. <ref
+                            target="https://doi.org/10.3917/sta.141.0005"
+                            >https://doi.org/10.3917/sta.141.0005</ref>
+                    </bibl>
+                    <bibl>Vors, O., Girard, A., Gal-Petitfaux, N., Lenzen, B., Mascret, N., Mouchet,
+                        A., Turcotte, S. et Potdevin, F. (2020). A review of the penetration of
+                        Francophone research on intervention in physical education and sport in
+                        Anglophone journals since 2010. <hi rendition="#style01">Physical Education
+                            and Sport Pedagogy</hi>, 25(4), 331-345. <ref
+                            target="https://doi.org/10.1080/17408989.2020.1729348"
+                            >https://doi.org/10.1080/17408989.2020.1729348</ref></bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
